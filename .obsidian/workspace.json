@@ -297,6 +297,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "workspaces:ワークスペースレイアウトを管理": false,
       "switcher:クイックスイッチャーを開く": false,
       "graph:グラフビューを開く": false,
