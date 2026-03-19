@@ -1,0 +1,352 @@
+{
+  "main": {
+    "id": "bf4a9512ce384d44",
+    "type": "split",
+    "children": [
+      {
+        "id": "5163dab56797e4ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bd7533439260bd89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Google Keep_ノート記事アイディア.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Google Keep_ノート記事アイディア"
+            }
+          },
+          {
+            "id": "8abee8cd753238b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Google Keep_ノート記事アイディア.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Google Keep_ノート記事アイディア"
+            }
+          },
+          {
+            "id": "05aa5727b0f332f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "資産（定義）/自分株式会社.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "自分株式会社"
+            }
+          },
+          {
+            "id": "ecc05e56bca6d2c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "執筆中/正論は タイミングという 器に盛れ.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "正論は タイミングという 器に盛れ"
+            }
+          },
+          {
+            "id": "e19c2f8433412b1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "執筆中/正論は タイミングという 器に盛れ.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "正論は タイミングという 器に盛れ"
+            }
+          },
+          {
+            "id": "cd29507160acf102",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "日報/2026-03-16.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-03-16"
+            }
+          },
+          {
+            "id": "420f483deaa8f60a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "日報/2026-03-18.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-03-18"
+            }
+          },
+          {
+            "id": "76a380bfea8e1920",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "執筆中/2番手の法則.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2番手の法則"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f47b91ede022aec8",
+    "type": "split",
+    "children": [
+      {
+        "id": "f2ecf07ec2c6dcee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95988ccc019d9633",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          },
+          {
+            "id": "39fcafee2ac6ec8c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "ed0f8455d4a48de3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "て]",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2ab90fd0f1ae47b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "f056602df5c5fabd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "105d755ca137a039",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "日報/2026-03-18.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "2026-03-18へのバックリンク"
+            }
+          },
+          {
+            "id": "9b6cc9ff244d5e90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Google Keep_ノート記事アイディア.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Google Keep_ノート記事アイディア"
+            }
+          },
+          {
+            "id": "856738ba1932b9c0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ひかる.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "ひかるからのアウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "fac1341376a65a3f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "fb385723a2015d5a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "すべてのプロパティ"
+            }
+          },
+          {
+            "id": "55606cceb31156b0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "無題のファイル.base",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "無題のファイルのアウトライン"
+            }
+          },
+          {
+            "id": "da12e07c0221d634",
+            "type": "leaf",
+            "state": {
+              "type": "smtcmp-chat-view",
+              "state": {},
+              "icon": "wand-sparkles",
+              "title": "Smart composer chat"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "workspaces:ワークスペースレイアウトを管理": false,
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "bases:新規ベースを作成": false,
+      "zk-prefixer:新規ユニークノートの作成": false,
+      "smart-composer:Open smart composer": false
+    }
+  },
+  "active": "420f483deaa8f60a",
+  "lastOpenFiles": [
+    "🤖 AI・ツール設定/_AI4ツール使い分けマップ.md",
+    "_文体・口癖メモ.md",
+    "アンナチュラル名言.md",
+    "日報/2026-03-18.md",
+    "セッション記録/2026-03-18.md",
+    "日報/2026-03-18.md.tmp.5.1773838117762",
+    "日報/2026-03-18.md.tmp.5.1773838099518",
+    "🤖 AI・ツール設定/_NotebookLM操作手順書（図解版）.md",
+    "セッション記録/2026-03-18.md.tmp.5.1773837558738",
+    "セッション記録/2026-03-18.md.tmp.5.1773837540430",
+    "🤖 AI・ツール設定/_NotebookLM活用フローガイド.md",
+    "🤖 AI・ツール設定/_NotebookLM活用ガイド.md",
+    "📋 NurseX・ブログ戦略/_NurseX骨格テンプレートv2.md",
+    "📋 NurseX・ブログ戦略/_NurseXサイト戦略・運営ナレッジ.md",
+    "📋 NurseX・ブログ戦略/_note記事作成フレームワーク.md",
+    "📦 生成ファイル/ナースX_Gemini用ナレッジドキュメント_2026-03-18.docx",
+    "📦 生成ファイル/アンナチュラル_名言_2026-03-18_v2.0.docx",
+    "📦 生成ファイル/nurse-x-fullpackage.skill",
+    "📦 生成ファイル/アンナチュラル_名言_WP貼り付け用HTML_v3.txt",
+    "📦 生成ファイル/アンナチュラル_名言_WP貼り付け用HTML_v2.txt",
+    "📦 生成ファイル/アンナチュラル_名言_WP貼り付け用HTML.txt",
+    "✍️ note記事ドラフト/note_異常なし_INFJ軸_draft.md",
+    "✍️ note記事ドラフト/note_コードブルー森本先生.md",
+    "✍️ note記事ドラフト/note_うちの弁護士_加筆リライト版.md",
+    "🤖 AI・ツール設定/自動化ワークロード.md",
+    "🤖 AI・ツール設定/_ツール関係性メモ.md",
+    "🤖 AI・ツール設定/_Obsidian×Claude活用マップ.md",
+    "🤖 AI・ツール設定/_AI分業ワークフロー（Gemini×Claude）.md",
+    "📋 NurseX・ブログ戦略/コードブルー森本先生_リライト済みHTML.md",
+    "📋 NurseX・ブログ戦略/Google Keep_ノート記事アイディア.md",
+    "📋 NurseX・ブログ戦略/ひかる.md",
+    "📋 NurseX・ブログ戦略/_プロンプト集.md",
+    "📋 NurseX・ブログ戦略/_スキルアイデア管理.md",
+    "📋 NurseX・ブログ戦略/_コアテーマ軸.md",
+    "📋 NurseX・ブログ戦略/_NurseX記事アイデアリスト.md",
+    "コードブルー森本先生_リライト済みHTML.md",
+    "無題のファイル.canvas"
+  ]
+}
