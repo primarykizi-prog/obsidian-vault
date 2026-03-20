@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日報/2026-03-17.md",
+                "file": "_自分取扱説明書.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-17"
+              "title": "_自分取扱説明書"
             }
           },
           {
@@ -222,7 +222,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日報/2026-03-17.md",
+                "file": "_自分取扱説明書.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -232,7 +232,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "2026-03-17へのバックリンク"
+              "title": "_自分取扱説明書へのバックリンク"
             }
           },
           {
@@ -340,12 +340,14 @@
   },
   "active": "08748ed91b1903f5",
   "lastOpenFiles": [
-    "日報/2026-03-20.md",
-    "日報/2026-03-17.md",
-    "無題のファイル.canvas",
-    "_ワークフローガイド.md",
-    "こういちのAIワークフロー全体像.md",
     "日報/2026-03-19.md",
+    "_自分取扱説明書.md.tmp.5.1774009259172",
+    "_ワークフローガイド.md",
+    "日報/2026-03-19.md.tmp.5.1774009017079",
+    "日報/2026-03-17.md",
+    "日報/2026-03-20.md",
+    "無題のファイル.canvas",
+    "こういちのAIワークフロー全体像.md",
     "日報/2026-03-18.md",
     "_自分取扱説明書.md",
     "日報/2026-03-16.md",
@@ -368,14 +370,11 @@
     "📦 生成ファイル/アンナチュラル_名言_2026-03-18_v2.0.docx",
     "📦 生成ファイル/nurse-x-fullpackage.skill",
     "📦 生成ファイル/アンナチュラル_名言_WP貼り付け用HTML_v3.txt",
-    "📦 生成ファイル/アンナチュラル_名言_WP貼り付け用HTML_v2.txt",
-    "📦 生成ファイル/アンナチュラル_名言_WP貼り付け用HTML.txt",
     "✍️ note記事ドラフト/note_異常なし_INFJ軸_draft.md",
     "✍️ note記事ドラフト/note_コードブルー森本先生.md",
     "✍️ note記事ドラフト/note_うちの弁護士_加筆リライト版.md",
     "🤖 AI・ツール設定/自動化ワークロード.md",
     "🤖 AI・ツール設定/_ツール関係性メモ.md",
-    "🤖 AI・ツール設定/_Obsidian×Claude活用マップ.md",
-    "🤖 AI・ツール設定/_AI分業ワークフロー（Gemini×Claude）.md"
+    "🤖 AI・ツール設定/_Obsidian×Claude活用マップ.md"
   ]
 }
