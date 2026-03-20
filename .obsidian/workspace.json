@@ -125,7 +125,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_自分取扱説明書.md",
+                "file": "📦 生成ファイル/_自分取扱説明書.md",
                 "mode": "source",
                 "source": false
               },
@@ -222,7 +222,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_自分取扱説明書.md",
+                "file": "📦 生成ファイル/_自分取扱説明書.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -338,7 +338,7 @@
       "smart-composer:Open smart composer": false
     }
   },
-  "active": "08748ed91b1903f5",
+  "active": "39fcafee2ac6ec8c",
   "lastOpenFiles": [
     "日報/2026-03-19.md",
     "_自分取扱説明書.md.tmp.5.1774009259172",
@@ -349,7 +349,7 @@
     "無題のファイル.canvas",
     "こういちのAIワークフロー全体像.md",
     "日報/2026-03-18.md",
-    "_自分取扱説明書.md",
+    "📦 生成ファイル/_自分取扱説明書.md",
     "日報/2026-03-16.md",
     "資産（定義）/自分株式会社.md",
     "🤖 AI・ツール設定/_AI4ツール使い分けマップ.md",
