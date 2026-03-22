@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\commands\\\\digest.md)",
+      "WebSearch"
+    ]
+  }
+}
