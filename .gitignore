@@ -1,0 +1,12 @@
+# Smart Connections プラグインのデータベース（重いので除外）
+.smtcmp_vector_db.tar.gz
+.smtcmp_json_db/
+
+# Obsidianのキャッシュ・一時ファイル
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db
