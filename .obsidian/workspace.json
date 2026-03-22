@@ -316,15 +316,27 @@
               "icon": "wand-sparkles",
               "title": "Smart composer chat"
             }
+          },
+          {
+            "id": "921d4f13042423e8",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 511.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian42-brat:BRAT": false,
       "obsidian-git:Open Git source control": false,
       "workspaces:ワークスペースレイアウトを管理": false,
       "switcher:クイックスイッチャーを開く": false,
@@ -335,11 +347,14 @@
       "command-palette:コマンドパレットを開く": false,
       "bases:新規ベースを作成": false,
       "zk-prefixer:新規ユニークノートの作成": false,
-      "smart-composer:Open smart composer": false
+      "smart-composer:Open smart composer": false,
+      "claudian:Open Claudian": false
     }
   },
-  "active": "975b3bc9fb12bd96",
+  "active": "921d4f13042423e8",
   "lastOpenFiles": [
+    "20_知識ベース/Web知見収集/2026-03-22_関心テーマ新知見.md",
+    "20_知識ベース/Web知見収集",
     "60_日報/2026-03-21.md",
     "スキル黄金の5項目（SKILL.md）活用ToDo.md",
     "20_知識ベース/ドラマ考察/_ドラマ考察MOC.md",
@@ -372,10 +387,8 @@
     "30_記事製造ライン/公開済み_note/ドラマ考察/2025-12-20_蜂須賀隆太郎はなぜ敵役ではなかったのか_ドクターX第7期.md",
     "30_記事製造ライン/公開済み_note/体験・エッセイ/2025-12-21_病院の8割が赤字_医療現場で働き続けるの.md",
     "30_記事製造ライン/公開済み_note/ドラマ考察/2025-12-22_ドクターXに原作がない理由_大門未知子誕生秘話.md",
-    "30_記事製造ライン/公開済み_note/ドラマ考察/2025-12-22_ドクターXに原作がない理由_大門未知子誕生秘話.md.tmp.5.1774066627055",
     "30_記事製造ライン/公開済み_note/ドラマ考察/2025-12-23_救う側が救われる側になる時_コードブルー橘先生.md",
     "30_記事製造ライン/公開済み_note/ドラマ考察/2025-12-24_医師より怖い師長_ドクターX白木淳子.md",
-    "30_記事製造ライン/公開済み_note/ドラマ考察/2025-12-25_助けないという救い_コードブルー自己決定権.md",
     "無題のファイル.canvas"
   ]
 }
