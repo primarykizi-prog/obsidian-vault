@@ -42,7 +42,7 @@
   "permissionMode": "normal",
   "model": "sonnet",
   "thinkingBudget": "low",
-  "effortLevel": "high",
+  "effortLevel": "medium",
   "enableAutoTitleGeneration": true,
   "titleGenerationModel": "",
   "enableChrome": false,
