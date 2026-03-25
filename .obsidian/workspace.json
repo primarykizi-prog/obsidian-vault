@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "70_参考資料/アンナチュラル名言.md",
+                "file": "40_NurseX戦略/_NurseXサイト戦略・運営ナレッジ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "アンナチュラル名言"
+              "title": "_NurseXサイト戦略・運営ナレッジ"
             }
           }
         ],
@@ -190,7 +190,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "digest",
+                "query": "アンナチュラル",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -202,7 +202,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -353,6 +353,7 @@
   },
   "active": "975b3bc9fb12bd96",
   "lastOpenFiles": [
+    "70_参考資料/アンナチュラル名言.md",
     "00_ダッシュボード/自分取り扱い説明書.md",
     "00_ダッシュボード/自分取り扱い説明書.md.tmp.5.1774350272033",
     "00_ダッシュボード/プロフィール.md",
@@ -388,7 +389,6 @@
     "60_日報/2026-03-21.md",
     "20_知識ベース/ドラマ考察/_ドラマ考察MOC.md",
     "30_記事製造ライン/ネタ・アイデア/週次ロードマップ_4月以降.md",
-    "20_知識ベース/ドラマ考察/コウノドリ_知識ハブ.md",
     "無題のファイル.canvas"
   ]
 }
