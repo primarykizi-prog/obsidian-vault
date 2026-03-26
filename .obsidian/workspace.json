@@ -398,7 +398,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 483.5
+    "width": 421.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -414,7 +414,8 @@
       "bases:新規ベースを作成": false,
       "zk-prefixer:新規ユニークノートの作成": false,
       "smart-composer:Open smart composer": false,
-      "claudian:Open Claudian": false
+      "claudian:Open Claudian": false,
+      "obsidian-kindle-plugin:Sync your Kindle highlights": false
     }
   },
   "active": "dc164e4dbc46973a",
