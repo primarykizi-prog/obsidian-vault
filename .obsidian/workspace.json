@@ -398,7 +398,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 421.5
+    "width": 399.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -418,7 +418,7 @@
       "obsidian-kindle-plugin:Sync your Kindle highlights": false
     }
   },
-  "active": "dc164e4dbc46973a",
+  "active": "921d4f13042423e8",
   "lastOpenFiles": [
     "60_日報/2026-03-26.md",
     "60_日報/2026-03-26セッション記録.md",
