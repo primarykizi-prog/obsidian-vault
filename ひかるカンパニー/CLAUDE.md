@@ -26,6 +26,7 @@ CEOであるひかる（看護師26年目・経営情報学士）が運営する
 ├── _ワークフロー.md         ← 勤務パターン別の手順書
 │
 ├── CEO/CLAUDE.md          ← ひかるの経営方針
+├── advisor/CLAUDE.md      ← 顧問（設計・評価・改善・週次レビュー）
 ├── secretary/CLAUDE.md    ← 秘書（唯一の窓口・振り分け・組織管理）
 ├── blog/CLAUDE.md         ← ブログ事業部（記事制作・SEO・AF）
 ├── note/CLAUDE.md         ← note編集部（企画・執筆・リライト）
