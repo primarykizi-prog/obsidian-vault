@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ライダーズベース糸魚川｜チラシ</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+  }
+
+  /* ヘッダー */
+  .hero {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    padding: 36px 32px 28px;
+    text-align: center;
+    border-bottom: 3px solid #e85d04;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(232,93,4,0.08) 0%, transparent 60%);
+  }
+  .badge {
+    display: inline-block;
+    background: #e85d04;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 4px 14px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 20px rgba(232,93,4,0.4);
+  }
+  .hero h1 span { color: #e85d04; }
+  .hero .sub {
+    font-size: 14px;
+    color: #aaa;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+  .location-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 12px;
+    color: #ccc;
+  }
+  .dot { width: 8px; height: 8px; background: #e85d04; border-radius: 50%; display: inline-block; }
+
+  /* コンセプト */
+  .concept {
+    background: #111;
+    padding: 22px 32px;
+    border-left: 4px solid #e85d04;
+    margin: 0;
+  }
+  .concept p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #ddd;
+  }
+  .concept strong { color: #e85d04; }
+
+  /* プランセクション */
+  .section {
+    padding: 28px 32px;
+  }
+  .section-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #e85d04;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .plans {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .plan {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: border-color 0.2s;
+  }
+  .plan.featured {
+    border-color: #e85d04;
+    background: linear-gradient(135deg, #1a1a1a, #1f1208);
+  }
+  .plan-icon { font-size: 28px; flex-shrink: 0; }
+  .plan-info { flex: 1; }
+  .plan-name {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  .plan-desc {
+    font-size: 12px;
+    color: #888;
+    line-height: 1.6;
+  }
+  .plan-price {
+    font-size: 20px;
+    font-weight: 900;
+    color: #e85d04;
+    text-align: right;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .plan-price small { font-size: 11px; color: #888; display: block; font-weight: normal; }
+
+  /* 特徴 */
+  .features {
+    background: #111;
+    padding: 24px 32px;
+    border-top: 1px solid #1f1f1f;
+  }
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .feature-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .feature-text strong {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+  .feature-text span {
+    font-size: 11px;
+    color: #888;
+    line-height: 1.5;
+  }
+
+  /* 対象 */
+  .targets {
+    padding: 24px 32px;
+    border-top: 1px solid #1f1f1f;
+  }
+  .target-list {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .target-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #ccc;
+  }
+  .check { color: #e85d04; font-weight: bold; font-size: 14px; }
+
+  /* シーズン */
+  .season {
+    background: #0f0f0f;
+    padding: 20px 32px;
+    border-top: 1px solid #1f1f1f;
+    border-bottom: 1px solid #1f1f1f;
+  }
+  .season-bar {
+    display: flex;
+    margin-top: 14px;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 40px;
+    font-size: 11px;
+  }
+  .season-winter {
+    background: linear-gradient(135deg, #1a3a5c, #0d2137);
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #7ec8e3;
+    border-right: 2px solid #0a0a0a;
+  }
+  .season-summer {
+    background: linear-gradient(135deg, #3d1a00, #5c2800);
+    flex: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #e85d04;
+  }
+  .season-note {
+    font-size: 11px;
+    color: #666;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  /* フッター */
+  .footer {
+    background: linear-gradient(135deg, #1a0800, #0a0a0a);
+    padding: 24px 32px;
+    text-align: center;
+    border-top: 3px solid #e85d04;
+  }
+  .footer .shrine-badge {
+    display: inline-block;
+    border: 1px solid #e85d04;
+    color: #e85d04;
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+  .contact-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 16px 24px;
+    display: inline-block;
+    text-align: left;
+    min-width: 260px;
+    margin-bottom: 14px;
+  }
+  .contact-name {
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .contact-line {
+    font-size: 13px;
+    color: #bbb;
+    margin-bottom: 5px;
+  }
+  .contact-line strong { color: #e85d04; margin-right: 8px; }
+  .footer-note {
+    font-size: 10px;
+    color: #555;
+    margin-top: 10px;
+  }
+  .season-ski { color: #7ec8e3; }
+  .season-bike { color: #e85d04; }
+</style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<div class="hero">
+  <div class="badge">🏍️ RIDERS BASE ITOIGAWA</div>
+  <h1>バイクの<span>聖地</span>に、<br>泊まれる場所ができた。</h1>
+  <p class="sub">海と山が同時に見える、糸魚川の宿泊拠点</p>
+  <div class="location-tag">
+    <span class="dot"></span>
+    シーサイドバレースキー場 車で1分｜新潟県糸魚川市
+  </div>
+</div>
+
+<!-- コンセプト -->
+<div class="concept">
+  <p>
+    全国からライダーが集まる糸魚川。でも、<strong>泊まれる場所が少なかった。</strong><br>
+    ここは、バイクを横に置いて眠れる宿泊拠点です。<br>
+    トランポごと乗り入れOK。トイレ・シャワーは建物内。<br>
+    ホテルより安く、車中泊より快適に。
+  </p>
+</div>
+
+<!-- プラン -->
+<div class="section">
+  <div class="section-title">▶ 3つの宿泊スタイル</div>
+  <div class="plans">
+    <div class="plan">
+      <div class="plan-icon">🛏️</div>
+      <div class="plan-info">
+        <div class="plan-name">室内フル宿泊</div>
+        <div class="plan-desc">布団・シャワー・トイレ完備。グループ・合宿に最適。最大50名まで対応。</div>
+      </div>
+      <div class="plan-price">6,000円〜<small>/人・1泊</small></div>
+    </div>
+    <div class="plan featured">
+      <div class="plan-icon">⛺</div>
+      <div class="plan-info">
+        <div class="plan-name">テント泊＋施設利用</div>
+        <div class="plan-desc">駐車場にテント設営OK。シャワー・トイレは建物内を使用。バイクを横に置いて眠れる。</div>
+      </div>
+      <div class="plan-price">3,000円〜<small>/人・1泊</small></div>
+    </div>
+    <div class="plan">
+      <div class="plan-icon">🚐</div>
+      <div class="plan-info">
+        <div class="plan-name">車中泊＋施設利用</div>
+        <div class="plan-desc">トランポ・バンごと乗り入れOK。広大な駐車場。シャワー・トイレ利用込み。</div>
+      </div>
+      <div class="plan-price">1,500円〜<small>/人・1泊</small></div>
+    </div>
+  </div>
+</div>
+
+<!-- 特徴 -->
+<div class="features">
+  <div class="section-title">▶ 施設の特徴</div>
+  <div class="features-grid">
+    <div class="feature-item">
+      <div class="feature-icon">🅿️</div>
+      <div class="feature-text">
+        <strong>超大型駐車場</strong>
+        <span>観光バス3台分の広さ。<br>トランポ何台でも対応可能。</span>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🚿</div>
+      <div class="feature-text">
+        <strong>シャワー・トイレ完備</strong>
+        <span>建物内で快適に使えます。<br>レース後の汚れもすっきり。</span>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🔧</div>
+      <div class="feature-text">
+        <strong>バイク洗い場・整備スペース</strong>
+        <span>泥汚れをその場で洗える。<br>簡単なメンテナンスも可能。</span>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🏔️</div>
+      <div class="feature-text">
+        <strong>海と山が同時に見える</strong>
+        <span>シーサイドバレーのロケーション。<br>日本でも希少な景色。</span>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">📶</div>
+      <div class="feature-text">
+        <strong>Wi-Fi完備</strong>
+        <span>ルート確認・SNS投稿も快適。<br>明日のツーリングも計画できる。</span>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🍖</div>
+      <div class="feature-text">
+        <strong>BBQスペース</strong>
+        <span>仲間と盛り上がれる屋外スペース。<br>（整備中・近日オープン予定）</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 対象者 -->
+<div class="targets">
+  <div class="section-title">▶ こんな方にぴったり</div>
+  <div class="target-list">
+    <div class="target-item"><span class="check">✔</span> シーサイドバレーのレースに参加する方</div>
+    <div class="target-item"><span class="check">✔</span> 全国から糸魚川にツーリングで来る方</div>
+    <div class="target-item"><span class="check">✔</span> 風巻神社への参拝ついでに1泊したい方</div>
+    <div class="target-item"><span class="check">✔</span> トランポ・バンで来て車中泊したい方</div>
+    <div class="target-item"><span class="check">✔</span> 仲間と大人数で泊まりたい方（最大50名）</div>
+    <div class="target-item"><span class="check">✔</span> ホテルより安く快適に泊まりたい方</div>
+  </div>
+</div>
+
+<!-- シーズン -->
+<div class="season">
+  <div class="section-title">▶ 通年営業</div>
+  <div class="season-bar">
+    <div class="season-winter">❄️ 冬（12〜3月）スキー合宿・団体</div>
+    <div class="season-summer">🏍️ 春〜秋（4〜11月）ライダー・モトクロス</div>
+  </div>
+  <div class="season-note">スキーシーズンは合宿・スポーツ団体の受け入れも行っています（最大50名）</div>
+</div>
+
+<!-- フッター -->
+<div class="footer">
+  <div class="shrine-badge">⛩️ 風巻神社（バイクの聖地）推薦の宿泊施設</div>
+  <div class="contact-box">
+    <div class="contact-name">◯◯◯◯（施設名）</div>
+    <div class="contact-line"><strong>📱</strong>◯◯◯-◯◯◯◯-◯◯◯◯</div>
+    <div class="contact-line"><strong>📧</strong>◯◯◯◯@◯◯◯◯.com</div>
+    <div class="contact-line"><strong>📍</strong>新潟県糸魚川市 ◯◯◯◯</div>
+    <div class="contact-line"><strong>🌐</strong>（予約サイトURL）</div>
+  </div>
+  <div class="footer-note">
+    ※料金は変更になる場合があります。詳細はお問い合わせください。<br>
+    ※現在整備中の設備は順次オープン予定です。
+  </div>
+</div>
+
+</body>
+</html>
