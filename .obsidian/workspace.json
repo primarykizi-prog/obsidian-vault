@@ -212,9 +212,40 @@
               "icon": "lucide-file",
               "title": "2026-03-31_X投稿案"
             }
+          },
+          {
+            "id": "d2e8a532fcbfa41f",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Canvas/2026-03-31.canvas",
+                "viewState": {
+                  "x": 135,
+                  "y": 207.7709497206705,
+                  "zoom": -2.3154658442576657
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "2026-03-31"
+            }
+          },
+          {
+            "id": "1b85251418fcb8ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_ダッシュボード/自分取り扱い説明書.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "自分取り扱い説明書"
+            }
           }
         ],
-        "currentTab": 14
+        "currentTab": 16
       }
     ],
     "direction": "vertical"
@@ -417,8 +448,10 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "921d4f13042423e8",
+  "active": "1b85251418fcb8ae",
   "lastOpenFiles": [
+    "Canvas/2026-03-31.canvas",
+    "Canvas",
     "20_知識ベース/Web新着digest/2026-03-31_digest.md.tmp.5.1774912606796",
     "skills-lock.json",
     "60_日報/2026-03-30_X投稿案.md",
@@ -434,9 +467,7 @@
     "秘書メモ/2026-03-30.md",
     "60_日報/2026-03-31_X投稿案.md",
     "60_日報/2026-03-31_X投稿案.md.tmp.5.1774908518848",
-    "こういちカンパニー/ダッシュボード.md.tmp.5.1774908284647",
     "こういちカンパニー/秘書/日報/2026-03-30.md",
-    "こういちカンパニー/秘書/日報/2026-03-30.md.tmp.5.1774907738674",
     "60_日報/セッション記録/2026-03-29_セッション記録.md",
     "20_知識ベース/Web新着digest/2026-03-31_digest.md",
     "20_知識ベース/リベ大学習/田舎民泊ノウハウ集大成_どん.md",

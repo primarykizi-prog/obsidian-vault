@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"3a7f2b9e1c4d8f05","type":"text","x":150,"y":-220,"width":1200,"height":120,"color":"4","text":"# 📅 2026-03-31 今日のダッシュボード\n\n🎯 **今日のフォーカス**：digest反映（軸①〜⑥） → 各記事への追記 → 執筆前進"},
+		{"id":"8b2e5d4c7f1a9e03","type":"group","x":-1080,"y":0,"width":1120,"height":1430,"label":"📰 本日のDigest 2026-03-31（軸①〜⑥）","color":"5"},
+		{"id":"c4f9a1b3e2d7f608","type":"file","x":-1060,"y":30,"width":1080,"height":200,"file":"20_知識ベース/Web新着digest/2026-03-31_digest.md"},
+		{"id":"d1a8c3f2b9e57040","type":"text","x":-1060,"y":260,"width":1080,"height":160,"color":"1","text":"### 軸①：アセスメント思考\n🔥 **OODAループ＝救急看護師が20年使ってきた軍事戦略家の意思決定ツール**\nObserve→Orient→Decide→Act は看護アセスメントサイクルと完全一致。25年の救急経験が高速Orientを作り上げた。"},
+		{"id":"e5b7f4a2c8d19031","type":"text","x":-1060,"y":440,"width":1080,"height":160,"color":"2","text":"### 軸②：2番手の法則\n🔥 **模範的フォロワー＝自立的批判的思考 × 積極的行動**\n「イエスマン」でも「反発者」でもなく、自分で考えて動く最強の実行者。「なぜ管理職を断るのか」最強の根拠。"},
+		{"id":"f2c6d8b4a7e10532","type":"text","x":-1060,"y":620,"width":1080,"height":160,"color":"3","text":"### 軸③：看護師免許\n🔥 **看護師×コーチング＝すでにあるスキルに名前をつけると月10〜30万円**\n傾聴・共感・目標設定は看護師が毎日実践していたスキルそのもの。資格取得は「再発見」にすぎない。"},
+		{"id":"a3e9d7b1f5c28063","type":"text","x":-1060,"y":800,"width":1080,"height":160,"color":"6","text":"### 軸④：INFJ生存戦略\n🔥 **境界線強化3実践：①感情日記 ②物理的距離 ③内省言語化**\n職業的共感（プロの共感）と個人的共感（感情流入）を分離することが25年燃え尽きなかった核心技術。"},
+		{"id":"b4f1a9c3e8d27054","type":"text","x":-1060,"y":980,"width":1080,"height":160,"color":"5","text":"### 軸⑤：経験資産化\n🔥 **Kindle出版 0円スタート・印税最大70%・電子書籍市場8,000億円超**\nnote → Kindle → Substack の三段階収益化で「著者」ブランドが確立し、E-E-A-T権威性が一気に上がる。"},
+		{"id":"c5a2e4f8b1d39065","type":"text","x":-1060,"y":1160,"width":1080,"height":160,"color":"4","text":"### 軸⑥：夫婦OS統合\n🔥 **2026〜2027年＝夫婦資産形成の制度改正元年**\niDeCo退職所得控除10年ルール適用・ダブルNISA生涯非課税枠3,600万円。「夫婦で動くほど有利」な構造を今設計する。"},
+		{"id":"d6b5c1f7a4e20176","type":"group","x":100,"y":230,"width":860,"height":1120,"label":"✅ 今日のアクションメモ（未完了）","color":"2"},
+		{"id":"e7a6d2b8c3f51187","type":"text","x":120,"y":260,"width":820,"height":160,"color":"1","text":"- [ ] **軸①🔥** 「OODAループ＝救急看護師の軍事戦略」を [[結局 人生も 人生もアセスメント]] に追記\n→ 看護師スキル完全マップ（仮説演繹法・SBAR・EBP・クリティカルシンキング・OODA）の完成形"},
+		{"id":"f8b7e3c9d4a62298","type":"text","x":120,"y":440,"width":820,"height":160,"color":"2","text":"- [ ] **軸②🔥** 「模範的フォロワー＝自立的批判的思考×積極的行動」を [[2番手の法則と最大価値]] に追記\n→ [[なぜ私は管理職を断り続けるのか]] の根拠がさらに強化される"},
+		{"id":"a9c8f4e1b7d333a9","type":"text","x":120,"y":620,"width":820,"height":160,"color":"3","text":"- [ ] **軸③🔥** 「看護師×コーチング＝月10〜30万円副業」を [[公務員看護師から一般に出て分かったこと]] に追記\n→ 免許の使い方一覧にコーチング×キャリア支援を追加"},
+		{"id":"b1d9a5f2c8e444ba","type":"text","x":120,"y":800,"width":820,"height":160,"color":"6","text":"- [ ] **軸④🔥** 「境界線強化3実践・職業的共感vs個人的共感の分離」を [[INFJのメンタルガード（組織崩壊サバイバル編）]] に追記\n→ 本文強化：「共感は武器、でも境界線がなければ毒になる」セクション追加"},
+		{"id":"c2e1b6d3f9a555cb","type":"text","x":120,"y":980,"width":820,"height":160,"color":"5","text":"- [ ] **軸⑤🔥** 「Kindle出版0円・印税70%・電子書籍市場8,000億円超」を [[知的財産権を手に入れよ！]] に追記\n→ note→Kindle→Substackの三段階収益化ロードマップを追記"},
+		{"id":"d3f2c7e4a1b666dc","type":"text","x":120,"y":1160,"width":820,"height":160,"color":"4","text":"- [ ] **軸⑥🔥** 「iDeCo×ダブルNISA分担・制度改正元年2026〜27年・3,600万円非課税枠」を [[夫婦の思考をすり合わせのやり方]] に追記\n→ 「夫婦で動くほど有利」な構造を今設計する"},
+		{"id":"e4a3d8b5f2c777ed","type":"group","x":-1080,"y":1490,"width":2060,"height":380,"label":"📝 執筆中・優先4記事","color":"3"},
+		{"id":"f5b4e9c6a3d888fe","type":"file","x":-1060,"y":1540,"width":470,"height":280,"file":"30_記事製造ライン/執筆中/なぜ私は管理職を断り続けるのか.md"},
+		{"id":"a6c5f1d7b4e9990f","type":"file","x":-570,"y":1540,"width":470,"height":280,"file":"30_記事製造ライン/執筆中/結局 人生も 人生もアセスメント.md"},
+		{"id":"b7d6a2e8c5f0001e","type":"file","x":-80,"y":1540,"width":470,"height":280,"file":"30_記事製造ライン/執筆中/INFJのメンタルガード（組織崩壊サバイバル編）.md"},
+		{"id":"c8e7b3f9d6a1112d","type":"file","x":410,"y":1540,"width":470,"height":280,"file":"30_記事製造ライン/執筆中/知的財産権を手に入れよ！.md"}
+	],
+	"edges":[
+		{"id":"ea1b2c3d4e5f6001","fromNode":"3a7f2b9e1c4d8f05","fromSide":"left","toNode":"8b2e5d4c7f1a9e03","toSide":"top","toEnd":"arrow","label":"今日の新着"},
+		{"id":"ea1b2c3d4e5f6002","fromNode":"3a7f2b9e1c4d8f05","fromSide":"right","toNode":"d6b5c1f7a4e20176","toSide":"top","toEnd":"arrow","label":"今日のタスク"},
+		{"id":"ea1b2c3d4e5f6003","fromNode":"d1a8c3f2b9e57040","fromSide":"right","toNode":"e7a6d2b8c3f51187","toSide":"left","toEnd":"arrow"},
+		{"id":"ea1b2c3d4e5f6004","fromNode":"e5b7f4a2c8d19031","fromSide":"right","toNode":"f8b7e3c9d4a62298","toSide":"left","toEnd":"arrow"},
+		{"id":"ea1b2c3d4e5f6005","fromNode":"f2c6d8b4a7e10532","fromSide":"right","toNode":"a9c8f4e1b7d333a9","toSide":"left","toEnd":"arrow"},
+		{"id":"ea1b2c3d4e5f6006","fromNode":"a3e9d7b1f5c28063","fromSide":"right","toNode":"b1d9a5f2c8e444ba","toSide":"left","toEnd":"arrow"},
+		{"id":"ea1b2c3d4e5f6007","fromNode":"b4f1a9c3e8d27054","fromSide":"right","toNode":"c2e1b6d3f9a555cb","toSide":"left","toEnd":"arrow"},
+		{"id":"ea1b2c3d4e5f6008","fromNode":"c5a2e4f8b1d39065","fromSide":"right","toNode":"d3f2c7e4a1b666dc","toSide":"left","toEnd":"arrow"}
+	]
+}
