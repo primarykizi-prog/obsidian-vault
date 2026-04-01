@@ -3,6 +3,10 @@
     "allow": [
       "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\commands\\\\digest.md)",
       "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\agents\\\\*)",
+      "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\agents\\\\planner-agent.md)",
+      "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\agents\\\\session-agent.md)",
+      "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\agents\\\\weekly-agent.md)",
+      "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\agents\\\\note-publisher-agent.md)",
       "WebSearch"
     ]
   }
