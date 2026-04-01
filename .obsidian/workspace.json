@@ -236,12 +236,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_ダッシュボード/自分取り扱い説明書.md",
+                "file": "秘書メモ/2026-04-01.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "自分取り扱い説明書"
+              "title": "2026-04-01"
             }
           }
         ],
@@ -448,8 +448,13 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "921d4f13042423e8",
+  "active": "1b85251418fcb8ae",
   "lastOpenFiles": [
+    "50_夫婦・家族/ライダーズベース_チラシ案.md",
+    "こういちカンパニー/マーケティング部/CLAUDE.md",
+    "こういちカンパニー/ゲスト対応部/CLAUDE.md",
+    "00_ダッシュボード/自分取り扱い説明書.md",
+    "10_自分OS/_文体・口癖メモ.md.tmp.5.1775021486769",
     "notebooklm-to-obsidian.skill",
     "20_知識ベース/YouTube学習/2026-04-01_OMC_OhMyClaudeCode_スキル強制発動の設計思想.md.tmp.5.1775018955051",
     "20_知識ベース/YouTube学習/2026-04-01_OMC_OhMyClaudeCode_スキル強制発動の設計思想.md",
@@ -464,8 +469,6 @@
     "ひかるカンパニー/note/published/2026-03-29_誰にも言えなかった_それでも立っていられた理由.md",
     "ひかるカンパニー/note/published/2026-03-29_誰にも言えなかった_それでも立っていられた理由.md.tmp.5.1775013811127",
     "ひかるカンパニー/note/published",
-    "ひかるカンパニー/note/drafts/2026-04-03_リブート_INFJ二面性_draft_v2.md.tmp.5.1775013795041",
-    "ひかるカンパニー/note/drafts/2026-04-03_リブート_INFJ二面性_draft_v2.md.tmp.5.1775013052069",
     "ひかるカンパニー/note/drafts/2026-04-03_リブート_INFJ二面性_draft_v2.md",
     "20_知識ベース/Web新着digest/2026-04-01_digest.md",
     "60_日報/2026-04-01_X投稿案.md",
@@ -484,9 +487,6 @@
     "20_知識ベース/note引用/2026-03-31_Airbnb新規リスティング初動戦略_連泊設定がベスト_note.md",
     "20_知識ベース/note引用/2026-03-31_Airbnb公式イベント運営ヒント_note.md",
     "ひかるカンパニー/CLAUDE.md",
-    "秘書メモ/2026-03-30.md",
-    "60_日報/2026-03-31_X投稿案.md",
-    "こういちカンパニー/秘書/日報/2026-03-30.md",
     "無題のファイル 1.canvas",
     "無題のファイル.canvas"
   ]
