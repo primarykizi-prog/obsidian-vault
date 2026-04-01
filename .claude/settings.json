@@ -2,6 +2,7 @@
   "permissions": {
     "allow": [
       "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\commands\\\\digest.md)",
+      "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\agents\\\\*)",
       "WebSearch"
     ]
   }
