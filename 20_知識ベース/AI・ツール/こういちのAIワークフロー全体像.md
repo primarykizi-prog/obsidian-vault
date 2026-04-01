@@ -136,3 +136,24 @@ LINE公式アカウント（クローズドコミュニティ）
 - 書籍『Obsidian×AI』（山口大陽著）でも「メモはAIを動かす命令セットへ進化」という概念が提唱
 - こういちのVault＋Claudianの運用は**この概念の最前線**にある
 - 出典：[GitHub × Obsidian × ChatGPT で知識アシスタントをつくる（Zenn）](https://zenn.dev/jambo_dev/articles/ea771dd08140b4)
+
+---
+
+## 📥 digest知見メモ（収益設計アップデート）
+
+> 追記日：2026-04-01｜digest 4/1（2・3回目）より
+
+### 「Substack＝アルゴリズム非依存の読者資産蓄積装置」🔥
+- Substackはnoteとの決定的な違いが「**メール直送×読者との直接関係**」——アルゴリズムに左右されない読者囲い込みが最大の強み
+- 有料購読収益の**90%がクリエイターに還元**、日本語発信者も増加中、JapanカテゴリーもSubstack内で可視化
+- → **五層収益設計の再定義**：Substackを「収益の場」だけでなく**「アルゴリズム非依存の読者資産蓄積装置」**として位置づける
+- note（集客・認知）→ Substack（囲い込み・読者資産化）という二段構えの機能分担が明確化
+- 出典：[Substackとは？使い方・ビジネスモデル（n-v-l.co）](https://n-v-l.co/blog/substack) / [世界のSubstack国別検索（nejimaki-radio.com）](https://nejimaki-radio.com/world-substack-newsletter-search-japan/)
+
+### 「2026年個人コンテンツの最終形＝関係継続型サブスク＋コミュニティ」
+- 2026年の主流トレンド：「単発売り切り型」から**「関係継続型サブスクモデル」**へのシフト
+- 収益の三本柱：月額課金×限定コンテンツ×コミュニティ参加（＋グッズ販売）
+- **「1プラットフォーム集中リスクの分散」**が常識化——note×Substack×LINE公式の複数展開が標準戦略
+- → **五層収益設計の最終ゴール更新**：「売り切り」から「**読者との関係継続型サブスク＋コミュニティ**」へ
+- → 具体的設計：note（集客）→ Substack（読者資産）→ LINE公式（クローズドコミュニティ＋メンバーシップ）
+- 出典：[ファンビジネス新戦略：サブスクリプションモデル（L4U）](https://l4u.media/column/fan-business-new-strategy-subscription-model/) / [クリエイターエコノミーとは？（コンテンツ東京）](https://www.content-tokyo.jp/hub/ja-jp/blog/blog01.html)
