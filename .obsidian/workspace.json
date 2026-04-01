@@ -236,12 +236,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "秘書メモ/ひかるカンパニー_noteメンバーシップ実行計画.md",
+                "file": "こういちカンパニー/CEO/CLAUDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ひかるカンパニー_noteメンバーシップ実行計画"
+              "title": "CLAUDE"
             }
           }
         ],
@@ -429,7 +429,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 399.5
+    "width": 355.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -450,6 +450,7 @@
   },
   "active": "1b85251418fcb8ae",
   "lastOpenFiles": [
+    "秘書メモ/ひかるカンパニー_noteメンバーシップ実行計画.md",
     "秘書メモ/2026-03-31.md",
     "20_知識ベース/YouTube学習/2026-04-01_gstack導入記録と次のステップ.md.tmp.5.1775040734301",
     "20_知識ベース/YouTube学習/2026-04-01_gstack導入記録と次のステップ.md.tmp.5.1775040720871",
@@ -485,7 +486,6 @@
     "60_日報/2026-04-01_X投稿案.md",
     "20_知識ベース/スキル作成メソッド.md",
     "秘書メモ/ベンチマーク一覧.md",
-    "秘書メモ/下書き_民泊アイデアを行動に移した話.md",
     "Canvas/2026-03-31.canvas",
     "無題のファイル 1.canvas",
     "無題のファイル.canvas"
