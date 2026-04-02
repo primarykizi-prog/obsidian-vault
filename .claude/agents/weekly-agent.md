@@ -79,12 +79,15 @@ tools:
 
 `30_記事製造ライン/ネタ・アイデア/_NurseX記事アイデアリスト.md` のテーブルに今週のネタ3件を追記する。
 
-### STEP 7：editorial-agentへの連鎖起動
+### STEP 7：editorial-agent → system-monitor-agentへの連鎖起動
 
-weekly完了後、自動でeditorial-agent（`e`）を起動する。
+weekly完了後、以下の順で自動連鎖する。こういちの指示は不要。
 
-> 「今週の知識整理 → 今週何を出すか決める」はセットで動く。こういちの指示は不要。
-> editorial-agentは外部調査（WebSearch）も含めて自律的に実行する。
+1. **editorial-agent**を起動（今週何を出すか決める）
+2. editorial完了後、**system-monitor-agent**を起動（チームの自己診断・改善）
+
+> weekly → editorial → system-monitor の3連鎖が毎週日曜に自動で走る。
+> チームが毎週自分たちを診断して改善していく。
 
 ### STEP 8：完了報告
 

@@ -90,6 +90,7 @@ CronListで確認し、設定がなければ以下を即座に再設定する：
 | `x-post-agent` | X投稿案を曜日別に3案生成 | 「x」と言われたとき |
 | `editorial-agent` | 次に出す記事の順序を戦略的に決める | 「e」と言われたとき |
 | `reviewer-agent` | 執筆済み記事を品質チェック・タイトル評価 | writer-agent完了後に自動起動 |
+| `system-monitor-agent` | チームの自己診断・自己改善を自律実行 | weekly連鎖の末尾で自動起動（週1回） |
 
 ---
 
