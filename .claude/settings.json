@@ -10,7 +10,8 @@
       "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\agents\\\\memory-agent.md)",
       "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\agents\\\\secretary-agent.md)",
       "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\agents\\\\x-post-agent.md)",
-      "WebSearch"
+      "WebSearch",
+      "Write(C:\\\\Users\\\\user\\\\Documents\\\\Obsidian Vault\\\\.claude\\\\agents\\\\reviewer-agent.md)"
     ]
   }
 }

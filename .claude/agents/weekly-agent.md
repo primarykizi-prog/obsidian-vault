@@ -79,12 +79,19 @@ tools:
 
 `30_記事製造ライン/ネタ・アイデア/_NurseX記事アイデアリスト.md` のテーブルに今週のネタ3件を追記する。
 
-### STEP 7：完了報告
+### STEP 7：editorial-agentへの連鎖起動
+
+weekly完了後、自動でeditorial-agent（`e`）を起動する。
+
+> 「今週の知識整理 → 今週何を出すか決める」はセットで動く。こういちの指示は不要。
+> editorial-agentは外部調査（WebSearch）も含めて自律的に実行する。
+
+### STEP 8：完了報告
 
 - 今週のdigest件数
 - 発見したつながりの数
 - 提案した記事ネタ一覧
-- 「p」コマンドでplanner-agentに渡せる状態であることを報告
+- editorial-agentの判断結果（連鎖起動した場合）
 
 ---
 
