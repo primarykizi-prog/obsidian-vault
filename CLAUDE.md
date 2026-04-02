@@ -54,6 +54,10 @@
 | `digest-agent` | Web検索→Vault保存 | 「digest」と言われたとき |
 | `reflector-agent` | アクションメモ→ノート反映 | 「a」と言われたとき |
 | `writer-agent` | 構成案→記事本文執筆 | 「b」と言われたとき |
+| `planner-agent` | アイデア→記事構成案生成 | 「p」と言われたとき |
+| `session-agent` | セッション引き継ぎ更新 | 「s」と言われたとき |
+| `weekly-agent` | 週次知識統合レポート | 「weekly」と言われたとき |
+| `note-publisher-agent` | 記事→note.com投稿用変換 | 「n」と言われたとき |
 
 ---
 

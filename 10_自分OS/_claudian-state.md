@@ -69,10 +69,29 @@ tags:
 - **企画書**：[[30_記事製造ライン/ネタ・アイデア/_claudian-state.md]] ではなく `.claude/skills/brainstorming/X戦略_企画書+実行計画.md` に保存済み
 - **現状**：フォロワー約10名・Claudian自動投稿案を活用予定
 
-### サブエージェント
+### サブエージェント（2026-04-02 更新）
 - `.claude/agents/digest-agent.md` ✅ 作成済み
 - `.claude/agents/reflector-agent.md` ✅ 作成済み
 - `.claude/agents/writer-agent.md` ✅ 作成済み
+- `.claude/agents/planner-agent.md` ✅ 作成済み（コマンド：`p`）
+- `.claude/agents/session-agent.md` ✅ 作成済み（コマンド：`s`）
+- `.claude/agents/weekly-agent.md` ✅ 作成済み（コマンド：`weekly`）
+- `.claude/agents/note-publisher-agent.md` ✅ 作成済み（コマンド：`n`）
+- ⚠️ 新規4体は**再起動後に有効**になる
+
+### 記事執筆ワークフロー（重要）
+こういちさんの実際の記事製造フロー：
+1. Claude.aiでアイデアを話す
+2. Claudianで「p」→ 構成案生成
+3. **Gemini（Google）で実体験ヒアリング**→ 複数回の質問で実体験を引き出す
+4. GeminiのレポートをClaudianに持ち込む
+5. Claudianで「b」→ 本文完成
+6. Claudianで「n」→ note.com用変換
+
+⚠️ Claudianが実体験を作ることはしない。Geminiヒアリング後に持ち込んでもらう。
+
+### 執筆中（2026-04-02追加）
+- [[記憶はクラウド化できる]] → 構成案完成・実体験はGeminiヒアリング待ち
 
 ### digestの重複NG（次回検索時に避けるキーワード）
 OODAループ・EBP・SBAR・SDM・ロジカルシンキング・アサーティブコミュニケーション・
