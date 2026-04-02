@@ -77,7 +77,9 @@ tags:
 - `.claude/agents/session-agent.md` ✅ 作成済み（コマンド：`s`）
 - `.claude/agents/weekly-agent.md` ✅ 作成済み（コマンド：`weekly`）
 - `.claude/agents/note-publisher-agent.md` ✅ 作成済み（コマンド：`n`）
-- ⚠️ 新規4体は**再起動後に有効**になる
+- `.claude/agents/memory-agent.md` ✅ 作成済み（コマンド：`m`）
+- `10_自分OS/記憶の棚.md` ✅ 作成済み（テーマ別空欄フォーマット）
+- ⚠️ 新規5体は**再起動後に有効**になる
 
 ### 記事執筆ワークフロー（重要）
 こういちさんの実際の記事製造フロー：

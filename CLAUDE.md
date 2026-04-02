@@ -58,6 +58,7 @@
 | `session-agent` | セッション引き継ぎ更新 | 「s」と言われたとき |
 | `weekly-agent` | 週次知識統合レポート | 「weekly」と言われたとき |
 | `note-publisher-agent` | 記事→note.com投稿用変換 | 「n」と言われたとき |
+| `memory-agent` | 眠っている記憶を週1回発掘 | 「m」と言われたとき |
 
 ---
 
