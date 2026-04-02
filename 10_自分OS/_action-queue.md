@@ -4,7 +4,7 @@ status: 常時更新
 tags:
   - 自分ノート
   - Cursor参照用
-更新日: 2026-04-03（reflector-agent更新）
+更新日: 2026-04-03（reflector-agent更新・MIGAKI民泊特集反映済み）
 ---
 
 # 📋 アクションキュー
@@ -42,6 +42,12 @@ tags:
 ---
 
 ## ✅ 完了済み（直近）
+
+> 2026-04-03 reflector-agent（MIGAKI民泊特集）
+
+- [x] MIGAKI🔥：[[MIGAKI_総合事業計画書]] に「許可申請2〜3カ月・ライダーズベース成功パターン・インバウンド二刀流・Instagram実証数字・Airbnb×直接予約二本柱」を追記（2026-04-03 digest）
+- [x] MIGAKI🔥：[[MIGAKI_創業計画書_最終版]] に「旅館業vs民泊の制度的違い・消防設備厳格化・SNS集客実証数字・インバウンド差別化訴求」を追記（2026-04-03 digest）
+- [x] MIGAKI🔥：[[MIGAKI_地元キーマンリスト]] に「糸魚川市許可申請窓口・BikeJINとSTAY JAPANはライダーキーマンへの入口」を追記（2026-04-03 digest）
 
 > 2026-04-03 reflector-agent
 
