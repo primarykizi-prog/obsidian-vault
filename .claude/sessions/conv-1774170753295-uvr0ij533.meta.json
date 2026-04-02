@@ -3,18 +3,18 @@
   "title": "Greet in Japanese",
   "titleGenerationStatus": "success",
   "createdAt": 1774170753301,
-  "updatedAt": 1775123895605,
-  "lastResponseAt": 1775123895605,
+  "updatedAt": 1775124633608,
+  "lastResponseAt": 1775124633608,
   "sessionId": "e1f5aacb-e9d6-4acc-a21b-595babf9de06",
   "sdkSessionId": "e1f5aacb-e9d6-4acc-a21b-595babf9de06",
   "usage": {
     "model": "sonnet",
     "inputTokens": 3,
-    "cacheCreationInputTokens": 1200,
-    "cacheReadInputTokens": 40660,
+    "cacheCreationInputTokens": 614,
+    "cacheReadInputTokens": 44159,
     "contextWindow": 200000,
-    "contextTokens": 41863,
-    "percentage": 21
+    "contextTokens": 44776,
+    "percentage": 22
   },
   "subagentData": {
     "toolu_01AnRaDSbeBBk8QTKezkbyiF": {
