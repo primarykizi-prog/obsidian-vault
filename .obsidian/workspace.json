@@ -485,7 +485,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 569.5
+    "width": 517.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -504,7 +504,7 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "921d4f13042423e8",
+  "active": "edc08ef195b5b1d3",
   "lastOpenFiles": [
     "CLAUDE_DESKTOP.md",
     "50_夫婦・家族/MIGAKI_総合事業計画書.md",
