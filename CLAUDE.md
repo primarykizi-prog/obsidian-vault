@@ -5,6 +5,22 @@
 
 ---
 
+## 🔌 Coworkセッション：Vault自動接続ルール（最優先）
+
+**CoworkセッションでObsidian Vaultへのファイルアクセスが必要になった瞬間、必ず以下を実行する。ユーザーに確認しない・スクリーンショットを求めない。**
+
+```
+Vault Windowsパス（固定）: C:\Users\user\Documents\Obsidian Vault
+VMパス（固定）:            /sessions/brave-youthful-ritchie/mnt/Obsidian Vault
+接続ツール: mcp__cowork__request_cowork_directory(path="C:\Users\user\Documents\Obsidian Vault")
+```
+
+- digestを読む・秘書メモを保存する・日報を書く・どんなスキルでも、Vaultアクセス前に自動接続する
+- 接続済みの場合は再接続不要（VMパスにファイルが見えていればOK）
+- ユーザーが毎回スクリーンショットを見せる必要はない。このルールで自律的に動く
+
+---
+
 ## 👤 こういちとは
 
 - **名前**：こういち（ひかる）、看護師26年目（2026年4月〜・救急中心）、INFJ、経営情報学士、現在49歳
