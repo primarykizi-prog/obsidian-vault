@@ -141,7 +141,7 @@ CronListで確認し、設定がなければ以下を即座に再設定する：
 20_知識ベース/                    ← digest保存先・AI・ツール・YouTube学習
 30_記事製造ライン/                ← 執筆中・ネタ・アイデア・MIGAKI MEDIA
 50_夫婦・家族/                    ← 夫婦OS統合・ライフデザイン・妻への説明書
-こういちカンパニー/               ← MIGAKI事業全体（旧FOREST BASE ITOIGAWA）
+こういちカンパニー/               ← MIGAKI事業全体（旧MIGAKI BASE）
   └ MIGAKI事業戦略/              ← 総合事業計画書・創業計画書・キーマンリスト
   └ 各部署（予約/財務/マーケ等）  ← MIGAKI BASE（旅館業）運営
 .claude/agents/                   ← サブエージェント定義
