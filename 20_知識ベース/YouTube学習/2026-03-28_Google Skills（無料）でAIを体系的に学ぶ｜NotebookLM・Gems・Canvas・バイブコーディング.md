@@ -55,4 +55,3 @@ NotebookLMは今すでに使っているが、Gems（型化）とCanvas（バイ
 ## 関連リンク
 
 - [[NotebookLM]]
-- [[AI学習リソース]]
