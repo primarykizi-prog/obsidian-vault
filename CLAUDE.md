@@ -70,6 +70,16 @@ Vault: マウント先/Obsidian Vault（セッションIDは毎回変わる）
 
 ---
 
+## 🔗 情報一元化ルール（Gemini・Cowork → Vault）
+
+**GeminiやCoworkで決まったことは、その日中にVaultに保存する。これが守れないと毎回情報がズレる。**
+
+- Geminiのアウトプットが来たら → `secretaryスキル`か`notebooklm-to-obsidianスキル`で即保存
+- MIGAKI事業の正規情報源 → `こういちカンパニー/MIGAKI事業戦略/_MASTER_INFO.md`
+- スキルを作る・更新するときは → 必ず上記から最新情報を読んでから書く
+
+---
+
 ## 📎 詳細は別ファイル参照（必要な時だけ読む）
 
 | ファイル | 内容 | いつ読むか |
