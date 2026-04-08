@@ -1,3 +1,13 @@
+---
+id: 20260406_Concept
+type: Concept
+status: Active
+tags: [MIGAKI, コンセプト, 運営原則, 戦略]
+related_links: [[MIGAKI_コンセプト強化_Gemini_2026-04-08]], [[MIGAKIブランド設計]]
+created: 2026-04-06
+last_updated: 2026-04-08
+note: "⚠️ 最新コンセプトは [[MIGAKI_コンセプト強化_Gemini_2026-04-08]] を参照（2026-04-08更新）"
+---
 # MIGAKI BASE｜コア・コンセプト（不動の軸）
 
 > 確定日：2026-04-06（第5回役員会議）
