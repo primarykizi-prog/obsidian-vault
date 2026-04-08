@@ -4,8 +4,8 @@
   "title": "Greet in Japanese",
   "titleGenerationStatus": "success",
   "createdAt": 1774170753301,
-  "updatedAt": 1775687953742,
-  "lastResponseAt": 1775687953742,
+  "updatedAt": 1775689550723,
+  "lastResponseAt": 1775689550723,
   "sessionId": "e1f5aacb-e9d6-4acc-a21b-595babf9de06",
   "providerState": {
     "providerSessionId": "e1f5aacb-e9d6-4acc-a21b-595babf9de06",
@@ -1337,16 +1337,322 @@
         ],
         "isExpanded": false,
         "result": "全ノートへの追記が完了しました。STEP 4：完了報告をまとめます。\n\n---\n\n## 完了報告\n\n### digest作成結果\n\n**保存ファイル：** `C:\\Users\\user\\Documents\\Obsidian Vault\\20_知識ベース\\Web新着digest\\2026-04-09_digest.md`\n\n**取得件数：** 8件（軸6本＋MIGAKI2件）\n\n---\n\n### 注目知見 TOP 3\n\n1. **軸②：AI代替48%×組織フラット化でナンバー2の価値が根本的に変わる**\nMIT研究チームが「中間管理職業務の48%がAI代替可能」と判定。同時に「水平的影響力（ホリゾンタル・リーダーシップ）」が2026年の最重要コンピテンシーに浮上。「管理職より強いナンバー2を選ぶ」という戦略がAI時代に正当化される強力なデータ。「なぜ私は管理職を断り続けるのか」の核として使える。\n\n2. **軸⑤：個人知識ベースAI市場がCAGR30.3%で拡大・ブランドはAIで定義される時代へ**\nパーソナルナレッジベースAI市場が2026年に21.6億ドルへ。「ブランドはAIによって定義される」という予測が出ており、Claudian×Obsidianの構造が個人ブランド×AI一体化の先行実装として記事化できる独自性を持つ。\n\n3. **軸④：INFJの本質洞察力×言語化精度×読者感情先読みの三連打が発信差別化の核に**\n2026年のSNS環境で「深く読ませる文章」への反動需要が高まっており、INFJの発信スタイルがポジション上の強みとして再定義された。X1,000フォロワー戦略の発信スタイル設計に直接使えるデータ。\n\n---\n\n### reflector-agent実行結果\n\n以下の7ノートへの追記が完了しました。\n\n- `C:\\Users\\user\\Documents\\Obsidian Vault\\30_記事製造ライン\\執筆中\\結局 人生も 人生もアセスメント.md` — クリニカルラダー2026改訂・アセスメントの制度的再定義を追記\n- `C:\\Users\\user\\Documents\\Obsidian Vault\\30_記事製造ライン\\執筆中\\2番手の法則と最大価値.md` — AI代替48%・水平的影響力・「管理職を断る」記事への最強データを追記\n- `C:\\Users\\user\\Documents\\Obsidian Vault\\30_記事製造ライン\\執筆中\\公務員看護師から一般に出て分かったこと.md` — 診療報酬改定30年ぶり大幅プラス・地方移住×訪問看護の現実性を追記\n- `C:\\Users\\user\\Documents\\Obsidian Vault\\30_記事製造ライン\\執筆中\\INFJのメンタルガード（組織崩壊サバイバル編）.md` — INFJ三連打の発信差別化核・X戦略への接続を追記\n- `C:\\Users\\user\\Documents\\Obsidian Vault\\30_記事製造ライン\\執筆中\\知的財産権を手に入れよ！.md` — 個人知識ベースAI市場21.6億ドル・ブランドはAIで定義されるデータを追記\n- `C:\\Users\\user\\Documents\\Obsidian Vault\\50_夫婦・家族\\夫婦の思考をすり合わせのやり方.md` — 50代共同管理率の低さと満足度+19.4pt・読者需要の大きさを追記\n- `C:\\Users\\user\\Documents\\Obsidian Vault\\こういちカンパニー\\MIGAKI事業戦略\\MIGAKIブランド設計.md` — 体験型OTA戦略・新潟バイクイベント・ライダー拠点設計の根拠を追記\n\nSources:\n- [看護師のクリニカルラダーとは？（ケアコム）](https://www.carecom.jp/contents/kangoshi-clinical-ladder/)\n- [生涯学習支援（日本看護協会）](https://www.nurse.or.jp/nursing/learning/index.html)\n- [2026年の人材育成トレンド予測（HR NOTE）](https://hrnote.jp/contents/soshiki-trend2026-20260212/)\n- [2026年の5つの重要なリーダーシップトレンド（MSC）](https://www.msc-net.co.jp/column-20260105/)\n- [2026年度診療報酬改定と訪問看護への影響（介舟ファミリー）](https://kaisyuf.jp/kfcolumn/20260310-0120/)\n- [INFJ型の特徴と強み・弱み（totolabo）](https://totonoesan.com/infj-type-mbti/)\n- [個人知識ベースAI市場規模（GII調査）](https://www.gii.co.jp/report/tbrc1982704-personal-knowledge-base-artificial-intelligence-ai.html)\n- [夫婦の家計管理は妻中心から夫婦共同の時代に（スマートバンク調査）](https://prtimes.jp/main/html/rd/p/000000038.000080496.html)\n- [2026年最新版インバウンド集客成功事例6選（JapanTicket）](https://www.japanticket.com/column/visito-to-japan/inbound-strategy-casestudy/)\n- [20世紀ミーティング2026春季（新潟県観光ナビ）](https://niigata-kankou.or.jp/event/44046)"
+      },
+      "toolu_01LHHshr6Q9ZBvUdkYnBkZVZ": {
+        "id": "toolu_01LHHshr6Q9ZBvUdkYnBkZVZ",
+        "description": "糸魚川モトクロス大会・ツーリングイベント調査",
+        "prompt": "新潟県糸魚川市周辺のモトクロス大会・バイクイベントについて徹底調査してください。\n\n## 調べること\n\n1. **シーサイドバレー糸魚川のモトクロスコース**\n   - 正式名称・運営団体\n   - 年間大会スケジュール（特に5月〜7月）\n   - 参加者数・規模\n   - 全国規模か地域規模か\n\n2. **新潟県・北陸エリアのモトクロス・バイクイベント**\n   - MFJ（モーターサイクルスポーツ日本）公認大会の開催情報\n   - 5月〜7月に集中しているイベント一覧\n   - 参加者が宿泊を必要とする規模のイベント\n\n3. **糸魚川エリアのツーリング需要**\n   - ライダーが集まる時期・ルート\n   - 宿泊需要が高い時期\n\n## 検索キーワード\n- シーサイドバレー糸魚川 モトクロス 大会 2026\n- 新潟 モトクロス 大会 2026 スケジュール\n- MFJ モトクロス 北陸 新潟 2026\n- 糸魚川 バイク ツーリング イベント\n- 新潟 ライダー イベント 2026 春夏\n\n## アウトプット形式\n- 大会名・開催時期・規模・宿泊需要の有無を表形式で\n- MIGAKIの開業タイミングとして「5月か7月」が現実的かどうかの判断\n- 宿泊需要が最大になる時期の特定\n\n200語程度で簡潔に、でも具体的な数字・固有名詞を含めて報告してください。\n",
+        "status": "completed",
+        "toolCalls": [
+          {
+            "id": "toolu_01DobQmF5mYW9L3Kxb1KZJSS",
+            "name": "ToolSearch",
+            "input": {
+              "query": "web search browse",
+              "max_results": 5
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "[\n  {\n    \"type\": \"tool_reference\",\n    \"tool_name\": \"WebSearch\"\n  },\n  {\n    \"type\": \"tool_reference\",\n    \"tool_name\": \"WebFetch\"\n  },\n  {\n    \"type\": \"tool_reference\",\n    \"tool_name\": \"TodoWrite\"\n  }\n]"
+          },
+          {
+            "id": "toolu_01KDN6vpw2f4VNCKY135omBb",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\user\\Documents\\Obsidian Vault\\こういちカンパニー\\MIGAKI事業戦略\\_MASTER_INFO.md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t---\n2\t種別: マスター情報インデックス\n3\t最終更新: 2026-04-08\n4\t役割: MIGAKI BASE事業の「正規情報の在り処」を一元管理するナビゲーター\n5\t---\n6\t\n7\t# MIGAKI BASE｜マスター情報インデックス\n8\t\n9\t> **このファイルがVault内の「地図」。**\n10\t> 何かを調べる前に、まずここを読んで正しいファイルに行く。\n11\t> GeminiでもCoworkでも決まったことは、必ずこのインデックスが指す先のファイルに反映する。\n12\t\n13\t---\n14\t\n15\t## ① 事業コンセプト・ブランド（ここが最新の正規ソース）\n16\t\n17\t| 内容 | ファイル | 最終更新 |\n18\t|------|---------|---------|\n19\t| **コンセプト最新版**（Zero Friction・Active & Zen）| `MIGAKI_コンセプト強化_Gemini_2026-04-08.md` | 2026-04-08 |\n20\t| ブランド名・メインコピー「幸せを、磨く。」・3層構造 | `MIGAKIブランド設計.md` | 2026-04-05 |\n21\t| **富裕層ライダー戦略・5体験設計**（¥100,000/棟） | `110_Riders_Luxury_Strategy.md` | 2026-04-08 |\n22\t| 不動の運営原則・季節別ターゲット | `MIGAKI_コアコンセプト.md` | 2026-04-06 |\n23\t| 事業3本柱・収益シミュレーション（旧版・参考） | `MIGAKI_総合事業計画書.md` | 2026-04-02 |\n24\t\n25\t**⚠️ 優先順位：`MIGAKI_コンセプト強化_Gemini_2026-04-08.md` が最新。数字は創業計画書を確認。**\n26\t\n27\t---\n28\t\n29\t## ② 申請書類・創業計画書\n30\t\n31\t| 内容 | ファイル | 最終更新 |\n32\t|------|---------|---------|\n33\t| 創業計画書（日本政策金融公庫向け・最終版） | `MIGAKI_創業計画書_最終版.md` | 2026-04-05 |\n34\t| 持続化補助金 様式2 下書き | `持続化補助金_様式2_下書き.md` | 要確認 |\n35\t| 補助金完全攻略マップ | `MIGAKI_補助金完全攻略マップ_2026-04-05.md` | 2026-04-05 |\n36\t| 工事・設備 補助金対象チェックリスト | `MIGAKI_工事優先順位チェックリスト.md` | 2026-04-08 |\n37\t| 補助金一覧（法務行政フォルダ） | `../01_法務行政/補助金一覧.md` | 要確認 |\n38\t\n39\t---\n40\t\n41\t## ③ 許認可・行政対応（最新状況）\n42\t\n43\t| 内容 | ファイル | 最終更新 |\n44\t|------|---------|---------|\n45\t| 締切・申請ステータス一覧（最新） | `../経営企画部/CLAUDE.md` | 2026-04-08 |\n46\t| 保健所チェックリスト | `../01_法務行政/保健所構造基準チェックリスト.md` | 要確認 |\n47\t| 消防設備チェックリスト | `../01_法務行政/消防設備チェックリスト.md` | 要確認 |\n48\t| 消防本部回答（2026-04-07） | `消防本部回答_2026-04-07.md` | 2026-04-07 |\n49\t\n50\t---\n51\t\n52\t## ④ 物件・設備・工事\n53\t\n54\t| 内容 | ファイル | 最終更新 |\n55\t|------|---------|---------|\n56\t| 客室一覧・面積（実測待ち） | `MIGAKI_BASE_客室一覧.md` | 2026-04-06 |\n57\t| 物件スペック詳細 | `../現地連携部/物件スペック詳細.md` | 要確認 |\n58\t| 初期投資予算フレームワーク | `MIGAKI_初期投資予算フレームワーク.md` | 2026-04-06 |\n59\t| 投資優先順位Tier | `../02_財務リノベ管理/投資優先順位Tier.md` | 要確認 |\n60\t\n61\t---\n62\t\n63\t## ⑤ 集客・マーケティング\n64\t\n65\t| 内容 | ファイル | 最終更新 |\n66\t|------|---------|---------|\n67\t| 開業前集客ロードマップ | `../マーケティング部/開業前集客ロードマップ.md` | 要確認 |\n68\t| OTA戦略・プラットフォーム使い分け | `../マーケティング部/プラットフォーム使い分け戦略.md` | 要確認 |\n69\t| 施設名候補リスト | `../マーケティング部/施設名_候補リスト.md` | 要確認 |\n70\t\n71\t---\n72\t\n73\t## ⑥ 地元連携・キーマン\n74\t\n75\t| 内容 | ファイル | 最終更新 |\n76\t|------|---------|---------|\n77\t| 地元キーマンリスト（今井さん・丸山さん等） | `MIGAKI_地元キーマンリスト.md` | 要確認 |\n78\t| 地元ネットワーク情報 | `../現地連携部/地元ネットワーク情報.md` | 要確認 |\n79\t\n80\t---\n81\t\n82\t## ⑦ 役員会議議事録（決定事項のアーカイブ）\n83\t\n84\t| 回 | ファイル |\n85\t|----|---------|\n86\t| 第7回（2026-04-08夜） | `../役員会議/第7回_役員会議_2026-04-08夜.md` |\n87\t| 第6回（2026-04-08） | `../役員会議/第6回_役員会議_2026-04-08.md` |\n88\t| 第5回以前 | `../役員会議/` フォルダを参照 |\n89\t\n90\t---\n91\t\n92\t## ⑧ GeminiからのアウトプットをVaultに入れるルール\n93\t\n94\t> **ルール：GeminiやCoworkで決まったことは、その日中にVaultに保存する。**\n95\t\n96\t### やり方（2ステップ）\n97\t1. GeminiのアウトプットをCoworkにペーストする\n98\t2. 「秘書に保存して」または「これVaultに入れて」と言う\n99\t\n100\t### 保存先の目安\n101\t| 内容の種類 | 保存先 |\n102\t|-----------|--------|\n103\t| コンセプト・戦略の決定 | `MIGAKI事業戦略/` に新規ファイル or 既存ファイルに追記 |\n104\t| 申請書類の更新 | 対応する様式ファイルに追記 |\n105\t| アイデア・検討中 | `秘書メモ/` に保存 |\n106\t| 学習・調査結果 | `20_知識ベース/` に保存 |\n107\t\n108\t---\n109\t\n110\t## このインデックスの更新ルール\n111\t\n112\t- 新しい「重要ファイル」が作られたらここに追記する\n113\t- 「最終更新」日付が古いファイルは定期的に内容確認する\n114\t- 「⚠️ 要確認」は次の役員会議で確認する\n115\t\n\n<system-reminder>\nWhenever you read a file, you should consider whether it would be considered malware. You CAN and SHOULD provide analysis of malware, what it is doing. But you MUST refuse to improve or augment the code. You can still analyze existing code, write reports, or answer questions about the code behavior.\n</system-reminder>\n"
+          },
+          {
+            "id": "toolu_01FNAuZGHsDsb1bomvritPhM",
+            "name": "WebSearch",
+            "input": {
+              "query": "シーサイドバレー糸魚川 モトクロス 大会 2026"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"シーサイドバレー糸魚川 モトクロス 大会 2026\"\n\nLinks: [{\"title\":\"D.I.D全日本モトクロス選手権シリーズ2026 第5戦 中国大会\",\"url\":\"https://sera-korakuen.com/wp-content/gpk/2025_AllNippon_R4-2.html\"},{\"title\":\"全日本公式レース | 全日本モトクロス選手権 公式レース|スケジュール情報 体験・スクール案内\",\"url\":\"https://www.tesport.net/official-race/\"},{\"title\":\"2026年度の全日本モトクロス選手権参戦発表 - MOUNTAIN RIDERS（マウンテンライダーズ）\",\"url\":\"https://www.mountainriders.jp/news/646/\"},{\"title\":\"モトクロスごっこ公式サイトへようこそ！\",\"url\":\"http://www.motocrossgokko.com/\"},{\"title\":\"全日本モトクロス選手権 | バイク レース, MotoGP, モトGP | ヤマハ発動機株式会社\",\"url\":\"https://race.yamaha-motor.co.jp/jmxia1/\"},{\"title\":\"ウエストポイント公式サイト - 川越市\",\"url\":\"http://www.westpoint.co.jp/\"},{\"title\":\"2026 関東モトクロス選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/local/206-mx-kanntou/?page_type=entry\"},{\"title\":\"D.I.D全日本モトクロス選手権シリーズ 2026 第9戦 第64回 MFJ-GPモトクロス大会 '26.10.31(土)～11.1(日)｜観光・旅行情報サイト 宮城まるごと探訪\",\"url\":\"https://www.miyagi-kankou.or.jp/kakikomi/detail.php?id=13726\"},{\"title\":\"モトクロnet – モトクロnetは、モトクロス国際A級ライダー、レディースライダーのプロフィール、観戦情報などをまとめたポータルサイトです\",\"url\":\"http://mx-danshi.com/\"},{\"title\":\"全日本モトクロス選手権 公式レース|スケジュール情報 体験・スクール案内\",\"url\":\"https://www.tesport.net/\"}]\n\n検索結果を見ると、「シーサイドバレー糸魚川」というモトクロス会場に関する情報は見つかりませんでした。検索結果には、2026年の全日本モトクロス選手権シリーズの各開催地（世羅グリーンパーク弘楽園、HSR九州、オフロードビレッジ、スポーツランドSUGO、新千歳モーターランド、名阪スポーツランド、スポーツランドSUGOなど）が列挙されていますが、糸魚川での開催については記載されていません。\n\nお探しの「シーサイドバレー糸魚川」での2026年のモトクロス大会についての情報は、検索結果には含まれていませんでした。詳しい情報については、MFJ（日本モーターサイクルスポーツ協会）の公式ウェブサイトや、シーサイドバレー糸魚川の公式ウェブサイトなどで確認されることをお勧めします。\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_018hwstCLeuMRat72eCt7cVd",
+            "name": "WebSearch",
+            "input": {
+              "query": "MFJ モトクロス 新潟 北陸 2026 大会スケジュール"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"MFJ モトクロス 新潟 北陸 2026 大会スケジュール\"\n\nLinks: [{\"title\":\"2026全日本モトクロス選手権シリーズ 暫定カレンダー ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/2025/09/19/73628/\"},{\"title\":\"川西モトクロス場 - ＭＦＪ新潟\",\"url\":\"http://www.mfj-niigata.jp/kawanishi.html\"},{\"title\":\"いなべモータースポーツランド\",\"url\":\"https://inabe-msl.com/?page_id=12467\"},{\"title\":\"D.I.D全日本モトクロス選手権シリーズ2025 ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/national/2025-mx-all-japan/\"},{\"title\":\"MFJモトクロス全国大会 ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/national/2023-mx-major-competitions/mx-national-championship/\"},{\"title\":\"2026 全道モトクロス選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/local/2026-mx-zendou/\"},{\"title\":\"2025 全道モトクロス選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/local/2025-mx-hokkaido/\"},{\"title\":\"ＭＦＪレース情報\",\"url\":\"https://archive.mfj.or.jp/user/contents/race/race_detail/Pct=MX&ty=L_index.html\"},{\"title\":\"MFJ地方モトクロス選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/motosports/motocross/local-championship/\"},{\"title\":\"JMX - JMX 全日本モトクロス選手権シリーズ | Motosports Promotion\",\"url\":\"https://mspro.jp/jmx/\"}]\n\n検索結果から、2026年のMFJモトクロス関連の大会スケジュール情報を見つけました。\n\n2026全日本モトクロス選手権の暫定開催日程が決まっています。2026年シリーズは、3月15日の第1戦中部大会 ダートフリークカップを皮切りに、第9戦 第64回 MFJ-GPモトクロス大会までの全9戦が予定されています。\n\n具体的な日程は以下の通りです：\n\n- **第1戦**：3月15日 中部大会 ダートフリークカップ\n- **第2戦**：4月19日 HSR九州大会\n- **第3戦**：5月23-24日 21Groupカップ\n- **第4戦**：6月6-7日 SUGO大会\n- **第5戦**：6月27-28日 中国大会\n- **第6戦**：7月12日 北海道千歳大会\n- **第7戦**：9月12-13日 近畿大会\n- **第8戦**：10月10-11日 TOKIO INKARAMI Super Motocross\n- **第9戦**：10月31日-11月1日 第64回 MFJ-GPモトクロス大会\n\n新潟・北陸地方に限定した大会については、検索結果内では詳細な情報が見つかりませんでした。地方選手権についての詳細は、MFJ公式サイトの詳細はPDFをご確認くださいと記載されているため、PDFカレンダーを確認することをお勧めします。\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_01NwC5VdAzm87WDYTR1oB6iw",
+            "name": "WebSearch",
+            "input": {
+              "query": "糸魚川 バイク ツーリング イベント 2026"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"糸魚川 バイク ツーリング イベント 2026\"\n\nLinks: [{\"title\":\"2026年03月29日以降に開催予定のバイクイベントを全国から探す｜WebikeイベントNAVI\",\"url\":\"https://event.webike.net/event\"},{\"title\":\"開催期間「2026年03月23日以降に開催中 」を含むイベントを探す | バイクるん\",\"url\":\"http://bikelun.com/search.html\"},{\"title\":\"バイクのイベント情報サイト | バイクるん\",\"url\":\"http://bikelun.com/\"},{\"title\":\"糸魚川レンタサイクル - 糸魚川の楽しみ方｜糸魚川観光ガイド\",\"url\":\"https://www.itoigawa-kanko.net/enjoy/rentalcycle/\"},{\"title\":\"「ツーリング」を含むイベントを探す | バイクるん\",\"url\":\"http://bikelun.com/search.html&category%5B%5D=6\"},{\"title\":\"九州・沖縄・福岡県で開催予定のバイクイベントを探す｜WebikeイベントNAVI\",\"url\":\"https://event.webike.net/event/fukuoka/list\"},{\"title\":\"バイクイベント情報｜２りんかんイベント\",\"url\":\"https://2rinkan.jp/event/\"},{\"title\":\"イベント | 株式会社カワサキモータースジャパン\",\"url\":\"https://www.kawasaki-motors.com/ja-jp/events\"},{\"title\":\"2026年02月03日以降に開催予定のバイクイベントを全国から探す｜WebikeイベントNAVI\",\"url\":\"https://event.webike.net/event/suggest/list\"},{\"title\":\"関東で開催予定のバイクイベントを探す｜WebikeイベントNAVI\",\"url\":\"https://event.webike.net/event?tod=8_9_10_11_12_13_14\"}]\n\nWeb search results for the query \"糸魚川 バイク ツーリング イベント 2026\" (Itoigawa motorcycle touring events 2026):\n\nThe search returned several pages related to motorcycle events and touring in Japan for 2026. However, the results do not contain specific information about motorcycle touring events in Itoigawa (糸魚川), a city in Niigata Prefecture.\n\nThe search results show:\n- General motorcycle event information portals (Webike Event NAVI, Bikelun, etc.) that list various events across Japan for 2026\n- A reference to Itoigawa's rental bicycle service (not motorcycle touring)\n- Various other motorcycle events and meetings scheduled for 2026 in other parts of Japan\n\nUnfortunately, the specific search results don't contain details about motorcycle touring events specifically scheduled in Itoigawa for 2026. To find this information, you may want to:\n\n1. Check local Itoigawa tourism websites\n2. Search directly on motorcycle event portals like Webike Event NAVI (イベントNAVI) or Bikelun\n3. Contact the Itoigawa Tourism Board (糸魚川観光案内所) at 025-555-7344\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_01HpfZawabAcZbp2DHDwAo9a",
+            "name": "WebFetch",
+            "input": {
+              "url": "https://www.mfj.or.jp/2025/09/19/73628/",
+              "prompt": "2026年全日本モトクロス選手権の全戦スケジュール、開催地、会場名を抽出してください"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Based on the web page content provided, I cannot extract the complete 2026 All Japan Motocross Championship schedule with all race details.\n\nThe page only indicates that \"2026全日本モトクロス選手権の暫定開催日程が決まりましたのでお知らせいたします\" (the provisional schedule for the 2026 All Japan Motocross Championship has been determined), and directs readers to \"詳細はPDFをご確認ください\" (please check the PDF for details).\n\nThe actual schedule information is contained in a PDF file (\"2026全日本モトクロス選手権シリーズ 暫定カレンダー\") that is referenced but not displayed in the HTML content provided. To obtain the specific race dates, venues, and locations, you would need to access and download that PDF document directly from the MFJ website."
+          },
+          {
+            "id": "toolu_01XeE8trWoA5ZmdLKwb5QUYY",
+            "name": "WebSearch",
+            "input": {
+              "query": "シーサイドバレー糸魚川 モトクロスコース 大会 スケジュール"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"シーサイドバレー糸魚川 モトクロスコース 大会 スケジュール\"\n\nLinks: [{\"title\":\"モトクロスごっこ公式サイトへようこそ！\",\"url\":\"http://www.motocrossgokko.com/\"},{\"title\":\"年間イベント予定表 | モトクロスヴィレッジ | ウエストポイント公式サイト\",\"url\":\"http://www.westpoint.co.jp/motocrossvillage/schedule.html\"},{\"title\":\"ウエストポイント公式サイト - 川越市\",\"url\":\"http://www.westpoint.co.jp/\"},{\"title\":\"全国モトクロスコース一覧 – モトクロnet\",\"url\":\"http://mx-danshi.com/map\"},{\"title\":\"藤沢スポーツランド | 岩手県一関市藤沢町 藤沢スポーツランド モトクロスコース\",\"url\":\"https://fujisawa-sl.net/\"},{\"title\":\"【2024.3.30-3.31】第１戦 オフロードビレッジ | 全日本モトクロス選手権 公式レース|スケジュール情報 体験・スクール案内\",\"url\":\"https://www.tesport.net/official-race/3560/\"},{\"title\":\"ダート・モトクロスコース | 新千歳モーターランド\",\"url\":\"https://ncml.jp/dirt%EF%BC%86mx\"},{\"title\":\"ライダーパーク生駒 - Jimdo\",\"url\":\"https://riderpark.jimdofree.com/\"},{\"title\":\"HOME - オフビファン オフロードビレッジ\",\"url\":\"https://wp4141ofvfan.com/\"},{\"title\":\"糸魚川シーサイドバレースキー場 ‐ スキー場情報サイト SURF&SNOW\",\"url\":\"https://surfsnow.jp/guide/htm/r0811s.htm\"}]\n\n検索結果から、「シーサイドバレー糸魚川」はスキー場として知られていることが分かりました。しかし、このスキー場がモトクロスコースとしても利用されているかどうか、また大会スケジュールについての具体的な情報は検索結果に含まれていません。\n\n検索結果には、新潟県にある糸魚川シーサイドバレースキー場に関する情報が出ていますが、モトクロスコースの大会スケジュールについては見つかりませんでした。\n\nより詳しい情報をお探しでしたら、以下の方法をお勧めします：\n- 糸魚川シーサイドバレーの公式ウェブサイトで直接確認する\n- 新潟県のモトクロス関連の組織やクラブに問い合わせる\n- 地元の体験・イベント情報サイトでスケジュール確認する\n\n申し訳ありませんが、この特定のスケジュール情報は検索結果に含まれていませんでした。\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_015AePyBidd3HHaSfxsiwcbz",
+            "name": "WebSearch",
+            "input": {
+              "query": "新潟 地方モトクロス選手権 2026 MFJ北陸信越"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"新潟 地方モトクロス選手権 2026 MFJ北陸信越\"\n\nLinks: [{\"title\":\"2026全日本モトクロス選手権シリーズ 暫定カレンダー ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/2025/09/19/73628/\"},{\"title\":\"ＭＦＪ新潟\",\"url\":\"http://www.mfj-niigata.jp/\"},{\"title\":\"2026 全日本モトクロス選手権 開催カレンダー（更新版）発表のお知らせ | 一般財団法人日本モーターサイクルスポーツ協会のプレスリリース\",\"url\":\"https://prtimes.jp/main/html/rd/p/000000016.000152706.html\"},{\"title\":\"川西モトクロス場 - ＭＦＪ新潟\",\"url\":\"http://www.mfj-niigata.jp/kawanishi.html\"},{\"title\":\"D.I.D全日本モトクロス選手権シリーズ2025 ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/national/2025-mx-all-japan/\"},{\"title\":\"2026 MFJ全日本ロードレース選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/national/2026-mfj-all-japan-roadrace-championship/\"},{\"title\":\"D.I.D全日本モトクロス選手権シリーズ2026 ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/national/2026-mx-all-japan/\"},{\"title\":\"2026 関東モトクロス選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/local/206-mx-kanntou/?page_type=entry\"},{\"title\":\"D.I.D全日本モトクロス選手権シリーズ2026 第5戦 中国大会\",\"url\":\"https://sera-korakuen.com/wp-content/gpk/2025_AllNippon_R4-2.html\"},{\"title\":\"2026 中日本モトクロス選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/local/2026-mx-center/\"}]\n\nBased on the search results, I found relevant information about the 2026 regional motocross championships in Japan. Here's what I found:\n\nThe 2026 Kanto Motocross Championship Series includes a 5th round in Niigata, which is part of the eastern regional championships. However, the search results don't show specific details about the \"新潟 地方モトクロス選手権\" (Niigata Regional Motocross Championship) or MFJ北陸信越 (MFJ Hokuriku-Shinetsu) regional championships for 2026.\n\nThe search results did identify:\n- MFJ Niigata (新潟県モトクロス部会) manages events, with contact information at 025-271-4611\n- The Kawanishi Motocross Course in Tokamachi, Niigata is a venue for local competitions\n\nFor more specific information about the Niigata Regional Motocross Championship 2026 and the MFJ Hokuriku-Shinetsu regional series, you may want to contact MFJ Niigata directly using the phone number provided, or visit their official website at mfj-niigata.jp.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_018a4RWytEVqXZtorisbwfPw",
+            "name": "WebFetch",
+            "input": {
+              "url": "http://www.mfj-niigata.jp/",
+              "prompt": "新潟のモトクロス大会スケジュール、特に2026年の日程・開催地・大会名を抽出してください"
+            },
+            "status": "blocked",
+            "isExpanded": false,
+            "result": "User denied this action."
+          },
+          {
+            "id": "toolu_01LyamknMaTtAHs8j1ceg26c",
+            "name": "WebFetch",
+            "input": {
+              "url": "https://prtimes.jp/main/html/rd/p/000000016.000152706.html",
+              "prompt": "2026年全日本モトクロス選手権の全戦スケジュール、開催地、会場名、参加者規模を抽出してください"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "# 2026年全日本モトクロス選手権スケジュール\n\nBased on the press release, here's what was announced:\n\n## Key Information Provided\nThe announcement states: \"2026年は全9戦で開催予定です\" (2026 will be held as a 9-race championship).\n\n## What's Missing\nUnfortunately, the specific details you requested are **not included** in this press release:\n\n- **Individual race dates**: Not listed\n- **Venue locations**: Not specified\n- **Venue names**: Not provided\n- **Participant scale**: Not mentioned\n\n## Important Caveats\nThe document notes that the schedule is \"provisional\" and subject to change, stating: \"日程、会場、開催クラスは、変更の可能性があり、参加条件が設定される場合があります\" (The schedule, venues, and held classes may be subject to change, and participation conditions may be set).\n\nThe complete calendar details are referenced as available on the MFJ official website (https://www.mfj.or.jp/2025/12/02/75602/), which would likely contain the comprehensive race-by-race breakdown you're seeking."
+          },
+          {
+            "id": "toolu_01BFuBmKuGUFXhA9KzxUsYzu",
+            "name": "WebSearch",
+            "input": {
+              "query": "糸魚川 ライダー バイク 北陸道 R8 ツーリングスポット 春夏 宿泊"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"糸魚川 ライダー バイク 北陸道 R8 ツーリングスポット 春夏 宿泊\"\n\nLinks: [{\"title\":\"日本各地にあるツーリングの聖地を紹介！絶景スポットとバイク初心者におすすめの場所とは - ライダーズアカデミー\",\"url\":\"https://2rinkan.jp/ridersacademy/archives/376/\"},{\"title\":\"「バイクで泊まれる宿泊施設！」 ホテルや旅館のバイク駐車場情報サイト\",\"url\":\"https://bike-p.net/\"},{\"title\":\"オートバイ・ツーリング歓迎の宿一覧＜全国版＞\",\"url\":\"https://ryokou-kikaku.com/touring.html\"},{\"title\":\"「バイク駐車場のある宿を探そう」静岡県のバイクで泊まれる宿泊施設！\",\"url\":\"https://bike-p.net/cate/c22_shizuoka.php\"},{\"title\":\"北陸ツーリングのおすすめスポット12選 -絶景・グルメ・キャンプ-\",\"url\":\"https://www.sasu-rider.com/bike-tabi/touring-spot/hokuriku-touring12\"},{\"title\":\"北陸甲信越のおすすめツーリングルート！バイクで行きたい絶景スポットや観光スポット紹介\",\"url\":\"https://motospot.jp/blog/4375/\"},{\"title\":\"海が見たくなったツーリング (糸魚川) - 旅行のクチコミサイト フォートラベル\",\"url\":\"https://4travel.jp/travelogue/11294367\"},{\"title\":\"“ライダーに優しい宿”カタログ\",\"url\":\"https://www.bikejin.jp/column/touring-36863/\"},{\"title\":\"一度は走りたい中部・北陸エリアの『絶景ワインディングロード』5選！【おすすめツーリングスポット／中部・北陸 編】\",\"url\":\"https://hondago-bikerental.jp/bike-lab/36826.html\"},{\"title\":\"ツーリングシーズン直前！－神奈川のおすすめツーリングスポット6選－ - NAPS-ON マガジン\",\"url\":\"https://magazine.naps-jp.com/articles/z7gIj\"}]\n\n検索結果をお知らせします。\n\nご入力いただいたクエリ「糸魚川 ライダー バイク 北陸道 R8 ツーリングスポット 春夏 宿泊」に関する検索結果は以下の通りです：\n\n## 主な検索結果：\n\n上越市のR8郷津交差点から糸魚川まで続く海岸線は、特に5月と秋が気持ちいい風が吹く、お気に入りのツーリングルートとして紹介されています。\n\n北陸地域全体のツーリングスポットについては、北陸には立山連峰をはじめとする豪快な山々、荒々しい日本海、強風吹き荒れる能登半島など、厳しくも美しい自然に満ち溢れており、晴れた日の北陸の自然の美しさは素晴らしいとされています。\n\nまた、北陸甲信越地方は海から山まで多様な地形と風土が広がるエリアであり、日本海に面した海岸線、雪に覆われた山々、歴史ある城や温泉地が点在しており、バイクツーリングには最適な地域です。\n\n宿泊についての情報として、オートバイ用の駐車場やツーリングプランのある宿泊施設を旅行サイト別・都道府県別に検索できるサービスがあります。\n\n検索結果では、糸魚川周辺の具体的な春夏の宿泊施設に関する詳細情報は見つかりませんでしたが、北陸地域全体のツーリングスポットや宿泊情報サイトの情報が得られました。\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_01YF33hDfZXvdU9hivjvcM57",
+            "name": "WebFetch",
+            "input": {
+              "url": "https://www.mfj.or.jp/national/2026-mx-all-japan/",
+              "prompt": "2026年全日本モトクロス選手権の全戦スケジュール（日程・開催地・会場名）を抽出してください"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "# 2026年全日本モトクロス選手権スケジュール\n\n以下が、掲載されているすべての大会の詳細です：\n\n| 戦 | 大会名 | 日程 | 会場 |\n|---|---|---|---|\n| 1 | 中部大会 ダートフリークカップ | 2026年3月15日 | いなべモータースポーツランド（三重） |\n| 2 | HSR九州大会 | 2026年4月19日 | HSR九州（熊本） |\n| 3 | 21Groupカップ | 2026年5月23～24日 | オフロードヴィレッジ（埼玉） |\n| 4 | SUGO大会 | 2026年6月6～7日 | スポーツランドSUGO（宮城） |\n| 5 | 中国大会 | 2026年6月27～28日 | 世羅グリーンパーク弘楽園（広島） |\n| 6 | 北海道千歳大会 | 2026年7月12日 | 新千歳モーターランド オフロードコース |\n| 7 | 近畿大会 | 2026年9月12～13日 | 名阪スポーツランド（奈良） |\n| 8 | TOKIO INKARAMI Super Motocross | 2026年10月10～11日 | オフロードヴィレッジ（埼玉） |\n| 9 | 第64回 MFJ-GP モトクロス大会 | 2026年10月31～11月1日 | スポーツランドSUGO（宮城） |\n\n全9戦で構成されています。"
+          },
+          {
+            "id": "toolu_016wWyuhmFGhPp4UtxJwRAtm",
+            "name": "WebFetch",
+            "input": {
+              "url": "https://www.sasu-rider.com/bike-tabi/touring-spot/hokuriku-touring12",
+              "prompt": "糸魚川周辺のツーリングスポット、ライダーが集まる時期・シーズン、宿泊需要に関する情報を抽出してください"
+            },
+            "status": "blocked",
+            "isExpanded": false,
+            "result": "User denied this action."
+          },
+          {
+            "id": "toolu_01EwfiowgpfSDuVbFKZiinw4",
+            "name": "WebFetch",
+            "input": {
+              "url": "http://www.mfj-niigata.jp/kawanishi.html",
+              "prompt": "川西モトクロス場の詳細（場所、大会スケジュール、規模）を抽出してください"
+            },
+            "status": "blocked",
+            "isExpanded": false,
+            "result": "User denied this action."
+          },
+          {
+            "id": "toolu_01DhRVbKYuSQuG11Lrg8KGTn",
+            "name": "WebSearch",
+            "input": {
+              "query": "糸魚川 フォッサマグナ ライダーズ ツーリング 宿泊 民泊"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"糸魚川 フォッサマグナ ライダーズ ツーリング 宿泊 民泊\"\n\nLinks: [{\"title\":\"「ライダー歓迎」に関連するホテル・旅館 - 宿泊予約＜じゃらんnet＞\",\"url\":\"https://www.jalan.net/keyword/key0014263/\"},{\"title\":\"「バイクで泊まれる宿泊施設！」 ホテルや旅館のバイク駐車場情報サイト\",\"url\":\"https://bike-p.net/\"},{\"title\":\"【ツーリングにオススメ宿】バイク愛好家のあなたへ｜STAY JAPAN（ステイジャパン）で宿泊予約を｜民泊・農泊・貸別荘・コテージ・古民家・城泊・宿坊など個性的な宿泊施設が見つかる予約サイト\",\"url\":\"https://stayjapan.com/feature/motorcycle-touring\"},{\"title\":\"フォッサマグナ糸魚川温泉｜東北の観光スポットを探す | 旅東北 - 東北の観光・旅行情報サイト\",\"url\":\"https://www.tohokukanko.jp/attractions/detail_1096.html\"},{\"title\":\"フォッサマグナミュージアム 周辺のホテル・旅館 - 楽天トラベル\",\"url\":\"https://travel.rakuten.co.jp/yado/spot/niigata/S15000199.html\"},{\"title\":\"フォッサマグナパーク：北陸エリア | おでかけガイド：JRおでかけネット\",\"url\":\"https://guide.jr-odekake.net/spot/11373\"},{\"title\":\"あづみのライダーズハウス\",\"url\":\"https://azuminoriders.com/\"},{\"title\":\"フォッサマグナ探訪コース | モデルコース | 観光情報と楽しみ方 | 糸魚川ユネスコ世界ジオパーク\",\"url\":\"https://geo-itoigawa.com/tourism/course/mpm03/\"},{\"title\":\"フォッサマグナパーク | 新潟 糸魚川 おすすめの人気観光・お出かけスポット - Yahoo!トラベル\",\"url\":\"https://travel.yahoo.co.jp/kanko/spot-00039323/\"},{\"title\":\"フォッサマグナパーク - フォッサマグナミュージアム Fossa Magna Museum - 新潟県糸魚川市のヒスイとフォッサマグナのことが楽しく学べる博物館\",\"url\":\"https://fmm.geo-itoigawa.com/collection/fmmpark/\"}]\n\n検索結果が返ってきました。このクエリに関する情報をまとめます：\n\n## 検索結果について\n\nあなたのクエリ「糸魚川 フォッサマグナ ライダーズ ツーリング 宿泊 民泊」の検索結果から、以下の関連情報が見つかりました：\n\n### 糸魚川のフォッサマグナについて\n糸魚川と静岡を縦断する巨大な断層線「フォッサマグナ」の地下1,000mから自噴する「糸魚川温泉」があります。「フォッサマグナパーク」は本州中央部の大地溝「フォッサマグナ」の西端にあり、約1600万年前と約3億年前に生成された東西の岩石や土の違いを視覚的に確認できます。\n\n### バイカー向けの宿泊施設について\nSTAY JAPANはバイク用の駐車場やガレージを備えているお宿を掲載しており、バイク愛好家でライダー歓迎のホスト様もいます。また、ライダーやバイカーは、バイクツーリングでライダー歓迎の宿、ペンションや民宿への宿泊を希望しています。\n\nただし、糸魚川地域の「フォッサマグナライダーズ」という特定の施設や民泊情報に関しては、検索結果に含まれていませんでした。より詳しい情報については、糸魚川市の観光協会などに直接問い合わせることをお勧めします。\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_01TUkXU3yQwQi5Y8zR16m77q",
+            "name": "WebSearch",
+            "input": {
+              "query": "新潟 北陸信越 地方モトクロス選手権 2026 スケジュール site:mfj.or.jp"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"新潟 北陸信越 地方モトクロス選手権 2026 スケジュール site:mfj.or.jp\"\n\nLinks: [{\"title\":\"スケジュール ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/motosports/schedule/\"},{\"title\":\"2026全日本モトクロス選手権シリーズ 暫定カレンダー ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/2025/09/19/73628/\"},{\"title\":\"MFJ主要スポーツカレンダー ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/motosports/race-calendar/?page_type=add\"},{\"title\":\"MFJモトクロス全国大会 ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/national/2023-mx-major-competitions/mx-national-championship/\"},{\"title\":\"2026 関東モトクロス選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/local/206-mx-kanntou/\"},{\"title\":\"2025MFJ全日本モトクロス選手権シリーズ カレンダーについて ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/2024/11/27/61894/\"},{\"title\":\"2026 全日本ロードレース選手権 暫定カレンダー（更新）\",\"url\":\"https://www.mfj.or.jp/2025/10/24/74708/\"},{\"title\":\"2025 全道モトクロス選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/local/2025-mx-hokkaido/\"},{\"title\":\"2026MFJ全日本モトクロス選手権シリーズ 暫定カレンダーを更新しました ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/2025/12/02/75602/\"},{\"title\":\"D.I.D全日本モトクロス選手権シリーズ2026 ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/national/2026-mx-all-japan/?page_type=bibs\"}]\n\n検索結果から、新潟・北陸信越地方モトクロス選手権2026の具体的なスケジュール情報は、直接見つかりませんでした。ただし、MFJ（日本モーターサイクルスポーツ協会）のウェブサイトには地方選手権のセクションがあります。\n\n検索で見つかった関連情報：\n\n- MFJ主要スポーツカレンダーには全日本、主要競技会、地方選（ちほうせん）のセクションがある\n\nより詳しい情報を得るには、以下の方法をお勧めします：\n\n1. MFJの主要スポーツカレンダーページ（https://www.mfj.or.jp/motosports/race-calendar/）にアクセスして、地方選手権セクションを確認する\n2. 北陸信越地域の各県のモトクロス関連ページを直接確認する\n3. MFJ本部事務局に直接問い合わせる\n\nMFJのサイト内でより詳細な地方選手権情報が公開されている可能性があります。\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_01Y4wx1JoHBCBhJRxJ8oL4QR",
+            "name": "WebFetch",
+            "input": {
+              "url": "https://www.mfj.or.jp/motosports/schedule/",
+              "prompt": "新潟・北陸信越・中部エリアのモトクロス地方選手権2026のスケジュール一覧を抽出してください"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "I've reviewed the provided web page content, but I cannot extract a schedule for the Niigata, Hokuriku, Shin'etsu, and Chubu regional motocross championships for 2026.\n\nThe page is a schedule index page from the MFJ (Motorcycle Federation of Japan) website. While it contains navigation menus and links to various motorsport categories—including \"モトクロス\" (Motocross) with options for national championships, major competitions, and regional championships—the actual schedule data is not present in the HTML provided.\n\nTo find this information, you would need to:\n\n1. Visit the motocross local championship page directly at: https://www.mfj.or.jp/motosports/motocross/local-championship/\n2. Use the MFJ Event Search System at: https://www.ms-event.net/mfjevent/\n\nThese resources should contain the detailed 2026 regional motocross championship schedules organized by prefecture and region."
+          },
+          {
+            "id": "toolu_01MhaMHKmNuEW4LeqfyPzrah",
+            "name": "WebSearch",
+            "input": {
+              "query": "\"糸魚川\" OR \"上越\" OR \"妙高\" バイク ライダー 春夏 宿泊需要 ツーリングシーズン"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"\"糸魚川\" OR \"上越\" OR \"妙高\" バイク ライダー 春夏 宿泊需要 ツーリングシーズン\"\n\nLinks: [{\"title\":\"＜上越・妙高・糸魚川＞どこに行く？何がしたい？日帰り旅行にもおすすめの観光・体験スポット【旅色】\",\"url\":\"https://tabiiro.jp/higaeri/koushinetsu/niigata/joetsu/\"},{\"title\":\"越後“上越”touring Part 1 - バイクに乗る女の名無しblogです。\",\"url\":\"https://jkov.me/zyouetu2310/\"},{\"title\":\"上越・糸魚川・妙高のおすすめツーリングスポットランキングTOP3（観光地）\",\"url\":\"https://tripnote.jp/joetsu-itoigawa/spot?c=%E3%83%84%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0\"},{\"title\":\"山から海まで！ 上越エリアのサイクリング情報 | 【公式】上越観光Navi - 歴史と自然に出会うまち、新潟県上越市公式観光情報サイト\",\"url\":\"https://joetsukankonavi.jp/cycling/\"},{\"title\":\"新潟県のおすすめツーリングルート！絶景スポットや観光スポットをまとめて紹介\",\"url\":\"https://motospot.jp/blog/3421/\"},{\"title\":\"Joetsu Bicycle Rental 上越レンタルサイクル：上越妙高駅前 ...\",\"url\":\"https://bicycle.furusatto.com/\"},{\"title\":\"上越・妙高・糸魚川おすすめ観光スポット30選\",\"url\":\"https://www.jtb.co.jp/kokunai-guide/list/index.html?area=1507&feature=0&genre=000\"},{\"title\":\"＜ロッテアライリゾート＞プレミアムウェルネスマウンテンリゾート｜上越・妙高・糸魚川のおすすめ観光・レジャースポットなら旅色\",\"url\":\"https://tabiiro.jp/leisure/s/210269-myoko-arai-resort/\"},{\"title\":\"東京都発→上越・妙高・糸魚川（新幹線・JR＋ホテル）パック・ツアー-JTB\",\"url\":\"https://www.jtb.co.jp/kokunai_jr/a/1507/?deparea=13\"},{\"title\":\"上越・糸魚川・妙高の観光スポットランキングTOP10 - じゃらんnet\",\"url\":\"https://www.jalan.net/kankou/170000/171700/\"}]\n\n検索結果がいくつか見つかりました。あなたの検索クエリについて、得られた情報をまとめます：\n\n## 検索結果の概要\n\n上越、妙高、糸魚川地域は**バイク・オートバイツーリングの人気エリア**です。\n\n### バイク関連の特徴：\n\n風巻神社は\"バイク神社\"とも呼ばれ、交通安全を願う社として親しまれています。\n\n複数のライダーが1泊2日で上越から糸魚川～妙高を走るツーリングを楽しんでおり、山道や回収予定のルートを走ることができます。\n\n### 季節ごとの特徴：\n\n春から秋の日曜、祝日には地引網が楽しめ、夏はファミリーに人気の海水浴が楽しめる鵜の浜温泉があります。\n\n### ツーリングスポット：\n\n久比岐自転車道は上越市から糸魚川市まで全長約32kmで、海沿いを走るルートから日本海の美しい風景が楽しめます。\n\nあなたの検索クエリが指すような、春夏のバイク・ライダーの**宿泊需要に関する統計データやビジネス分析**については、検索結果に含まれていません。より具体的な情報があれば、さらに詳しく検索できます。\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_01GgZjUsmaX9F5sJTNjeqMwa",
+            "name": "WebFetch",
+            "input": {
+              "url": "https://motospot.jp/blog/3421/",
+              "prompt": "新潟県ツーリングのベストシーズン、おすすめルート、糸魚川周辺情報を抽出してください"
+            },
+            "status": "blocked",
+            "isExpanded": false,
+            "result": "User denied this action."
+          },
+          {
+            "id": "toolu_01CnNd4wYtvjqEToGEGcvA61",
+            "name": "WebFetch",
+            "input": {
+              "url": "https://www.mfj.or.jp/motosports/motocross/local-championship/",
+              "prompt": "北陸信越・新潟・中部エリアの地方モトクロス選手権2026のスケジュールを抽出してください"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "# Response\n\nI apologize, but I cannot extract the specific 2026 schedule information you requested. The webpage content provided shows the **MFJ Local Motocross Championship Series main page** with regional area links, but it does not contain the actual schedule details for the Hokuriku, Niigata, or Chubu regions.\n\nThe page displays:\n- A Japan map with clickable regional areas\n- Links to different regions (Hokkaido, Tohoku, Kanto, Chubu, Shikoku, Chugoku, Kyushu)\n- General information about motocross classes and licensing requirements\n- Recent news topics\n\nTo find the 2026 schedule for your specific region, you would need to **click on the relevant regional link** (such as the Chubu area link at \"https://www.mfj.or.jp/local/2026-mx-center/\") which would direct you to that region's detailed competition schedule."
+          },
+          {
+            "id": "toolu_01U6PmAogKythmGigqodhZjT",
+            "name": "WebFetch",
+            "input": {
+              "url": "https://www.mfj.or.jp/local/2026-mx-center/",
+              "prompt": "2026年中部モトクロス選手権の全戦スケジュール（日程・会場・開催地・特に新潟・北陸信越エリア）を抽出してください"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "# 2026年中部モトクロス選手権スケジュール\n\n申し訳ありませんが、提供されたウェブページには、**新潟・北陸信越エリアの情報は含まれていません**。\n\nページに掲載されているのは、2026年の「**中日本モトクロス選手権シリーズ**」のスケジュールで、これは近畿地区と中部地区を統一したシリーズです。\n\n**記載されている開催会場：**\n- いなべモータースポーツランド（三重県）\n- 名阪スポーツランド\n- ウッズモータースポーツランドしもいち\n- フラットバレーOP2\n\nページ下部に「中部エリア」と「近畿エリア」のアーカイブへのリンクがありますが、詳細情報は提供されたコンテンツには含まれていません。新潟・北陸信越エリアの選手権情報については、MFJ公式サイトで別途確認が必要です。"
+          },
+          {
+            "id": "toolu_01DMvsSFEpgXMLBBARhZnAYn",
+            "name": "WebSearch",
+            "input": {
+              "query": "新潟 モトクロス 2026 川西 春季大会 スケジュール MFJ"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"新潟 モトクロス 2026 川西 春季大会 スケジュール MFJ\"\n\nLinks: [{\"title\":\"川西モトクロス場 - ＭＦＪ新潟\",\"url\":\"http://www.mfj-niigata.jp/kawanishi.html\"},{\"title\":\"スケジュール ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/motosports/schedule/\"},{\"title\":\"川西モトクロス場 | 十日町市観光協会\",\"url\":\"https://www.tokamachishikankou.jp/spot/motokurosuzyou/\"},{\"title\":\"2026全日本モトクロス選手権シリーズ 暫定カレンダー ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/2025/09/19/73628/\"},{\"title\":\"新潟大会 ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/local/2024-mfj-mx-kanto/rd4/\"},{\"title\":\"MFJ主要スポーツカレンダー ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/motosports/race-calendar/?page_type=add\"},{\"title\":\"ＭＦＪ新潟\",\"url\":\"http://www.mfj-niigata.jp/\"},{\"title\":\"施設案内 - 川西モトクロス場\",\"url\":\"http://www.mfj-niigata.jp/kawanishi02.html\"},{\"title\":\"大会日程 - 川西モトクロス場\",\"url\":\"http://www.mfj-niigata.jp/kawanishi04.html\"},{\"title\":\"川西モトクロス場\",\"url\":\"https://www.facebook.com/kawanishimx/?locale=ja_JP\"}]\n\nI found search results for your query about the Kawanishi Motocross venue in Niigata and MFJ information. However, the specific 2026 spring season schedule details are not fully displayed in the search results. \n\nFrom what I found:\n\n- The next year's race schedule reception will begin after the \"Niigata Prefectural Motocross Division\" main races schedule is determined, which suggests the 2026 spring schedule may not yet be finalized or publicly available.\n\n- Kawanishi Motocross venue offers practice on Saturdays, Sundays, and holidays outside of the official race schedule.\n\n- For official 2026 MFJ schedules, the 2026 All-Japan Motocross Championship provisional calendar has been determined, with details available on the official MFJ website.\n\nTo get the specific spring season schedule for the Kawanishi venue in 2026, I recommend:\n1. Checking the official MFJ Niigata website (mfj-niigata.jp) directly\n2. Contacting the venue management at the phone number listed\n3. Checking the Niigata Motocross Division at 025-271-4611\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_01JUJVXzqaBQTa3n75r7H82F",
+            "name": "WebFetch",
+            "input": {
+              "url": "http://www.mfj-niigata.jp/kawanishi04.html",
+              "prompt": "川西モトクロス場の2026年大会日程・スケジュールを抽出してください"
+            },
+            "status": "blocked",
+            "isExpanded": false,
+            "result": "User denied this action."
+          },
+          {
+            "id": "toolu_014cxRAfpZVkBZ7PG2297tQK",
+            "name": "WebFetch",
+            "input": {
+              "url": "https://www.mfj.or.jp/local/2024-mfj-mx-kanto/rd4/",
+              "prompt": "新潟大会の詳細（会場・日程・規模・参加者数）を抽出してください"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "# 2024 関東モトクロス選手権シリーズ 第4戦 新潟大会の詳細\n\n**日程**\n「2024/06/16」に開催予定\n\n**会場**\n「川西モトクロス場」で実施\n\n**開催クラス**\n公認クラスとして「IO, NA, NB, JX」、承認クラスとして「OP85, K65, EJ」を設定\n\n**エントリー期間**\n「2024/05/27 - 2024/06/02」の間に参加申込を受け付け\n\n**主催**\n新潟県モトクロス部会が運営\n\n**参加申込方法**\n参加申込書をFAX（025-271-4611）またはメール（mfj-niigata-yzf@kxa.biglobe.ne.jp）で送付し、参加料は銀行振込で対応\n\n規模や参加者数に関する具体的な情報は、提供されたコンテンツには記載されていません。"
+          },
+          {
+            "id": "toolu_01TQTisv2X3ndKAevpTUBgco",
+            "name": "WebSearch",
+            "input": {
+              "query": "関東モトクロス選手権 2026 新潟大会 川西 スケジュール"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"関東モトクロス選手権 2026 新潟大会 川西 スケジュール\"\n\nLinks: [{\"title\":\"2026 関東モトクロス選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/local/206-mx-kanntou/\"},{\"title\":\"川西モトクロス場 - ＭＦＪ新潟\",\"url\":\"http://www.mfj-niigata.jp/kawanishi.html\"},{\"title\":\"ウエストポイント公式サイト - 川越市\",\"url\":\"http://www.westpoint.co.jp/\"},{\"title\":\"レース情報 - モトショップ鷹\",\"url\":\"https://taka-is-fast.com/race/\"},{\"title\":\"2025 関東ＭＸ選手権 千葉/茨城大会 – connect-mx\",\"url\":\"http://connect-mx.com/index.php/kantou-chiba/\"},{\"title\":\"2025関東モトクロス選手権シリーズ 【 ...\",\"url\":\"http://www.westpoint.co.jp/2025shitei.pdf\"},{\"title\":\"2025 関東モトクロス選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/local/2025-mfj-mx-kanto/\"},{\"title\":\"2026 全日本モトクロス選手権 開催カレンダー（更新版）発表のお知らせ | 一般財団法人日本モーターサイクルスポーツ協会のプレスリリース\",\"url\":\"https://prtimes.jp/main/html/rd/p/000000016.000152706.html\"},{\"title\":\"全日本モトクロス選手権 公式レース|スケジュール情報 体験・スクール案内\",\"url\":\"https://www.tesport.net/\"},{\"title\":\"2023 関東モトクロス選手権シリーズ ｜ MFJ Online Magazine\",\"url\":\"https://www.mfj.or.jp/local/2023-mfj-mx-kanto/\"}]\n\n検索結果から、2026関東モトクロス選手権シリーズのレース構成が確認できます。第5戦が新潟大会となっています。\n\nただし、具体的な新潟大会（川西モトクロス場での開催と思われます）のスケジュールや日程については、検索結果に詳細な情報が含まれていません。MFJ公式ページでは「第5戦 新潟大会」として記載されていますが、詳しい開催日時やタイムスケジュールについては、MFJ公式ウェブサイトの該当ページで確認する必要があります。\n\nより詳細な情報が必要な場合は、以下を参照されることをお勧めします：\n- MFJ関東モトクロス選手権シリーズの公式ページ（mfj.or.jp）\n- 川西モトクロス場の公式サイト（mfj-niigata.jp）\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_01HSf2A6mNAA2Tta1Xy2VYYS",
+            "name": "WebSearch",
+            "input": {
+              "query": "糸魚川 親不知 ライダー ツーリング スポット 宿泊 春 ゴールデンウィーク"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Web search results for query: \"糸魚川 親不知 ライダー ツーリング スポット 宿泊 春 ゴールデンウィーク\"\n\nLinks: [{\"title\":\"ドライブにおすすめ！糸魚川の人気スポットランキングTOP30 | RETRIP[リトリップ]\",\"url\":\"https://rtrp.jp/locations/1695/scenes/39/\"},{\"title\":\"糸魚川の人気観光スポットランキングTOP30 | くふうトリップ（旧RETRIP）\",\"url\":\"https://rtrp.jp/locations/1695/categories/9999/\"},{\"title\":\"春ツーリングは油断するべからず！服装のポイントやおすすめのスポットを紹介 | バイクライフをより楽しくさせる！ グーバイクマガジン\",\"url\":\"https://www.goobike.com/magazine/ride/touring/75/\"},{\"title\":\"東京都発→糸魚川・親不知（新幹線・JR＋ホテル）パック・ツアー-JTB\",\"url\":\"https://www.jtb.co.jp/kokunai_jr/a/150705/?deparea=13\"},{\"title\":\"糸魚川・親不知のホテル・旅館・宿（新潟県） | 宿泊予約【JTB】\",\"url\":\"https://www.jtb.co.jp/kokunai-hotel/list/150705/\"},{\"title\":\"人生初のバイクツーリング！新潟県糸魚川市へ行って来ました - 楽しく生きたい陰キャ男\",\"url\":\"https://magurotyaduke.hatenablog.com/entry/2019/05/03/204704\"},{\"title\":\"糸魚川 親不知 | 【ダイビングスクール】LIGHT HOUSE Japan\",\"url\":\"https://lighthouse-japan.jp/%E7%B3%B8%E9%AD%9A%E5%B7%9D-%E8%A6%AA%E4%B8%8D%E7%9F%A5/\"},{\"title\":\"糸魚川・親不知観光ならここ!糸魚川・親不知でおすすめの観光・旅行スポット - 2022版 | まっぷるトラベルガイド\",\"url\":\"https://www.mapple.net/region/a0302050200/spot/\"},{\"title\":\"GWに桜が満開！春の北海道ツーリングおすすめスポット10選 | SasuRider.com |\",\"url\":\"https://www.sasu-rider.com/bike-tabi/hokkaido-touring/spring-hokkaido10\"},{\"title\":\"海が見たくなったツーリング (糸魚川) - 旅行のクチコミサイト フォートラベル\",\"url\":\"https://4travel.jp/travelogue/11294367\"}]\n\n検索結果をまとめました。糸魚川・親不知地域のライダーツーリングスポット、宿泊施設、春・ゴールデンウィーク関連の情報をご紹介します。\n\n## ツーリングスポット\n\n親不知は、ツーリングの立ち寄り所や車中泊で利用されることが多い施設で、2階には親不知の歴史を知ることができる展望展示室が設けられており、雄大な日本海が望めます。\n\n親不知は北アルプスが日本海に落ち込んでいる絶壁で、2014年3月に国名勝に指定されています。\n\n## 道の駅\n\n道の駅 親不知は親不知インターチェンジから直ぐ近くにあり、雄大な日本海に面した広い駐車場があり、駐輪スペースも備えられています。\n\n## 春・ゴールデンウィークのツーリング\n\n上越市から糸魚川まで続く海岸線は、特に5月と秋が気持ちいい風が吹く人気のツーリングルートです。\n\n5月2日はゴールデンウィークで、道の駅 親不知はめちゃくちゃ賑わっていました。\n\n## 宿泊施設\n\n糸魚川・親不知の宿泊施設には、ホテル国富翠泉閣、ホテル国富アネックス、ホテルルートイン糸魚川などがあり、最安値プランは大人1人様あたり5300円からとなっています。\n\n親不知観光ホテルは日本海に面した断崖絶壁に建つ館で、海の眺めと日本海ならではの新鮮魚介類を満喫できます。\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+          },
+          {
+            "id": "toolu_01SnUxbTH8wcuVT1arVLbdVp",
+            "name": "WebFetch",
+            "input": {
+              "url": "https://www.mfj.or.jp/local/206-mx-kanntou/",
+              "prompt": "2026年関東モトクロス選手権シリーズの全戦スケジュール（日程・会場・特に新潟大会の詳細）を抽出してください"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "# 2026年関東モトクロス選手権シリーズ スケジュール\n\n## 全8戦のスケジュール\n\n| 戦 | 大会名 | 日程 | 会場 |\n|---|---|---|---|\n| 1 | 埼玉大会 | 2026/03/29 | オフロードヴィレッジ（埼玉） |\n| 2 | 山梨大会 | 2026/04/26 | クロスパーク勝沼 |\n| 3 | 埼玉大会 | 2026/05/10 | オフロードヴィレッジ（埼玉） |\n| 4 | 千葉大会 | 2026/05/31 | MX408 |\n| **5** | **新潟大会** | **2026/06/21** | **川西モトクロス場** |\n| 6 | 群馬大会 | 2026/08/30 | 軽井沢モーターパーク |\n| 7 | 東京大会 | 2026/09/27 | オフロードヴィレッジ（埼玉） |\n| 8 | 茨城大会 | 2026/10/18 | MX408 |\n\n## 新潟大会の詳細\n\n**第5戦 新潟大会**\n- **開催日**：2026年6月21日（日）\n- **会場**：川西モトクロス場\n- **公認クラス**：インターナショナルOP、ナショナル、ノービス、ジュニアクロス\n- **承認クラス**：OP85、キッズ65、チャイルドクロス、エンジョイ"
+          },
+          {
+            "id": "toolu_01SnJM1TzZgfWW8cjocpyqmT",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\user\\Documents\\Obsidian Vault\\こういちカンパニー\\MIGAKI事業戦略\\110_Riders_Luxury_Strategy.md",
+              "limit": 60
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t---\n2\tid: 202604082300\n3\ttype: Concept\n4\tstatus: Active\n5\ttags: [MIGAKI, ライダー, 富裕層, ラグジュアリー, 体験設計, 差別化, 10万円]\n6\trelated_links: [[差別化戦略_ライダーズベース構想]], [[根知地区_需要予測_総合分析]], [[MIGAKI_コンセプト強化_Gemini_2026-04-08]], [[MIGAKI_体験コンテンツ案]], [[MIGAKIブランド設計]]\n7\tcreated: 2026-04-08\n8\tlast_updated: 2026-04-08\n9\t統合元データ: ライダーズベース構想（旧）× 根知地区分析 × MIGAKI LAGジュアリーコンセプト\n10\t---\n11\t\n12\t# 🏍️ 110_Riders_Luxury_Strategy\n13\t## 「1泊10万円を払う富裕層ライダーが狂喜する体験」設計書\n14\t\n15\t> **統合元：**\n16\t> - [[差別化戦略_ライダーズベース構想]]（2026-03-29）→ 旧来の「安く快適に」路線\n17\t> - [[根知地区_需要予測_総合分析]]（2026-03-29）→ 地質・文化・立地の唯一資産\n18\t> - [[MIGAKI_コンセプト強化_Gemini_2026-04-08]] → \"Zero Friction, Pure Zen\" × Active & Zen\n19\t>\n20\t> ⚠️ 旧ライダーズベース構想（¥2,000〜10,000/人）はアーカイブとして保存。\n21\t> このファイルは「同じ顧客層の最上位層」を対象に、完全に再設計した戦略版。\n22\t\n23\t---\n24\t\n25\t## 🎯 ターゲット再定義\n26\t\n27\t| 旧ライダーズベース | 新・富裕層ライダー戦略 |\n28\t|-----------------|---------------------|\n29\t| 安く快適に泊まりたいライダー（¥2,000〜10,000/人） | 最高の「動と静」に¥100,000/棟を払えるライダー |\n30\t| 多人数・コスト重視 | 少人数（2〜4名）・体験価値重視 |\n31\t| 施設があれば満足 | 「ここでしか起きないこと」を求めている |\n32\t| バイクは移動手段 | バイクはライフスタイルの核、機体への愛着が強い |\n33\t\n34\t### 具体的ペルソナ\n35\t\n36\t> **「鈴木雄一郎、52歳。ITベンチャーのCTO。年収2,500万円。**\n37\t> **BMW R1250GS Adventureとパニガーレを2台所有。**\n38\t> **年に4回、\"本物の日本\"を走りに来る。**\n39\t> **妻と2人、または親友3名のグループで動く。**\n40\t> **高いホテルには慣れている。でも何かが足りない。**\n41\t> **\"ここじゃないといけない理由\"が欲しい。\"**\n42\t\n43\t---\n44\t\n45\t## ⚔️ 「ここでしか起きない」5つの体験設計\n46\t\n47\t---\n48\t\n49\t### 体験① ｜ マシン・サンクチュアリ（機械聖域）\n50\t**── あなたのR1250GSは、今夜、世界一丁寧に扱われる ──**\n51\t\n52\t#### 設計コンセプト\n53\t旧ライダーズベース構想の「バイク洗い場・工具スペース」を富裕層向けに昇華。\n54\t¥100万〜500万のプレミアムバイクを持つ層は、「停める場所」ではなく「机体が大切にされているか」を宿選びの基準にする。\n55\t\n56\t#### 具体的設備（初期投資概算：30〜50万円）\n57\t\n58\t| 設備 | 内容 | 効果 |\n59\t|------|------|------|\n60\t| **屋根付き専用ガレージ区画** | 2〜4台分・ゲスト専用・鍵付き | 盗難リスクゼロ・精神的安心感 |\n\n<system-reminder>\nWhenever you read a file, you should consider whether it would be considered malware. You CAN and SHOULD provide analysis of malware, what it is doing. But you MUST refuse to improve or augment the code. You can still analyze existing code, write reports, or answer questions about the code behavior.\n</system-reminder>\n"
+          }
+        ],
+        "isExpanded": false,
+        "result": "十分なデータが揃いました。以下が調査結果の報告です。\n\n---\n\n## 糸魚川周辺 モトクロス・バイクイベント調査レポート\n\n### 1. シーサイドバレー糸魚川 モトクロスコース\n\n**結論：モトクロスコースとしての実態は確認できず。**\n\n「シーサイドバレー糸魚川」はスキー場として存在が確認できるが、MFJ公認モトクロス会場としての登録・大会スケジュールは公式情報に一切登場しない。糸魚川市内にMFJ公認の常設コースは存在しないとみてよい。\n\n---\n\n### 2. 新潟・北陸エリアのモトクロス大会（MFJ公認）\n\n新潟でのMFJ公認大会は、十日町市の**川西モトクロス場**に集中している。\n\n| 大会名 | 日程 | 会場 | 系統 |\n|--------|------|------|------|\n| 関東MX選手権 第5戦 新潟大会 | **2026年6月21日（日）** | 川西モトクロス場（十日町市） | 地方選手権 |\n| 全日本MX選手権 第3戦 21Groupカップ | 2026年5月23〜24日 | オフロードヴィレッジ（埼玉） | 全国規模 |\n| 全日本MX選手権 第4戦 SUGO大会 | 2026年6月6〜7日 | スポーツランドSUGO（宮城） | 全国規模 |\n\n**川西モトクロス場について：**\n- 場所：新潟県十日町市（糸魚川から約90km東、車で約1.5時間）\n- 主催：新潟県モトクロス部会\n- 規模：地方選手権レベル（関東ブロック）。参加者数は数十〜百数十名程度が想定される\n- 2024年実績から、出場クラスは IO/NA/NB/JX + OP85/K65/EJ と多様。家族連れ参加も多い\n\n全日本規模（数百〜千人規模）の大会は糸魚川から200km以上離れた会場が中心。\n\n---\n\n### 3. 糸魚川エリアのツーリング需要\n\n| 項目 | 内容 |\n|------|------|\n| 最盛期 | **5月（GW〜）と9〜10月**が最需要。5月は「風と海が気持ちいい」と複数ライダーが記述 |\n| 主要ルート | 国道8号線・日本海岸線（上越〜糸魚川〜親不知）、フォッサマグナパーク経由の内陸ルート |\n| ランドマーク | 道の駅 親不知（GW期間は混雑確認済み）、フォッサマグナパーク |\n| 宿泊需要 | 遠方からのツーリング客は1泊2日構成が多い。現状の宿泊選択肢はビジネスホテル・温泉旅館が主で、ライダー特化施設は確認できず |\n\n---\n\n### 4. MIGAKI開業タイミング判断（5月 vs 7月）\n\n**5月開業が有力、ただし根拠は「ツーリング需要」が主軸。**\n\n| 観点 | 5月開業 | 7月開業 |\n|------|---------|---------|\n| ツーリング需要 | GW後の5月中旬〜末が最盛期入口 | 梅雨明け後の7月下旬〜8月がピーク |\n| 近隣モトクロス大会 | 5月23〜24日・全日本第3戦（埼玉）は遠い | 6月21日・川西新潟大会に近い時期 |\n| 旅館業許可取得 | Q2目標（4〜6月）に間に合えば5月末可能 | 許可余裕あり |\n| リスク | 開業直後の運営ミスがピーク期に重なる | 準備期間を確保できる |\n\n**推奨：7月開業が現実的。** 6月21日の川西新潟大会（十日町）を「試し受け入れ」の機会として活用し、その参加者の口コミを梅雨明けの夏ピーク（7月下旬〜8月）につなげる流れが理想的。5月は「プレオープン・SNS集客」期間として活用するのがリスク最小の設計。\n\n**宿泊需要が最大になる時期：7月下旬〜8月（夏ツーリングシーズン本番）+ 9月〜10月（秋の紅葉ツーリング）** の2ピークが年間最高需要。\n\n---\n\nSources:\n- [D.I.D全日本モトクロス選手権シリーズ2026 | MFJ Online Magazine](https://www.mfj.or.jp/national/2026-mx-all-japan/)\n- [2026 関東モトクロス選手権シリーズ | MFJ Online Magazine](https://www.mfj.or.jp/local/206-mx-kanntou/)\n- [川西モトクロス場 - MFJ新潟](http://www.mfj-niigata.jp/kawanishi.html)\n- [糸魚川シーサイドバレースキー場 - SURF&SNOW](https://surfsnow.jp/guide/htm/r0811s.htm)\n- [海が見たくなったツーリング（糸魚川） - フォートラベル](https://4travel.jp/travelogue/11294367)"
       }
     }
   },
   "usage": {
     "model": "sonnet",
     "inputTokens": 3,
-    "cacheCreationInputTokens": 952,
-    "cacheReadInputTokens": 130515,
+    "cacheCreationInputTokens": 518,
+    "cacheReadInputTokens": 145606,
     "contextWindow": 200000,
-    "contextTokens": 131470,
-    "percentage": 66
+    "contextTokens": 146127,
+    "percentage": 73,
+    "contextWindowIsAuthoritative": true
   }
 }
