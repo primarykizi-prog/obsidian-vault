@@ -306,12 +306,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_記事製造ライン/280_マガジン紹介後編_完全版.md",
+                "file": "こういちカンパニー/MIGAKI事業戦略/_MASTER_INFO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "280_マガジン紹介後編_完全版"
+              "title": "_MASTER_INFO"
             }
           }
         ],
@@ -357,8 +357,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "マガジン紹介後編_完全版.md",
-                "matchingCase": true,
+                "query": "メンバーシップ",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -520,6 +520,13 @@
   },
   "active": "2ee57d6657eb5c24",
   "lastOpenFiles": [
+    "こういちカンパニー/MIGAKI_BASE/10_Articles/12_Membership_Launch/12_Sunday_Launch_v3.md",
+    "こういちカンパニー/MIGAKI_BASE/10_Articles/12_Membership_Launch/12_Sunday_Launch_v3.md.tmp.5.1775714530717",
+    "こういちカンパニー/MIGAKI_BASE/10_Articles/12_Membership_Launch/12_Sunday_Launch_v2.md.tmp.5.1775714317159",
+    "こういちカンパニー/MIGAKI_BASE/10_Articles/12_Membership_Launch/12_Sunday_Launch_v2.md.tmp.5.1775714306936",
+    "30_記事製造ライン/280_マガジン紹介後編_完全版.md",
+    "こういちカンパニー/MIGAKI_BASE/10_Articles/12_Membership_Launch/12_Sunday_Launch_v2.md",
+    "こういちカンパニー/MIGAKI_BASE/10_Articles/12_Membership_Launch/12_Sunday_Launch_v2.md.tmp.5.1775714110951",
     "こういちカンパニー/MIGAKI_BASE/20_Membership_Inner/300_Community_Operations.md",
     "こういちカンパニー/MIGAKI_BASE/00_Strategy/290_Membership_Application_Text.md",
     "30_記事製造ライン/_PIPELINE.md",
@@ -533,13 +540,8 @@
     "こういちカンパニー/MIGAKI_BASE/10_Articles/12_Membership_Launch",
     "こういちカンパニー/MIGAKI_BASE/10_Articles/11_Magazine_ThankYou",
     "こういちカンパニー/MIGAKI_BASE/30_Admin",
-    "こういちカンパニー/MIGAKI_BASE/20_Membership_Inner",
-    "こういちカンパニー/MIGAKI_BASE/10_Articles",
-    "こういちカンパニー/MIGAKI_BASE/00_Strategy",
-    "こういちカンパニー/MIGAKI_BASE",
     "30_SNS管理/noteフォロワー/_交流リスト.md",
     "30_SNS管理/noteフォロワー/【運営ドキュメント】noteマガジン交流管理_ワークフロー.md",
-    "30_記事製造ライン/280_マガジン紹介後編_完全版.md",
     "こういちカンパニー/270_Sunday_Launch_Article_Final.md",
     "こういちカンパニー/260_MIGAKI_Three_Articles_v2.md",
     "こういちカンパニー/250_Three_Article_Scripts.md",
@@ -554,8 +556,6 @@
     "こういちカンパニー/MIGAKI事業戦略/180_MIGAKI_Sunday_Launch_Plan.md",
     "こういちカンパニー/MIGAKI事業戦略/170_Small_Start_Practical_Plan.md",
     "こういちカンパニー/MIGAKI事業戦略/160_Storytelling_Membership_Architecture.md",
-    "こういちカンパニー/MIGAKI事業戦略/130_Note_Membership_Business_Model.md",
-    "こういちカンパニー/MIGAKI事業戦略/120_Workation_Strategy_Integrated.md",
     "Canvas/2026-03-31.canvas",
     "無題のファイル 1.canvas",
     "無題のファイル.canvas"
