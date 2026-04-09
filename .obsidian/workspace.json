@@ -306,12 +306,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_ダッシュボード/プロフィール.md",
+                "file": "30_SNS管理/noteフォロワー/【運営ドキュメント】noteマガジン交流管理_ワークフロー.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "プロフィール"
+              "title": "【運営ドキュメント】noteマガジン交流管理_ワークフロー"
             }
           }
         ],
@@ -357,7 +357,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "アンナチュラル",
+                "query": "紹介記事下書き_マガジン追加してくれた方々_Part1.md",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -369,7 +369,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -518,8 +518,12 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "921d4f13042423e8",
+  "active": "2ee57d6657eb5c24",
   "lastOpenFiles": [
+    "こういちカンパニー/200_Membership_Launch_Final_Copy.md",
+    "こういちカンパニー/200_Membership_Launch_Final_Copy.md.tmp.5.1775694106297",
+    "30_記事製造ライン/_note記事公開ワークフロー.md",
+    "00_ダッシュボード/プロフィール.md",
     "こういちカンパニー/MIGAKI事業戦略/_MASTER_INFO.md.tmp.5.1775692529158",
     "こういちカンパニー/MIGAKI事業戦略/180_MIGAKI_Sunday_Launch_Plan.md",
     "こういちカンパニー/MIGAKI事業戦略/180_MIGAKI_Sunday_Launch_Plan.md.tmp.5.1775692517798",
@@ -532,8 +536,6 @@
     "_System_Command_Center.md.tmp.5.1775690330739",
     "_System_Command_Center.md.tmp.5.1775690318224",
     "_System_Command_Center.md.tmp.5.1775690301592",
-    "_System_Command_Center.md.tmp.5.1775690284388",
-    "こういちカンパニー/MIGAKI事業戦略/_MASTER_INFO.md.tmp.5.1775690277525",
     "こういちカンパニー/MIGAKI事業戦略/130_Note_Membership_Business_Model.md",
     "こういちカンパニー/MIGAKI事業戦略/120_Workation_Strategy_Integrated.md",
     "20_知識ベース/Web新着digest/2026-04-09_digest.md",
@@ -554,8 +556,6 @@
     "こういちカンパニー/経営企画部/CLAUDE.md",
     "こういちカンパニー/MIGAKI事業戦略/じゅん君への依頼文_下書き.md",
     "こういちカンパニー/MIGAKI事業戦略/持続化補助金_様式2_下書き.md",
-    "こういちカンパニー/役員会議/第6回_役員会議_2026-04-08.md",
-    "こういちカンパニー/ゲスト対応部/お父様_不動心インタビュープラン.md",
     "Canvas/2026-03-31.canvas",
     "無題のファイル 1.canvas",
     "無題のファイル.canvas"
