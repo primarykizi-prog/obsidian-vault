@@ -306,12 +306,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "こういちカンパニー/MIGAKI事業戦略/180_MIGAKI_Sunday_Launch_Plan.md",
+                "file": "30_記事製造ライン/完成稿/note_INFJだから書ける文章_draft.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "180_MIGAKI_Sunday_Launch_Plan"
+              "title": "note_INFJだから書ける文章_draft"
             }
           }
         ],
@@ -357,8 +357,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "メンバーシップ",
-                "matchingCase": false,
+                "query": "note_INFJだから書ける文章_draft.md",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -521,6 +521,15 @@
   "active": "2ee57d6657eb5c24",
   "lastOpenFiles": [
     "30_記事製造ライン/完成稿/note_管理職を断り続ける_draft.md",
+    "30_記事製造ライン/音声スクリプト/2026-04-09_INFJだから書ける文章_音声スクリプト.md",
+    "30_記事製造ライン/音声スクリプト/2026-04-09_INFJだから書ける文章_音声スクリプト.md.tmp.5.1775729463574",
+    "30_記事製造ライン/完成稿/note_INFJだから書ける文章_draft.md",
+    "30_記事製造ライン/完成稿/note_INFJだから書ける文章_draft.md.tmp.5.1775729420456",
+    "60_日報/2026-04-09_X投稿案.md",
+    "60_日報/2026-04-09_X投稿案.md.tmp.5.1775729303124",
+    "こういちカンパニー/MIGAKI事業戦略/180_MIGAKI_Sunday_Launch_Plan.md",
+    "30_記事製造ライン/音声スクリプト/2026-04-09_管理職を断り続ける_音声スクリプト.md",
+    "30_記事製造ライン/音声スクリプト/2026-04-09_管理職を断り続ける_音声スクリプト.md.tmp.5.1775729151690",
     "30_記事製造ライン/完成稿/note_管理職を断り続ける_draft.md.tmp.5.1775729095990",
     "20_知識ベース/Web新着digest/2026-04-09_digest.md.tmp.5.1775728843968",
     "20_知識ベース/Web新着digest/2026-04-09_digest.md.tmp.5.1775728832627",
@@ -528,12 +537,8 @@
     "こういちカンパニー/MIGAKI事業戦略/_MASTER_INFO.md",
     "30_SNS管理/noteフォロワー/_交流リスト.md.tmp.5.1775726820141",
     "30_SNS管理/noteフォロワー/_交流リスト.md.tmp.5.1775726814417",
-    "30_SNS管理/noteフォロワー/_交流リスト.md.tmp.5.1775726809024",
     "30_SNS管理/noteフォロワー/人物/丁寧な暮らしさん.md",
-    "30_SNS管理/noteフォロワー/人物/丁寧な暮らしさん.md.tmp.5.1775726801868",
     "30_SNS管理/noteフォロワー/人物/ゆらりさん.md",
-    "30_SNS管理/noteフォロワー/人物/ゆらりさん.md.tmp.5.1775726788339",
-    "30_SNS管理/noteフォロワー/人物/fancy_nerineさん.md.tmp.5.1775726774366",
     "こういちカンパニー/MIGAKI_BASE/00_Strategy/291_現在地戦略シート_20260409.md",
     "秘書メモ/2026-04-09_MIGAKI_Coworkセッション記録.md",
     "こういちカンパニー/MIGAKI_BASE/10_Articles/12_Membership_Launch/12_Sunday_Launch_v5.md",
@@ -551,11 +556,6 @@
     "30_SNS管理/noteフォロワー/_交流リスト.md",
     "30_SNS管理/noteフォロワー/【運営ドキュメント】noteマガジン交流管理_ワークフロー.md",
     "こういちカンパニー/270_Sunday_Launch_Article_Final.md",
-    "こういちカンパニー/260_MIGAKI_Three_Articles_v2.md",
-    "こういちカンパニー/250_Three_Article_Scripts.md",
-    "こういちカンパニー/240_Sunday_Launch_Master_Plan.md",
-    "20_知識ベース/YouTube学習/2026-04-09_noteメンバーシップ成功の基本ポイント_note公式勉強会.md",
-    "こういちカンパニー/230_Light_Recovery_Final.md",
     "Canvas/2026-03-31.canvas",
     "無題のファイル 1.canvas",
     "無題のファイル.canvas"
