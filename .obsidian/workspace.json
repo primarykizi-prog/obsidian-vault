@@ -301,6 +301,20 @@
             }
           },
           {
+            "id": "6d3fe10d7784e032",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "こういちカンパニー/MIGAKI事業戦略/MIGAKI_こういち決意プログラム.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MIGAKI_こういち決意プログラム"
+            }
+          },
+          {
             "id": "2ee57d6657eb5c24",
             "type": "leaf",
             "state": {
@@ -315,7 +329,7 @@
             }
           }
         ],
-        "currentTab": 20
+        "currentTab": 21
       }
     ],
     "direction": "vertical"
@@ -528,8 +542,13 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2ae43e143a367b85",
+  "active": "6d3fe10d7784e032",
   "lastOpenFiles": [
+    "30_記事製造ライン/執筆中/公務員看護師から一般に出て分かったこと.md",
+    "こういちカンパニー/MIGAKI事業戦略/MIGAKI_こういち決意プログラム.md",
+    "こういちカンパニー/MIGAKI事業戦略/MIGAKI_両親説明メモ_4月19日用.md",
+    "秘書メモ/SKILL警告_2026-04-11.md",
+    "30_記事製造ライン/有料マガジン_価格設計.md",
     "10_自分OS/Claudian使い方マニュアル.md",
     "日報/2026-04-11.md",
     "20_知識ベース/Web新着digest/2026-04-11_digest.md",
@@ -571,11 +590,6 @@
     "秘書メモ/2026-04-10.md",
     "こういちカンパニー/マーケティング部/MIGAKIブランド設計.md",
     "202604100635.md",
-    "30_記事製造ライン/完成稿/note_INFJだから書ける文章_draft.md",
-    "20_知識ベース/Web新着digest/2026-04-10_digest.md",
-    "20_知識ベース/YouTube学習/2026-04-09_学歴不要論と教育改革_イーロン・マスク.md",
-    "30_記事製造ライン/完成稿/note_管理職を断り続ける_draft.md",
-    "30_記事製造ライン/音声スクリプト/2026-04-09_INFJだから書ける文章_音声スクリプト.md",
     "Canvas/2026-03-31.canvas",
     "無題のファイル 1.canvas",
     "無題のファイル.canvas"
