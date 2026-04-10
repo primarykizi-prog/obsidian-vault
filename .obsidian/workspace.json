@@ -306,12 +306,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日報/2026-04-10.md",
+                "file": "10_自分OS/Claudian使い方マニュアル.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-10"
+              "title": "Claudian使い方マニュアル"
             }
           }
         ],
@@ -357,7 +357,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MIGAKI_BASE_homepage_v2.html",
+                "query": "n使い方マニュアル.md",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -509,7 +509,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 605.5
+    "width": 405.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -528,8 +528,13 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "ed0f8455d4a48de3",
+  "active": "2ee57d6657eb5c24",
   "lastOpenFiles": [
+    "日報/2026-04-10_セッション記録.md",
+    "秘書メモ/2026-04-10_Gemini共有用_Coworkセッション成果.md",
+    "日報/2026-04-10.md",
+    "10_自分OS/Claudian使い方マニュアル.md",
+    "ひかるカンパニー_現在地ダッシュボード_20260410.docx",
     "ひかるカンパニー/note/drafts/2026-04-12_誰の感情を背負っているのか_rewrite.md",
     "こういちカンパニー/MIGAKI事業戦略/MIGAKI_フェーズ設計書_下宿スタート.md",
     "秘書メモ/2026-04-10_note運営状況更新.md",
@@ -558,13 +563,11 @@
     "こういちカンパニー/マーケティング部/MIGAKI_note有料記事戦略_2026-04-10.md.tmp.5.1775797337978",
     "30_記事製造ライン/音声スクリプト/2026-04-12_磨けば必ず光る_音声スクリプト.md",
     "30_記事製造ライン/完成稿/note_磨けば必ず光る_MIGAKI_draft.md",
-    "30_記事製造ライン/完成稿/note_磨けば必ず光る_MIGAKI_draft.md.tmp.5.1775795210848",
     "こういちカンパニー/役員会議/第8回_役員会議_2026-04-10.md",
     "秘書メモ/SKILL警告_2026-04-10.md",
     "60_日報/2026-04-10_X投稿案.md",
     "秘書メモ/2026-04-10.md",
     "こういちカンパニー/マーケティング部/MIGAKIブランド設計.md",
-    "日報/2026-04-10.md",
     "202604100635.md",
     "30_記事製造ライン/完成稿/note_INFJだから書ける文章_draft.md",
     "20_知識ベース/Web新着digest/2026-04-10_digest.md",
@@ -573,9 +576,6 @@
     "30_記事製造ライン/音声スクリプト/2026-04-09_INFJだから書ける文章_音声スクリプト.md",
     "60_日報/2026-04-09_X投稿案.md",
     "こういちカンパニー/MIGAKI事業戦略/180_MIGAKI_Sunday_Launch_Plan.md",
-    "30_記事製造ライン/音声スクリプト/2026-04-09_管理職を断り続ける_音声スクリプト.md",
-    "こういちカンパニー/MIGAKI事業戦略/_MASTER_INFO.md",
-    "30_SNS管理/noteフォロワー/人物/丁寧な暮らしさん.md",
     "Canvas/2026-03-31.canvas",
     "無題のファイル 1.canvas",
     "無題のファイル.canvas"
