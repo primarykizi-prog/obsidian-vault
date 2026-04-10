@@ -357,7 +357,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "note_INFJだから書ける文章_draft.md",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -369,7 +369,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -528,7 +528,7 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "39fcafee2ac6ec8c",
+  "active": "ed0f8455d4a48de3",
   "lastOpenFiles": [
     "30_記事製造ライン/完成稿/note_磨けば必ず光る_v3_一般向け.md",
     "30_記事製造ライン/完成稿/note_磨けば必ず光る_v3_一般向け.md.tmp.5.1775803155128",
