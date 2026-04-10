@@ -315,7 +315,7 @@
             }
           }
         ],
-        "currentTab": 21
+        "currentTab": 20
       }
     ],
     "direction": "vertical"
@@ -509,7 +509,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.5
+    "width": 595.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -528,12 +528,14 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2ee57d6657eb5c24",
+  "active": "2ae43e143a367b85",
   "lastOpenFiles": [
+    "10_自分OS/Claudian使い方マニュアル.md",
+    "日報/2026-04-11.md",
+    "20_知識ベース/Web新着digest/2026-04-11_digest.md",
     "日報/2026-04-10_セッション記録.md",
     "秘書メモ/2026-04-10_Gemini共有用_Coworkセッション成果.md",
     "日報/2026-04-10.md",
-    "10_自分OS/Claudian使い方マニュアル.md",
     "ひかるカンパニー_現在地ダッシュボード_20260410.docx",
     "ひかるカンパニー/note/drafts/2026-04-12_誰の感情を背負っているのか_rewrite.md",
     "こういちカンパニー/MIGAKI事業戦略/MIGAKI_フェーズ設計書_下宿スタート.md",
@@ -574,8 +576,6 @@
     "20_知識ベース/YouTube学習/2026-04-09_学歴不要論と教育改革_イーロン・マスク.md",
     "30_記事製造ライン/完成稿/note_管理職を断り続ける_draft.md",
     "30_記事製造ライン/音声スクリプト/2026-04-09_INFJだから書ける文章_音声スクリプト.md",
-    "60_日報/2026-04-09_X投稿案.md",
-    "こういちカンパニー/MIGAKI事業戦略/180_MIGAKI_Sunday_Launch_Plan.md",
     "Canvas/2026-03-31.canvas",
     "無題のファイル 1.canvas",
     "無題のファイル.canvas"
