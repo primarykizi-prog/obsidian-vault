@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIGAKI BASE｜幸せを、磨く。｜糸魚川の一棟貸しヴィラ</title>
+<meta name="description" content="新潟県糸魚川市、シーサイドバレースキー場から車1分。世界を旅した航海士の父と、26年救急の現場に立った看護師の息子が作った、一棟貸しの宿。Zero Friction, Pure Zen.">
+<meta property="og:title" content="MIGAKI BASE｜幸せを、磨く。">
+<meta property="og:description" content="糸魚川の山と海に磨かれる、一棟貸しヴィラ。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+JP:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== CSS Variables ===== */
+:root {
+  --sumi: #1a1a1a;
+  --tetsukon: #1b2838;
+  --suna: #c4a882;
+  --suna-light: #d4bc9a;
+  --kinari: #f5f0e8;
+  --shiro: #ffffff;
+  --bg-dark: #0d0d0d;
+  --font-jp: 'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho Pro', serif;
+  --font-en: 'Cormorant Garamond', 'Georgia', serif;
+  --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* ===== Reset ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-jp);
+  color: var(--sumi);
+  background: var(--kinari);
+  line-height: 1.9;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: inherit; }
+
+/* ===== Scroll Fade Animation ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s var(--ease-out), transform 1s var(--ease-out);
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-in-delay { transition-delay: 0.2s; }
+.fade-in-delay-2 { transition-delay: 0.4s; }
+.fade-in-delay-3 { transition-delay: 0.6s; }
+
+/* ===== Navigation ===== */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.4s, padding 0.4s;
+}
+.nav.scrolled {
+  background: rgba(13, 13, 13, 0.92);
+  backdrop-filter: blur(10px);
+  padding: 14px 40px;
+}
+.nav-logo {
+  font-family: var(--font-en);
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  color: var(--shiro);
+  text-transform: uppercase;
+}
+.nav-logo span {
+  font-family: var(--font-jp);
+  font-size: 0.65rem;
+  font-weight: 200;
+  letter-spacing: 0.15em;
+  display: block;
+  margin-top: 2px;
+  opacity: 0.7;
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-family: var(--font-en);
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  color: rgba(255,255,255,0.8);
+  text-transform: uppercase;
+  transition: color 0.3s;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--suna);
+  transition: width 0.3s var(--ease-out);
+}
+.nav-links a:hover { color: var(--shiro); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-cta {
+  font-family: var(--font-en);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--shiro);
+  border: 1px solid rgba(196, 168, 130, 0.6);
+  padding: 10px 24px;
+  transition: all 0.3s;
+}
+.nav-cta:hover {
+  background: var(--suna);
+  border-color: var(--suna);
+  color: var(--sumi);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1001;
+}
+.hamburger span {
+  width: 28px;
+  height: 1px;
+  background: var(--shiro);
+  transition: all 0.3s;
+}
+.hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-dark);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  transition: right 0.5s var(--ease-in-out);
+}
+.mobile-menu.open { right: 0; }
+.mobile-menu a {
+  font-family: var(--font-en);
+  font-size: 1.2rem;
+  letter-spacing: 0.3em;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.mobile-menu a:hover { color: var(--suna); }
+
+/* ===== Hero Section ===== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('photos/1775810065275.jpg') center center / cover no-repeat;
+  animation: kenburns 25s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 13, 13, 0.3) 0%,
+    rgba(27, 40, 56, 0.5) 50%,
+    rgba(13, 13, 13, 0.7) 100%
+  );
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--shiro);
+  padding: 0 20px;
+}
+.hero-brand {
+  font-family: var(--font-en);
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: fadeUp 1.2s 0.3s var(--ease-out) forwards;
+}
+.hero-catchcopy {
+  font-family: var(--font-jp);
+  font-size: 3.2rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: fadeUp 1.2s 0.6s var(--ease-out) forwards;
+}
+.hero-sub {
+  font-family: var(--font-en);
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.15em;
+  opacity: 0;
+  animation: fadeUp 1.2s 0.9s var(--ease-out) forwards;
+  color: var(--suna-light);
+}
+.hero-scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  animation: fadeUp 1.2s 1.5s var(--ease-out) forwards;
+}
+.hero-scroll span {
+  font-family: var(--font-en);
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+.hero-scroll-line {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(to bottom, var(--suna), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* ===== Section Commons ===== */
+.section {
+  padding: 120px 0;
+}
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.section-label {
+  font-family: var(--font-en);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--suna);
+  margin-bottom: 16px;
+}
+.section-title {
+  font-family: var(--font-jp);
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.section-title-en {
+  font-family: var(--font-en);
+  font-size: 2.4rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  color: var(--tetsukon);
+}
+.section-body {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 2.2;
+  max-width: 680px;
+}
+.divider {
+  width: 60px;
+  height: 1px;
+  background: var(--suna);
+  margin: 40px 0;
+}
+
+/* ===== Philosophy Section ===== */
+.philosophy {
+  background: var(--shiro);
+  position: relative;
+}
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.philosophy-image {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+}
+.philosophy-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-out);
+}
+.philosophy-image:hover img {
+  transform: scale(1.03);
+}
+.philosophy-quote {
+  font-family: var(--font-jp);
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  color: var(--tetsukon);
+  border-left: 2px solid var(--suna);
+  padding-left: 24px;
+  margin-top: 32px;
+}
+
+/* ===== Parallax Banner ===== */
+.parallax-banner {
+  position: relative;
+  height: 70vh;
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parallax-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 13, 13, 0.5);
+}
+.parallax-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: var(--shiro);
+}
+.parallax-text h2 {
+  font-family: var(--font-en);
+  font-size: 2.4rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.12em;
+  margin-bottom: 16px;
+}
+.parallax-text p {
+  font-family: var(--font-en);
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--suna-light);
+}
+
+/* ===== Gallery Section ===== */
+.gallery {
+  background: var(--kinari);
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 8px;
+}
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+.gallery-item--wide {
+  grid-column: span 2;
+}
+.gallery-item--tall {
+  grid-row: span 2;
+}
+.gallery-item--featured {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.gallery-item .gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.6));
+  color: var(--shiro);
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s;
+}
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Rooms Section ===== */
+.rooms {
+  background: var(--shiro);
+}
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+.room-card {
+  position: relative;
+}
+.room-card-image {
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  margin-bottom: 24px;
+}
+.room-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+.room-card:hover .room-card-image img {
+  transform: scale(1.04);
+}
+.room-card-label {
+  font-family: var(--font-en);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--suna);
+  margin-bottom: 8px;
+}
+.room-card-title {
+  font-family: var(--font-jp);
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+.room-card-desc {
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 2;
+  color: #555;
+}
+
+/* ===== Experience Section ===== */
+.experience {
+  background: var(--bg-dark);
+  color: var(--shiro);
+}
+.experience .section-label { color: var(--suna); }
+.experience .section-title { color: var(--shiro); }
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-top: 60px;
+}
+.experience-card {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(196, 168, 130, 0.2);
+}
+.experience-card-icon {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.experience-card-title {
+  font-family: var(--font-en);
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+}
+.experience-card-desc {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 2;
+  color: rgba(255,255,255,0.7);
+}
+
+/* ===== Host Story Section ===== */
+.host {
+  background: var(--kinari);
+}
+.host-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.host-image {
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.host-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.host-tagline {
+  font-family: var(--font-en);
+  font-size: 0.85rem;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  color: var(--suna);
+  line-height: 1.9;
+  margin-top: 32px;
+  padding: 20px 24px;
+  border: 1px solid rgba(196, 168, 130, 0.3);
+}
+
+/* ===== Differentiation Section ===== */
+.diff {
+  background: var(--shiro);
+}
+.diff-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  margin-top: 60px;
+}
+.diff-card {
+  padding: 40px;
+  border: 1px solid rgba(196, 168, 130, 0.25);
+  transition: border-color 0.3s;
+}
+.diff-card:hover {
+  border-color: var(--suna);
+}
+.diff-card-num {
+  font-family: var(--font-en);
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  color: var(--suna);
+  margin-bottom: 16px;
+}
+.diff-card-title {
+  font-family: var(--font-jp);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+.diff-card-desc {
+  font-size: 0.88rem;
+  font-weight: 300;
+  line-height: 2;
+  color: #555;
+}
+
+/* ===== Access Section ===== */
+.access {
+  background: var(--kinari);
+}
+.access-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 40px;
+}
+.access-info-item {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(196, 168, 130, 0.3);
+  display: flex;
+  gap: 16px;
+}
+.access-info-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  min-width: 100px;
+  color: var(--suna);
+}
+.access-info-value {
+  font-size: 0.88rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.access-map {
+  background: #ddd;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.access-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== CTA Section ===== */
+.cta {
+  background: var(--tetsukon);
+  padding: 100px 0;
+  text-align: center;
+  color: var(--shiro);
+}
+.cta-title {
+  font-family: var(--font-jp);
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+}
+.cta-sub {
+  font-family: var(--font-en);
+  font-size: 0.9rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  color: var(--suna-light);
+  margin-bottom: 48px;
+}
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cta-btn {
+  font-family: var(--font-en);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 16px 48px;
+  border: 1px solid var(--suna);
+  color: var(--shiro);
+  transition: all 0.3s;
+  display: inline-block;
+}
+.cta-btn:hover {
+  background: var(--suna);
+  color: var(--sumi);
+}
+.cta-btn--primary {
+  background: var(--suna);
+  color: var(--sumi);
+}
+.cta-btn--primary:hover {
+  background: var(--suna-light);
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--bg-dark);
+  color: rgba(255,255,255,0.5);
+  padding: 60px 0 40px;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.footer-brand {
+  font-family: var(--font-en);
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+}
+.footer-brand span {
+  display: block;
+  font-family: var(--font-jp);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  margin-top: 6px;
+  color: rgba(255,255,255,0.4);
+}
+.footer-links {
+  display: flex;
+  gap: 32px;
+}
+.footer-links a {
+  font-family: var(--font-en);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  transition: color 0.3s;
+}
+.footer-links a:hover { color: var(--suna); }
+.footer-copy {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-en);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .philosophy-grid,
+  .host-grid,
+  .experience-grid,
+  .access-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .diff-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .rooms-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery-item--featured {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 15px; }
+  .nav { padding: 16px 20px; }
+  .nav.scrolled { padding: 12px 20px; }
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+  .hero-catchcopy {
+    font-size: 2rem;
+    letter-spacing: 0.12em;
+  }
+  .hero-brand { font-size: 0.7rem; }
+  .section { padding: 80px 0; }
+  .section-inner { padding: 0 24px; }
+  .section-title { font-size: 1.6rem; }
+  .section-title-en { font-size: 1.6rem; }
+  .rooms-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-item--featured,
+  .gallery-item--wide {
+    grid-column: span 2;
+  }
+  .gallery-item--tall {
+    grid-row: span 1;
+  }
+  .parallax-banner {
+    background-attachment: scroll;
+    height: 50vh;
+  }
+  .parallax-text h2 { font-size: 1.6rem; }
+  .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+  .footer-links { flex-wrap: wrap; justify-content: center; }
+  .cta-buttons { flex-direction: column; align-items: center; }
+  .cta-btn { width: 100%; max-width: 300px; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .hero-catchcopy { font-size: 1.6rem; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; gap: 4px; }
+  .gallery-item--featured,
+  .gallery-item--wide { grid-column: span 2; }
+}
+
+/* ===== Lightbox ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0,0,0,0.92);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.lightbox.active { display: flex; }
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: rgba(255,255,255,0.6);
+  cursor: pointer;
+  font-family: var(--font-en);
+  font-weight: 300;
+  transition: color 0.3s;
+}
+.lightbox-close:hover { color: var(--shiro); }
+</style>
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo">
+    MIGAKI BASE
+    <span>糸魚川・一棟貸しヴィラ</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#philosophy">Philosophy</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#host">Story</a></li>
+    <li><a href="#access">Access</a></li>
+  </ul>
+  <a href="#cta" class="nav-cta">Reserve</a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#philosophy" onclick="closeMobile()">Philosophy</a>
+  <a href="#gallery" onclick="closeMobile()">Gallery</a>
+  <a href="#rooms" onclick="closeMobile()">Rooms</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#host" onclick="closeMobile()">Story</a>
+  <a href="#access" onclick="closeMobile()">Access</a>
+  <a href="#cta" onclick="closeMobile()">Reserve</a>
+</div>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-brand">Itoigawa, Niigata &mdash; Private Villa</p>
+    <h1 class="hero-catchcopy">幸せを、磨く。</h1>
+    <p class="hero-sub">"MIGAKI &mdash; where happiness is refined."</p>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== Philosophy ===== -->
+<section class="section philosophy" id="philosophy">
+  <div class="section-inner">
+    <div class="philosophy-grid">
+      <div class="philosophy-image fade-in">
+        <img src="photos/1775810065287.jpg" alt="水仙 - MIGAKI BASEの庭に咲く花" loading="lazy">
+      </div>
+      <div>
+        <p class="section-label fade-in">Philosophy</p>
+        <h2 class="section-title-en fade-in fade-in-delay">
+          Zero Friction,<br>Pure Zen.
+        </h2>
+        <div class="divider fade-in fade-in-delay"></div>
+        <div class="section-body fade-in fade-in-delay-2">
+          <p>現代人が最も渇望するもの。それは「意思決定からの解放」だ。</p>
+          <br>
+          <p>コンビニがない。周囲に何もない。<br>
+          それは不便ではなく、24時間、選択と決断から解放される知的な自由。</p>
+          <br>
+          <p>日本海を見下ろす山の中腹に、50人が泊まれる建物を最大8名で貸し切る。<br>
+          隣人はゼロ。聞こえるのは、風と水の音だけ。</p>
+        </div>
+        <blockquote class="philosophy-quote fade-in fade-in-delay-3">
+          「磨く」は、時間をかけて、本質を引き出す行為だ。
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Parallax Banner ===== -->
+<div class="parallax-banner" style="background-image: url('photos/1775810086336.jpg');">
+  <div class="parallax-text fade-in">
+    <h2>"Active &amp; Zen"</h2>
+    <p>Push your limits by day, dissolve into silence by night.</p>
+  </div>
+</div>
+
+<!-- ===== Gallery ===== -->
+<section class="section gallery" id="gallery">
+  <div class="section-inner">
+    <p class="section-label fade-in">Gallery</p>
+    <h2 class="section-title fade-in fade-in-delay">四季が磨く、この場所のすべて</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--featured fade-in" onclick="openLightbox(this)">
+        <img src="photos/1775810026881.jpg" alt="建物全景と日本庭園" loading="lazy">
+        <div class="gallery-caption">建物全景・灯籠と池のある日本庭園</div>
+      </div>
+      <div class="gallery-item fade-in fade-in-delay" onclick="openLightbox(this)">
+        <img src="photos/1775810026850.jpg" alt="石灯籠と庭園" loading="lazy">
+        <div class="gallery-caption">石灯籠と池</div>
+      </div>
+      <div class="gallery-item fade-in fade-in-delay-2" onclick="openLightbox(this)">
+        <img src="photos/1775810065267.jpg" alt="池越しの建物" loading="lazy">
+        <div class="gallery-caption">池越しの母屋</div>
+      </div>
+      <div class="gallery-item gallery-item--wide fade-in" onclick="openLightbox(this)">
+        <img src="photos/1775810065275.jpg" alt="庭園全景と山々" loading="lazy">
+        <div class="gallery-caption">庭園と北アルプスの山並み</div>
+      </div>
+      <div class="gallery-item fade-in fade-in-delay" onclick="openLightbox(this)">
+        <img src="photos/1775810086346.jpg" alt="離れ外観" loading="lazy">
+        <div class="gallery-caption">離れ棟・広い駐車スペース</div>
+      </div>
+      <div class="gallery-item fade-in fade-in-delay-2" onclick="openLightbox(this)">
+        <img src="photos/1775810117034.jpg" alt="大広間" loading="lazy">
+        <div class="gallery-caption">大広間（畳）</div>
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox(this)">
+        <img src="photos/1775810101884.jpg" alt="洋室" loading="lazy">
+        <div class="gallery-caption">木壁の洋室</div>
+      </div>
+      <div class="gallery-item fade-in fade-in-delay" onclick="openLightbox(this)">
+        <img src="photos/1775810086351.jpg" alt="キッチン" loading="lazy">
+        <div class="gallery-caption">共用キッチン</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Rooms ===== -->
+<section class="section rooms" id="rooms">
+  <div class="section-inner">
+    <p class="section-label fade-in">Rooms</p>
+    <h2 class="section-title fade-in fade-in-delay">磨かれた静寂の中で眠る</h2>
+    <div class="rooms-grid">
+      <div class="room-card fade-in">
+        <div class="room-card-image">
+          <img src="photos/1775810117034.jpg" alt="大広間" loading="lazy">
+        </div>
+        <p class="room-card-label">Japanese Room</p>
+        <h3 class="room-card-title">大広間</h3>
+        <p class="room-card-desc">広々とした畳の大広間。グループでの滞在に最適。障子越しの柔らかな光が、静かな朝を届ける。</p>
+      </div>
+      <div class="room-card fade-in fade-in-delay">
+        <div class="room-card-image">
+          <img src="photos/1775810101893.jpg" alt="洋室" loading="lazy">
+        </div>
+        <p class="room-card-label">Western Room</p>
+        <h3 class="room-card-title">ロフト洋室</h3>
+        <p class="room-card-desc">木の温もりに包まれたロフト風の洋室。天井の高さが解放感を生む。ワーケーションにも。</p>
+      </div>
+      <div class="room-card fade-in fade-in-delay-2">
+        <div class="room-card-image">
+          <img src="photos/1775810117025.jpg" alt="和室" loading="lazy">
+        </div>
+        <p class="room-card-label">Tatami Room</p>
+        <h3 class="room-card-title">畳の間</h3>
+        <p class="room-card-desc">こたつのある伝統的な和室。窓から差す光を浴びながら、何もしない贅沢を味わう。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Parallax Banner 2 ===== -->
+<div class="parallax-banner" style="background-image: url('photos/1775810026881.jpg');">
+  <div class="parallax-text fade-in">
+    <h2>"Decision-Free Zone"</h2>
+    <p>Your own mountain. Zero neighbors, unlimited freedom.</p>
+  </div>
+</div>
+
+<!-- ===== Experience ===== -->
+<section class="section experience" id="experience">
+  <div class="section-inner">
+    <p class="section-label fade-in">Experience</p>
+    <h2 class="section-title fade-in fade-in-delay">動と静。<br>その両極を、一つの宿で。</h2>
+    <div class="experience-grid">
+      <div class="experience-card fade-in">
+        <div class="experience-card-icon">&#9968;</div>
+        <h3 class="experience-card-title">Ski &amp; Snow</h3>
+        <p class="experience-card-desc">シーサイドバレースキー場まで車1分。滑り終わったら、隣接の温泉へ直行。冬の糸魚川は、雪と海が同時に見える稀有な場所。</p>
+      </div>
+      <div class="experience-card fade-in fade-in-delay">
+        <div class="experience-card-icon">&#127956;</div>
+        <h3 class="experience-card-title">Touring &amp; Ride</h3>
+        <p class="experience-card-desc">日本海沿岸ルート、親不知。糸魚川ジオパークを駆け抜けるツーリング。大型バイク10台が入るガレージ付き。愛車と一緒に眠れる場所。</p>
+      </div>
+      <div class="experience-card fade-in fade-in-delay-2">
+        <div class="experience-card-icon">&#128260;</div>
+        <h3 class="experience-card-title">Silence &amp; Zen</h3>
+        <p class="experience-card-desc">隣人ゼロの完全プライベート空間。日本庭園の池を眺めながら、鳥の声だけを聞く。デジタルデトックスが自然に起きる環境。</p>
+      </div>
+      <div class="experience-card fade-in fade-in-delay-3">
+        <div class="experience-card-icon">&#127968;</div>
+        <h3 class="experience-card-title">Workation</h3>
+        <p class="experience-card-desc">50人収容の建物を最大8名で貸し切る。集中するための空間が、ここにある。Wi-Fi完備。庭でBBQ、夜は満天の星。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Host Story ===== -->
+<section class="section host" id="host">
+  <div class="section-inner">
+    <div class="host-grid">
+      <div class="host-image fade-in">
+        <img src="photos/1775810086336.jpg" alt="MIGAKI BASE 外観" loading="lazy">
+      </div>
+      <div>
+        <p class="section-label fade-in">Host Story</p>
+        <h2 class="section-title fade-in fade-in-delay">航海士の父と、<br>看護師の息子が作った宿。</h2>
+        <div class="divider fade-in fade-in-delay"></div>
+        <div class="section-body fade-in fade-in-delay-2">
+          <p>父は甲種一等航海士。日本の船員免許の最高位を持ち、世界を旅してきた。英語での対応経験も豊富。</p>
+          <br>
+          <p>息子は看護師26年目。救急の現場で培った「患者の言葉にならないストレスを察知し、先回りして排除する力」を、ホスピタリティに転換する。</p>
+          <br>
+          <p>世界を旅した航海士が、山と海の見える場所でゲストを迎える。<br>
+          26年患者を守り続けた看護師が、その安心を設計する。</p>
+        </div>
+        <div class="host-tagline fade-in fade-in-delay-3">
+          "Your host, my father, was a first-class navigator &mdash; he sailed the world for decades. Now he welcomes you here, in the mountains of Itoigawa, where the Japan Sea meets the snow."
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Differentiation ===== -->
+<section class="section diff">
+  <div class="section-inner">
+    <p class="section-label fade-in">Why MIGAKI</p>
+    <h2 class="section-title fade-in fade-in-delay">MIGAKIが、他と違う4つの理由</h2>
+    <div class="diff-grid">
+      <div class="diff-card fade-in">
+        <p class="diff-card-num">01</p>
+        <h3 class="diff-card-title">不動心の庭（ストーリー）</h3>
+        <p class="diff-card-desc">航海士と看護師。2つの人生経験が結晶化した宿。オーナーの「磨き続けてきた人間性」そのものがブランドである。</p>
+      </div>
+      <div class="diff-card fade-in fade-in-delay">
+        <p class="diff-card-num">02</p>
+        <h3 class="diff-card-title">Luxury Dojo（体験）</h3>
+        <p class="diff-card-desc">卓球台・パターパット・ガレージ・スキー場隣接の温泉。すべてが「磨く」「研ぎ澄ます」をテーマにした体験設計。</p>
+      </div>
+      <div class="diff-card fade-in fade-in-delay-2">
+        <p class="diff-card-num">03</p>
+        <h3 class="diff-card-title">看護師の安心設計（信頼）</h3>
+        <p class="diff-card-desc">オーナーが看護師だからこそ、ゲストの安心設計が違う。段差対応・非常時対応・衛生管理。細部に医療的配慮が行き渡る。</p>
+      </div>
+      <div class="diff-card fade-in fade-in-delay-3">
+        <p class="diff-card-num">04</p>
+        <h3 class="diff-card-title">何もない贅沢（静寂・自由）</h3>
+        <p class="diff-card-desc">隣接する家がゼロ。BBQも、笑い声も、バイクの音も何も気にしない。プライバシーの絶対値が、ここにある。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Access ===== -->
+<section class="section access" id="access">
+  <div class="section-inner">
+    <p class="section-label fade-in">Access</p>
+    <h2 class="section-title fade-in fade-in-delay">糸魚川の山の中腹に</h2>
+    <div class="access-grid">
+      <div class="fade-in fade-in-delay-2">
+        <div class="access-info-item">
+          <span class="access-info-label">所在地</span>
+          <span class="access-info-value">新潟県糸魚川市<br>シーサイドバレースキー場エリア</span>
+        </div>
+        <div class="access-info-item">
+          <span class="access-info-label">スキー場</span>
+          <span class="access-info-value">シーサイドバレースキー場まで車1分</span>
+        </div>
+        <div class="access-info-item">
+          <span class="access-info-label">温泉</span>
+          <span class="access-info-value">スキー場併設温泉まで車1分</span>
+        </div>
+        <div class="access-info-item">
+          <span class="access-info-label">駐車場</span>
+          <span class="access-info-value">大型バイク・トランポ対応<br>10台以上駐車可能</span>
+        </div>
+        <div class="access-info-item">
+          <span class="access-info-label">収容人数</span>
+          <span class="access-info-value">一棟貸し・最大8名（推奨）<br>建物収容能力：50名</span>
+        </div>
+        <div class="access-info-item">
+          <span class="access-info-label">設備</span>
+          <span class="access-info-value">Wi-Fi / キッチン / 卓球台 / パターパット / BBQスペース / ガレージ</span>
+        </div>
+      </div>
+      <div class="access-map fade-in fade-in-delay-3">
+        <img src="photos/1775810065275.jpg" alt="MIGAKI BASEからの眺望" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta" id="cta">
+  <div class="section-inner">
+    <h2 class="cta-title fade-in">幸せを、磨きに来い。</h2>
+    <p class="cta-sub fade-in fade-in-delay">MIGAKI &mdash; where happiness is refined.</p>
+    <div class="cta-buttons fade-in fade-in-delay-2">
+      <a href="#" class="cta-btn cta-btn--primary">Airbnb</a>
+      <a href="#" class="cta-btn">Booking.com</a>
+      <a href="#" class="cta-btn">Contact</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      MIGAKI BASE
+      <span>新潟県糸魚川市｜一棟貸しプライベートヴィラ</span>
+    </div>
+    <div class="footer-links">
+      <a href="#philosophy">Philosophy</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#experience">Experience</a>
+      <a href="#host">Story</a>
+      <a href="#access">Access</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 MIGAKI BASE. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ===== Lightbox ===== -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- ===== JavaScript ===== -->
+<script>
+// Scroll fade-in with Intersection Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.1,
+  rootMargin: '0px 0px -60px 0px'
+});
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Navigation scroll effect
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 80) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
+
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+});
+
+function closeMobile() {
+  hamburger.classList.remove('active');
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Lightbox
+function openLightbox(el) {
+  const img = el.querySelector('img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  lightboxImg.src = img.src;
+  lightboxImg.alt = img.alt;
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Escape key to close lightbox
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
+</body>
+</html>
