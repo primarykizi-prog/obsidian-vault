@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIGAKI BASE｜ライダーポスター</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+  }
+  .poster-wrap {
+    width: 700px;
+    position: relative;
+  }
+</style>
+</head>
+<body>
+<div class="poster-wrap">
+<svg viewBox="0 0 700 1000" xmlns="http://www.w3.org/2000/svg" width="700" height="1000">
+  <defs>
+    <!-- 背景グラデーション -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="50%" style="stop-color:#141420"/>
+      <stop offset="100%" style="stop-color:#0d0d18"/>
+    </linearGradient>
+
+    <!-- スピードライングラデーション -->
+    <linearGradient id="speedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c4a882;stop-opacity:0"/>
+      <stop offset="60%" style="stop-color:#c4a882;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    </linearGradient>
+
+    <!-- ダスト（土埃）グラデーション -->
+    <radialGradient id="dustGrad" cx="60%" cy="70%" r="50%">
+      <stop offset="0%" style="stop-color:#8b6914;stop-opacity:0.4"/>
+      <stop offset="50%" style="stop-color:#6b4f0a;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#3d2d05;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- ライダーシルエット用クリップ -->
+    <clipPath id="posterClip">
+      <rect width="700" height="1000"/>
+    </clipPath>
+
+    <!-- グローエフェクト -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ソフトグロー -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ダストブラー -->
+    <filter id="dustBlur">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+
+    <!-- テキストシャドウ -->
+    <filter id="textShadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#c4a882" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- 砂ノイズテクスチャ -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="blend"/>
+      <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+
+  <!-- ===== 背景 ===== -->
+  <rect width="700" height="1000" fill="url(#bgGrad)"/>
+
+  <!-- ===== ダートコース（地面ライン）===== -->
+  <!-- 地面テクスチャ -->
+  <ellipse cx="350" cy="820" rx="420" ry="120" fill="#2a1f08" opacity="0.8"/>
+  <ellipse cx="350" cy="830" rx="380" ry="100" fill="#1e1606" opacity="0.6"/>
+
+  <!-- コースのコーナーライン -->
+  <path d="M -50 950 Q 200 750 400 680 Q 550 630 750 700"
+        fill="none" stroke="#4a3510" stroke-width="80" opacity="0.5"/>
+  <path d="M -50 950 Q 200 750 400 680 Q 550 630 750 700"
+        fill="none" stroke="#5a4015" stroke-width="40" opacity="0.4"/>
+  <!-- コース中央ライン -->
+  <path d="M -50 950 Q 200 750 400 680 Q 550 630 750 700"
+        fill="none" stroke="#6b4f1a" stroke-width="4" opacity="0.3" stroke-dasharray="20,15"/>
+
+  <!-- ===== 土埃エフェクト ===== -->
+  <ellipse cx="420" cy="720" rx="200" ry="80" fill="#8b6914" opacity="0.15" filter="url(#dustBlur)"/>
+  <ellipse cx="500" cy="680" rx="150" ry="60" fill="#a07820" opacity="0.12" filter="url(#dustBlur)"/>
+  <ellipse cx="380" cy="750" rx="180" ry="70" fill="#6b5010" opacity="0.18" filter="url(#dustBlur)"/>
+
+  <!-- 細かい土埃パーティクル -->
+  <g opacity="0.4" filter="url(#dustBlur)">
+    <circle cx="460" cy="650" r="8" fill="#c4921a"/>
+    <circle cx="490" cy="630" r="5" fill="#d4a220"/>
+    <circle cx="520" cy="660" r="6" fill="#b08015"/>
+    <circle cx="440" cy="680" r="4" fill="#c49218"/>
+    <circle cx="480" cy="700" r="7" fill="#a07010"/>
+    <circle cx="550" cy="640" r="5" fill="#d4aa22"/>
+    <circle cx="410" cy="660" r="3" fill="#b88515"/>
+  </g>
+
+  <!-- ===== スピードライン ===== -->
+  <!-- メインスピードライン群（右向き＋斜め） -->
+  <g opacity="0.25">
+    <line x1="-100" y1="500" x2="800" y2="350" stroke="#c4a882" stroke-width="1"/>
+    <line x1="-100" y1="520" x2="800" y2="380" stroke="#c4a882" stroke-width="0.5"/>
+    <line x1="-100" y1="540" x2="800" y2="410" stroke="#c4a882" stroke-width="1.5"/>
+    <line x1="-100" y1="480" x2="800" y2="330" stroke="#c4a882" stroke-width="0.5"/>
+    <line x1="-100" y1="460" x2="800" y2="310" stroke="#c4a882" stroke-width="1"/>
+    <line x1="-100" y1="440" x2="800" y2="290" stroke="#c4a882" stroke-width="0.5"/>
+    <line x1="-100" y1="560" x2="800" y2="430" stroke="#c4a882" stroke-width="1"/>
+    <line x1="-100" y1="580" x2="800" y2="450" stroke="#c4a882" stroke-width="0.5"/>
+    <line x1="-100" y1="600" x2="800" y2="470" stroke="#c4a882" stroke-width="1.5"/>
+  </g>
+
+  <!-- アクセントスピードライン（明るい） -->
+  <line x1="0" y1="540" x2="700" y2="390" stroke="url(#speedGrad)" stroke-width="2" opacity="0.6"/>
+  <line x1="0" y1="510" x2="700" y2="360" stroke="url(#speedGrad)" stroke-width="1" opacity="0.4"/>
+
+  <!-- ===== バイク＆ライダーシルエット ===== -->
+  <!-- ライダーシルエット（コーナリング中・左に大きく傾いた姿勢） -->
+  <g transform="translate(200, 480) rotate(-18)" opacity="0.95">
+
+    <!-- バイク本体フレーム -->
+    <ellipse cx="120" cy="120" rx="110" ry="22" fill="#1a1a1a" opacity="0.9"/>
+
+    <!-- リアタイヤ -->
+    <circle cx="30" cy="135" r="48" fill="#0d0d0d" stroke="#333" stroke-width="4"/>
+    <circle cx="30" cy="135" r="38" fill="#1a1a1a"/>
+    <circle cx="30" cy="135" r="10" fill="#444"/>
+    <!-- タイヤトレッド -->
+    <circle cx="30" cy="135" r="46" fill="none" stroke="#222" stroke-width="6" stroke-dasharray="8,6"/>
+
+    <!-- フロントタイヤ -->
+    <circle cx="210" cy="140" r="42" fill="#0d0d0d" stroke="#333" stroke-width="4"/>
+    <circle cx="210" cy="140" r="33" fill="#1a1a1a"/>
+    <circle cx="210" cy="140" r="8" fill="#444"/>
+    <circle cx="210" cy="140" r="40" fill="none" stroke="#222" stroke-width="5" stroke-dasharray="7,5"/>
+
+    <!-- スイングアーム -->
+    <path d="M 30 120 L 95 95 L 120 115" fill="none" stroke="#2a2a2a" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- バイクフレーム -->
+    <path d="M 95 95 L 135 55 L 175 60 L 185 90 L 210 100"
+          fill="none" stroke="#2a2a2a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- エンジン部 -->
+    <rect x="80" y="95" width="55" height="40" rx="5" fill="#1e1e1e"/>
+
+    <!-- タンク -->
+    <path d="M 120 50 Q 150 30 175 55 L 170 75 Q 148 60 120 72 Z" fill="#c0392b"/>
+    <!-- タンク光沢 -->
+    <path d="M 125 52 Q 148 35 168 58" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+
+    <!-- シート -->
+    <path d="M 85 72 Q 105 60 125 68 L 120 85 Q 100 78 82 88 Z" fill="#1a1a1a"/>
+
+    <!-- フロントフォーク -->
+    <line x1="175" y1="65" x2="205" y2="100" stroke="#2a2a2a" stroke-width="8"/>
+    <line x1="185" y1="62" x2="212" y2="98" stroke="#2a2a2a" stroke-width="6"/>
+
+    <!-- ハンドルバー -->
+    <line x1="178" y1="55" x2="195" y2="45" stroke="#333" stroke-width="6"/>
+    <line x1="190" y1="45" x2="205" y2="48" stroke="#333" stroke-width="5"/>
+
+    <!-- マフラー -->
+    <path d="M 80 115 Q 50 120 20 145 L 25 155 Q 55 130 85 125 Z" fill="#2a2a2a"/>
+    <circle cx="18" cy="148" r="7" fill="#1a1a1a" stroke="#333" stroke-width="2"/>
+
+    <!-- ナンバープレート（青）-->
+    <rect x="15" y="78" width="28" height="20" rx="3" fill="#2255cc" stroke="#4477ff" stroke-width="1"/>
+    <text x="29" y="92" font-family="Arial Black" font-size="9" fill="white" text-anchor="middle" font-weight="900">76</text>
+
+    <!-- ===== ライダー本体 ===== -->
+    <!-- 上半身（前傾姿勢） -->
+    <!-- ヘルメット -->
+    <ellipse cx="195" cy="18" rx="22" ry="20" fill="#e8e800" opacity="0.95"/>
+    <ellipse cx="195" cy="18" rx="22" ry="20" fill="none" stroke="#cccc00" stroke-width="2"/>
+    <!-- バイザー -->
+    <path d="M 177 12 Q 195 5 213 12 L 215 22 Q 195 16 175 22 Z" fill="#111" opacity="0.85"/>
+    <!-- ヘルメットデカール -->
+    <path d="M 180 28 Q 195 25 210 28" fill="none" stroke="#ff3300" stroke-width="2.5"/>
+
+    <!-- 首 -->
+    <rect x="190" y="36" width="12" height="10" rx="3" fill="#cc9966"/>
+
+    <!-- 上半身ジャージ（前傾） -->
+    <path d="M 165 45 Q 175 38 195 40 Q 210 42 215 50 L 218 80 L 200 85 L 170 78 L 158 65 Z"
+          fill="#e8e800"/>
+    <!-- ゼッケン -->
+    <ellipse cx="192" cy="60" rx="14" ry="11" fill="white"/>
+    <text x="192" y="64" font-family="Arial Black" font-size="10" fill="#333" text-anchor="middle" font-weight="900">76</text>
+
+    <!-- 左腕（グリップ） -->
+    <path d="M 165 55 Q 158 52 155 48 Q 160 42 168 46"
+          fill="#cc9900" stroke="#aa8800" stroke-width="1"/>
+    <path d="M 155 48 L 148 44 L 145 50 L 152 54 Z" fill="#333"/><!-- グローブ -->
+
+    <!-- 右腕（ハンドル） -->
+    <path d="M 215 50 Q 222 46 225 42 L 220 38 Q 215 42 210 46"
+          fill="#cc9900" stroke="#aa8800" stroke-width="1"/>
+
+    <!-- 下半身（ニーグリップ姿勢） -->
+    <!-- 左脚 -->
+    <path d="M 170 82 Q 160 100 145 120 L 155 128 Q 168 108 178 90 Z" fill="#2255cc"/>
+    <rect x="140" y="118" width="22" height="18" rx="4" fill="#333"/><!-- ブーツ -->
+
+    <!-- 右脚 -->
+    <path d="M 190 85 Q 195 105 200 125 L 210 122 Q 205 102 198 82 Z" fill="#2255cc"/>
+    <rect x="196" y="118" width="22" height="18" rx="4" fill="#333"/><!-- ブーツ -->
+
+    <!-- プロテクター（胸） -->
+    <path d="M 170 48 Q 192 44 215 52 L 213 58 Q 192 53 170 56 Z"
+          fill="rgba(255,255,255,0.2)"/>
+  </g>
+
+  <!-- ===== タイヤ跡（コース上） ===== -->
+  <path d="M 50 920 Q 180 820 320 760 Q 450 710 600 730"
+        fill="none" stroke="#3a2a08" stroke-width="18" opacity="0.5"/>
+  <path d="M 80 920 Q 210 820 340 765 Q 470 715 620 730"
+        fill="none" stroke="#2a1d06" stroke-width="10" opacity="0.4"/>
+
+  <!-- ===== 対角装飾ライン ===== -->
+  <!-- 左下から右上へ切る太いライン -->
+  <line x1="-20" y1="820" x2="720" y2="200" stroke="#c4a882" stroke-width="1.5" opacity="0.15"/>
+  <line x1="-20" y1="840" x2="720" y2="220" stroke="#c4a882" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- 右上コーナーデコ -->
+  <line x1="580" y1="0" x2="700" y2="0" stroke="#c4a882" stroke-width="2" opacity="0.6"/>
+  <line x1="700" y1="0" x2="700" y2="120" stroke="#c4a882" stroke-width="2" opacity="0.6"/>
+
+  <!-- 左下コーナーデコ -->
+  <line x1="0" y1="880" x2="120" y2="880" stroke="#c4a882" stroke-width="2" opacity="0.6"/>
+  <line x1="0" y1="880" x2="0" y2="1000" stroke="#c4a882" stroke-width="2" opacity="0.6"/>
+
+  <!-- ===== 上部テキストエリア ===== -->
+  <!-- ブランドライン -->
+  <line x1="40" y1="72" x2="660" y2="72" stroke="#c4a882" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- サブタイトル（上） -->
+  <text x="350" y="55"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="11" font-weight="300" letter-spacing="8"
+        fill="#c4a882" text-anchor="middle" opacity="0.9">
+    ITOIGAWA, NIIGATA — PRIVATE VILLA
+  </text>
+
+  <!-- ===== メインタイトルエリア ===== -->
+  <!-- MIGAKI BASE ロゴ（大） -->
+  <text x="350" y="145"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="72" font-weight="900" letter-spacing="12"
+        fill="white" text-anchor="middle"
+        filter="url(#glow)" opacity="0.97">
+    MIGAKI
+  </text>
+  <text x="350" y="200"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="36" font-weight="300" letter-spacing="28"
+        fill="#c4a882" text-anchor="middle" opacity="0.9">
+    BASE
+  </text>
+
+  <!-- デコラインmiddle -->
+  <line x1="200" y1="225" x2="500" y2="225" stroke="#c4a882" stroke-width="1" opacity="0.5"/>
+  <circle cx="350" cy="225" r="3" fill="#c4a882" opacity="0.7"/>
+
+  <!-- ===== メインキャッチコピー ===== -->
+  <text x="350" y="300"
+        font-family="'Noto Serif JP', 'Yu Mincho', serif"
+        font-size="13" font-weight="300" letter-spacing="4"
+        fill="rgba(255,255,255,0.6)" text-anchor="middle">
+    ライダーよ、ここに眠れ。
+  </text>
+
+  <!-- ===== ライダー向けコピー（バイク下） ===== -->
+  <!-- 大きなキャッチ -->
+  <text x="100" y="860"
+        font-family="'Noto Serif JP', 'Yu Mincho', serif"
+        font-size="28" font-weight="700" letter-spacing="3"
+        fill="white" filter="url(#textShadow)" opacity="0.97">
+    走り終えたら、
+  </text>
+  <text x="100" y="900"
+        font-family="'Noto Serif JP', 'Yu Mincho', serif"
+        font-size="28" font-weight="700" letter-spacing="3"
+        fill="#c4a882" filter="url(#textShadow)" opacity="0.97">
+    磨かれに来い。
+  </text>
+
+  <!-- ===== 英語サブコピー ===== -->
+  <text x="100" y="932"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="11" font-weight="300" letter-spacing="4"
+        fill="rgba(255,255,255,0.5)">
+    RIDE HARD. REST DEEP. WAKE UP SHARPENED.
+  </text>
+
+  <!-- ===== スペック情報 ===== -->
+  <line x1="40" y1="952" x2="660" y2="952" stroke="#c4a882" stroke-width="0.5" opacity="0.35"/>
+
+  <!-- アイコン＋テキスト群 -->
+  <!-- ガレージ -->
+  <text x="60" y="972" font-family="sans-serif" font-size="10" fill="#c4a882" opacity="0.8">▪</text>
+  <text x="72" y="972" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="10" letter-spacing="1" fill="rgba(255,255,255,0.55)">10台ガレージ</text>
+
+  <!-- スキー場 -->
+  <text x="192" y="972" font-family="sans-serif" font-size="10" fill="#c4a882" opacity="0.8">▪</text>
+  <text x="204" y="972" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="10" letter-spacing="1" fill="rgba(255,255,255,0.55)">スキー場まで車1分</text>
+
+  <!-- 一棟貸し -->
+  <text x="354" y="972" font-family="sans-serif" font-size="10" fill="#c4a882" opacity="0.8">▪</text>
+  <text x="366" y="972" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="10" letter-spacing="1" fill="rgba(255,255,255,0.55)">一棟貸し・最大8名</text>
+
+  <!-- 温泉 -->
+  <text x="502" y="972" font-family="sans-serif" font-size="10" fill="#c4a882" opacity="0.8">▪</text>
+  <text x="514" y="972" font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="10" letter-spacing="1" fill="rgba(255,255,255,0.55)">隣接温泉</text>
+
+  <!-- ===== 下部フッター ===== -->
+  <line x1="40" y1="985" x2="660" y2="985" stroke="#c4a882" stroke-width="0.5" opacity="0.2"/>
+
+  <text x="350" y="998"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="9" font-weight="300" letter-spacing="5"
+        fill="rgba(255,255,255,0.3)" text-anchor="middle">
+    MIGAKI BASE  ©  ITOIGAWA  NIIGATA  JAPAN
+  </text>
+
+  <!-- ===== アクセント：コーナーナンバー ===== -->
+  <text x="648" y="30"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="11" font-weight="300" letter-spacing="2"
+        fill="rgba(196,168,130,0.4)" text-anchor="end">
+    01 / RIDER
+  </text>
+
+  <!-- ===== グローバル光源エフェクト ===== -->
+  <!-- 上部から差す光 -->
+  <ellipse cx="350" cy="-100" rx="250" ry="300" fill="#c4a882" opacity="0.03" filter="url(#softGlow)"/>
+  <!-- バイク周辺の光 -->
+  <ellipse cx="380" cy="580" rx="180" ry="120" fill="#c4a882" opacity="0.04" filter="url(#softGlow)"/>
+</svg>
+</div>
+</body>
+</html>
