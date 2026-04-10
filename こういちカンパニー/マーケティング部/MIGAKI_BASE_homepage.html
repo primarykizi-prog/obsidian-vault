@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIGAKI BASE｜幸せを、磨く。糸魚川 一棟貸し</title>
+  <meta name="description" content="新潟県糸魚川。シーサイドバレースキー場隣。隣人ゼロの一棟貸しヴィラ。世界を旅した航海士の父と、26年看護師の息子が作った宿。MIGAKI BASE。">
+  <style>
+    /* ============================
+       Reset & Base
+    ============================ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --black:   #0d0d0d;
+      --navy:    #1a2233;
+      --sand:    #c8b89a;
+      --cream:   #f5f0e8;
+      --white:   #ffffff;
+      --orange:  #c0622b;
+      --gray:    #6b6b6b;
+      --light:   #e8e2d8;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Georgia', '游明朝', 'Yu Mincho', 'Hiragino Mincho ProN', serif;
+      background: var(--black);
+      color: var(--cream);
+      overflow-x: hidden;
+    }
+
+    /* ============================
+       Navigation
+    ============================ */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: rgba(13,13,13,0.85);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(200,184,154,0.12);
+    }
+    .nav-logo {
+      font-size: 1.3rem;
+      letter-spacing: 0.25em;
+      color: var(--sand);
+      text-decoration: none;
+      font-weight: 300;
+    }
+    .nav-logo span { color: var(--white); }
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(245,240,232,0.7);
+      text-decoration: none;
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: var(--sand); }
+    .nav-reserve {
+      background: var(--orange);
+      color: var(--white) !important;
+      padding: 0.6rem 1.4rem !important;
+      border-radius: 1px;
+      font-weight: 600 !important;
+    }
+    .nav-reserve:hover { background: #a84f22; color: var(--white) !important; }
+
+    /* ============================
+       Hero
+    ============================ */
+    #hero {
+      position: relative;
+      height: 100vh;
+      min-height: 640px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(
+        160deg,
+        #0d1a2a 0%,
+        #13202f 45%,
+        #1a1208 100%
+      );
+    }
+    /* Decorative elements */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 60%, rgba(192,98,43,0.08) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 30%, rgba(200,184,154,0.06) 0%, transparent 50%);
+    }
+    .hero-line {
+      position: absolute;
+      left: 50%;
+      top: 0; bottom: 0;
+      width: 1px;
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(200,184,154,0.15) 30%,
+        rgba(200,184,154,0.15) 70%,
+        transparent
+      );
+      transform: translateX(-50%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 2rem;
+    }
+    .hero-ja-small {
+      font-size: 0.72rem;
+      letter-spacing: 0.5em;
+      color: var(--sand);
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+    .hero-logo {
+      font-size: clamp(3rem, 8vw, 6rem);
+      letter-spacing: 0.18em;
+      color: var(--white);
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .hero-sub {
+      font-size: clamp(0.9rem, 2vw, 1.15rem);
+      letter-spacing: 0.4em;
+      color: var(--sand);
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+    }
+    .hero-tagline {
+      font-size: clamp(1.4rem, 4vw, 2.4rem);
+      color: var(--cream);
+      letter-spacing: 0.12em;
+      line-height: 1.5;
+      margin-bottom: 3.5rem;
+      font-weight: 400;
+    }
+    .hero-tagline em {
+      font-style: normal;
+      color: var(--sand);
+    }
+    .hero-cta {
+      display: inline-block;
+      padding: 1rem 3rem;
+      border: 1px solid var(--sand);
+      color: var(--sand);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      transition: all 0.35s;
+    }
+    .hero-cta:hover {
+      background: var(--sand);
+      color: var(--black);
+    }
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      color: rgba(200,184,154,0.5);
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      animation: fadeInUp 2s ease 1s forwards;
+      opacity: 0;
+    }
+    .hero-scroll::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, var(--sand), transparent);
+      animation: scrollLine 2s ease infinite;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; }
+    }
+    @keyframes scrollLine {
+      0% { transform: scaleY(0); transform-origin: top; }
+      50% { transform: scaleY(1); transform-origin: top; }
+      51% { transform: scaleY(1); transform-origin: bottom; }
+      100% { transform: scaleY(0); transform-origin: bottom; }
+    }
+
+    /* ============================
+       Sections Base
+    ============================ */
+    section { padding: 7rem 0; }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .section-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.5em;
+      text-transform: uppercase;
+      color: var(--sand);
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 300;
+      line-height: 1.4;
+      color: var(--cream);
+      margin-bottom: 2.5rem;
+    }
+    .section-divider {
+      width: 48px;
+      height: 1px;
+      background: var(--sand);
+      margin-bottom: 2.5rem;
+    }
+    .section-text {
+      font-size: 1rem;
+      line-height: 2;
+      color: rgba(245,240,232,0.8);
+      max-width: 680px;
+    }
+
+    /* ============================
+       Concept Section
+    ============================ */
+    #concept {
+      background: var(--black);
+    }
+    .concept-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+    .concept-visual {
+      position: relative;
+    }
+    .concept-kanji {
+      font-size: clamp(6rem, 12vw, 10rem);
+      color: rgba(200,184,154,0.08);
+      line-height: 1;
+      position: absolute;
+      top: -2rem;
+      right: -2rem;
+      font-weight: 900;
+      pointer-events: none;
+    }
+    .concept-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(200,184,154,0.12);
+      padding: 2.5rem;
+    }
+    .concept-card-title {
+      font-size: 0.7rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--sand);
+      margin-bottom: 1rem;
+    }
+    .concept-card-text {
+      font-size: 0.95rem;
+      line-height: 1.9;
+      color: rgba(245,240,232,0.75);
+    }
+    .concept-quote {
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      line-height: 1.8;
+      color: var(--cream);
+      margin-bottom: 2rem;
+      position: relative;
+      padding-left: 1.5rem;
+      border-left: 2px solid var(--sand);
+    }
+
+    /* ============================
+       Features Section
+    ============================ */
+    #features {
+      background: linear-gradient(to bottom, #0a0a0a, #111117);
+    }
+    .features-header {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    .feature-item {
+      background: rgba(255,255,255,0.025);
+      padding: 3rem 2rem;
+      border: 1px solid rgba(200,184,154,0.07);
+      transition: background 0.35s, border-color 0.35s;
+    }
+    .feature-item:hover {
+      background: rgba(200,184,154,0.05);
+      border-color: rgba(200,184,154,0.2);
+    }
+    .feature-number {
+      font-size: 2rem;
+      color: rgba(200,184,154,0.2);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+      font-family: 'Georgia', serif;
+    }
+    .feature-title {
+      font-size: 1.1rem;
+      color: var(--cream);
+      margin-bottom: 1rem;
+      letter-spacing: 0.08em;
+    }
+    .feature-desc {
+      font-size: 0.88rem;
+      line-height: 1.9;
+      color: rgba(245,240,232,0.6);
+    }
+
+    /* ============================
+       Rider Section
+    ============================ */
+    #rider {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+    #rider::before {
+      content: 'RIDE';
+      position: absolute;
+      right: -2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: clamp(8rem, 20vw, 16rem);
+      color: rgba(255,255,255,0.03);
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      pointer-events: none;
+    }
+    .rider-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .rider-list {
+      list-style: none;
+      margin-top: 2rem;
+    }
+    .rider-list li {
+      padding: 1.2rem 0;
+      border-bottom: 1px solid rgba(200,184,154,0.1);
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      font-size: 0.92rem;
+      color: rgba(245,240,232,0.75);
+      line-height: 1.7;
+    }
+    .rider-list li::before {
+      content: '▸';
+      color: var(--orange);
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .rider-badge {
+      display: inline-block;
+      background: rgba(192,98,43,0.15);
+      border: 1px solid rgba(192,98,43,0.3);
+      color: var(--orange);
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .route-box {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(200,184,154,0.12);
+      padding: 2rem;
+      margin-top: 1rem;
+    }
+    .route-box h4 {
+      font-size: 0.72rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--sand);
+      margin-bottom: 1.2rem;
+    }
+    .route-item {
+      font-size: 0.88rem;
+      color: rgba(245,240,232,0.65);
+      line-height: 1.7;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(200,184,154,0.06);
+    }
+    .route-item:last-child { border-bottom: none; }
+
+    /* ============================
+       Host Section
+    ============================ */
+    #host {
+      background: var(--black);
+    }
+    .host-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+    .host-card {
+      border: 1px solid rgba(200,184,154,0.1);
+      padding: 3rem;
+      position: relative;
+    }
+    .host-tag {
+      position: absolute;
+      top: -1px;
+      left: 2rem;
+      background: var(--orange);
+      color: var(--white);
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+    }
+    .host-name {
+      font-size: 1.3rem;
+      color: var(--cream);
+      margin-bottom: 0.3rem;
+      margin-top: 1rem;
+    }
+    .host-title {
+      font-size: 0.75rem;
+      color: var(--sand);
+      letter-spacing: 0.2em;
+      margin-bottom: 1.5rem;
+    }
+    .host-story {
+      font-size: 0.9rem;
+      line-height: 2;
+      color: rgba(245,240,232,0.7);
+    }
+    .host-highlight {
+      font-size: 1rem;
+      line-height: 1.9;
+      color: var(--cream);
+      font-style: italic;
+      border-left: 2px solid var(--sand);
+      padding-left: 1.2rem;
+      margin: 2rem 0;
+    }
+
+    /* ============================
+       Facilities Section
+    ============================ */
+    #facilities {
+      background: linear-gradient(to bottom, #0a0a0a, #050505);
+    }
+    .facility-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .facility-item {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1.8rem;
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(200,184,154,0.07);
+      align-items: flex-start;
+    }
+    .facility-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+    .facility-info h4 {
+      font-size: 1rem;
+      color: var(--cream);
+      margin-bottom: 0.4rem;
+    }
+    .facility-info p {
+      font-size: 0.83rem;
+      color: rgba(245,240,232,0.55);
+      line-height: 1.7;
+    }
+
+    /* ============================
+       Plans Section
+    ============================ */
+    #plans {
+      background: var(--navy);
+    }
+    .plans-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .plan-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(200,184,154,0.1);
+      padding: 2.5rem 2rem;
+      transition: border-color 0.3s;
+    }
+    .plan-card:hover { border-color: rgba(200,184,154,0.3); }
+    .plan-card.featured {
+      border-color: var(--orange);
+      position: relative;
+    }
+    .plan-card.featured::before {
+      content: 'POPULAR';
+      position: absolute;
+      top: -1px; right: 1.5rem;
+      background: var(--orange);
+      color: var(--white);
+      font-size: 0.6rem;
+      letter-spacing: 0.3em;
+      padding: 0.25rem 0.7rem;
+    }
+    .plan-name {
+      font-size: 0.7rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--sand);
+      margin-bottom: 0.8rem;
+    }
+    .plan-title {
+      font-size: 1.15rem;
+      color: var(--cream);
+      margin-bottom: 1.2rem;
+    }
+    .plan-price {
+      font-size: 1.6rem;
+      color: var(--cream);
+      font-weight: 300;
+      margin-bottom: 0.3rem;
+    }
+    .plan-price span {
+      font-size: 0.75rem;
+      color: var(--gray);
+      letter-spacing: 0.1em;
+    }
+    .plan-note {
+      font-size: 0.75rem;
+      color: var(--sand);
+      margin-bottom: 1.5rem;
+    }
+    .plan-features {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    .plan-features li {
+      font-size: 0.82rem;
+      color: rgba(245,240,232,0.65);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(200,184,154,0.06);
+      display: flex;
+      gap: 0.6rem;
+    }
+    .plan-features li::before { content: '✓'; color: var(--sand); }
+    .plan-btn {
+      display: block;
+      text-align: center;
+      padding: 0.85rem;
+      border: 1px solid rgba(200,184,154,0.3);
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 0.78rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+    .plan-btn:hover, .plan-card.featured .plan-btn {
+      background: var(--orange);
+      border-color: var(--orange);
+      color: var(--white);
+    }
+
+    /* ============================
+       Access Section
+    ============================ */
+    #access {
+      background: var(--black);
+    }
+    .access-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .access-info { }
+    .access-item {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(200,184,154,0.08);
+    }
+    .access-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--sand);
+      min-width: 80px;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .access-val {
+      font-size: 0.9rem;
+      color: rgba(245,240,232,0.75);
+      line-height: 1.8;
+    }
+    .map-placeholder {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(200,184,154,0.1);
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+      color: rgba(200,184,154,0.4);
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+    }
+    .map-placeholder::before {
+      content: '📍';
+      font-size: 2rem;
+    }
+
+    /* ============================
+       CTA Section
+    ============================ */
+    #reserve {
+      background: linear-gradient(135deg, #0d1a2a 0%, #1a120a 100%);
+      text-align: center;
+      padding: 8rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    #reserve::before {
+      content: '磨';
+      position: absolute;
+      font-size: 40vw;
+      color: rgba(200,184,154,0.03);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-weight: 900;
+      pointer-events: none;
+    }
+    .reserve-en {
+      font-size: 0.7rem;
+      letter-spacing: 0.5em;
+      color: var(--sand);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .reserve-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      color: var(--cream);
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+    .reserve-sub {
+      font-size: 0.95rem;
+      color: rgba(245,240,232,0.55);
+      margin-bottom: 3.5rem;
+      letter-spacing: 0.1em;
+    }
+    .reserve-buttons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-block;
+      padding: 1.1rem 3.5rem;
+      background: var(--orange);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.82rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      transition: background 0.3s;
+    }
+    .btn-primary:hover { background: #a84f22; }
+    .btn-secondary {
+      display: inline-block;
+      padding: 1.1rem 3.5rem;
+      border: 1px solid rgba(200,184,154,0.4);
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 0.82rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+    .btn-secondary:hover {
+      border-color: var(--sand);
+      color: var(--sand);
+    }
+
+    /* ============================
+       Footer
+    ============================ */
+    footer {
+      background: #050505;
+      padding: 4rem 2rem 2rem;
+      border-top: 1px solid rgba(200,184,154,0.08);
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-logo {
+      font-size: 1.4rem;
+      letter-spacing: 0.25em;
+      color: var(--sand);
+      margin-bottom: 1rem;
+    }
+    .footer-tagline {
+      font-size: 0.82rem;
+      color: rgba(245,240,232,0.45);
+      line-height: 1.9;
+    }
+    .footer-heading {
+      font-size: 0.65rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--sand);
+      margin-bottom: 1.2rem;
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li { margin-bottom: 0.6rem; }
+    .footer-links a {
+      color: rgba(245,240,232,0.45);
+      text-decoration: none;
+      font-size: 0.82rem;
+      transition: color 0.3s;
+    }
+    .footer-links a:hover { color: var(--sand); }
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(200,184,154,0.06);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(245,240,232,0.25);
+      letter-spacing: 0.1em;
+    }
+    .footer-lang {
+      font-size: 0.72rem;
+      color: var(--sand);
+      letter-spacing: 0.2em;
+      cursor: pointer;
+    }
+
+    /* ============================
+       Responsive
+    ============================ */
+    @media (max-width: 900px) {
+      nav { padding: 1.2rem 1.5rem; }
+      .nav-links { display: none; }
+      .concept-grid, .rider-content, .host-grid,
+      .access-grid, .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .features-grid, .plans-grid {
+        grid-template-columns: 1fr;
+      }
+      .facility-grid { grid-template-columns: 1fr; }
+      .reserve-buttons { flex-direction: column; align-items: center; }
+      section { padding: 4rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== Navigation ==================== -->
+  <nav>
+    <a href="#hero" class="nav-logo"><span>MIGAKI</span> BASE</a>
+    <ul class="nav-links">
+      <li><a href="#concept">Concept</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#rider">Rider</a></li>
+      <li><a href="#host">Host</a></li>
+      <li><a href="#access">Access</a></li>
+      <li><a href="#reserve" class="nav-reserve">Reserve</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== Hero ==================== -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-line"></div>
+    <div class="hero-content">
+      <p class="hero-ja-small">Itoigawa, Niigata — Private Villa</p>
+      <h1 class="hero-logo">MIGAKI BASE</h1>
+      <p class="hero-sub">M I G A K I &nbsp; B A S E</p>
+      <p class="hero-tagline">
+        <em>幸せを、</em>磨く。
+      </p>
+      <a href="#reserve" class="hero-cta">Reservation</a>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- ==================== Concept ==================== -->
+  <section id="concept">
+    <div class="container">
+      <div class="concept-grid">
+        <div class="concept-left">
+          <span class="section-label">— Concept</span>
+          <h2 class="section-title">「磨く」という<br>ひとつの動詞に、<br>すべてを込めた。</h2>
+          <div class="section-divider"></div>
+          <p class="section-text">
+            polish（表面を光らせる）でも、forge（鍛える）でもない。<br>
+            「磨く」は——時間をかけて、本質を引き出す行為だ。<br><br>
+            新潟県糸魚川。北アルプスと日本海が交わる場所に、<br>
+            その名を持つ一棟の宿がある。
+          </p>
+          <br><br>
+          <p class="concept-quote">
+            "MIGAKI — where happiness is refined."<br>
+            "Zero Friction, Pure Zen."
+          </p>
+          <p class="section-text" style="font-size:0.85rem; opacity:0.7;">
+            ここは癒しの場ではない。<br>
+            ライダーは風と道に磨かれる。<br>
+            旅人は静けさと本物に磨かれる。<br>
+            あなたも、ここで変わる。
+          </p>
+        </div>
+        <div class="concept-visual">
+          <div class="concept-kanji">磨</div>
+          <div class="concept-card">
+            <p class="concept-card-title">— Three Meanings of MIGAKI</p>
+            <p class="concept-card-text">
+              <strong style="color:var(--sand)">刀を磨く</strong><br>
+              日本の職人精神。研ぎ澄まされた技と美学。インバウンドの旅人が本物を求めてここへ来る。
+              <br><br>
+              <strong style="color:var(--sand)">スキルを磨く</strong><br>
+              非日常の環境で、自分を再設計する。看護師も、起業家も、ここで次の一手を見つける。
+              <br><br>
+              <strong style="color:var(--sand)">自然に磨かれる</strong><br>
+              糸魚川の山、海、四季。都市では買えない静寂が、あなたの本質を引き出す。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Features ==================== -->
+  <section id="features">
+    <div class="container">
+      <div class="features-header">
+        <span class="section-label">— Why MIGAKI BASE</span>
+        <h2 class="section-title">4つの、決定的な違い。</h2>
+        <div class="section-divider" style="margin:0 auto 1rem;"></div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <p class="feature-number">01</p>
+          <h3 class="feature-title">隣人ゼロ。<br>完全プライベート</h3>
+          <p class="feature-desc">
+            この物件に隣接する家がない。BBQも、笑い声も、バイクの音も——何も気にしない。
+            静寂の中で、大声で笑える場所。それが「隣人ゼロ」という贅沢だ。
+          </p>
+        </div>
+        <div class="feature-item">
+          <p class="feature-number">02</p>
+          <h3 class="feature-title">スキー場温泉<br>車で1分</h3>
+          <p class="feature-desc">
+            シーサイドバレースキー場が隣接。冬はゲレンデ直結、通年は温泉を即利用。
+            ライダーが一日走った後、すぐ浸かれる。これが本物のロケーション価値だ。
+          </p>
+        </div>
+        <div class="feature-item">
+          <p class="feature-number">03</p>
+          <h3 class="feature-title">Luxury Dojo<br>体験設計</h3>
+          <p class="feature-desc">
+            卓球台・パターパット・ガレージ・日本海を見渡す庭——すべてが「磨く」テーマで設計。
+            「癒し」ではなく、鍛える。研ぎ澄ます。そういう宿だ。
+          </p>
+        </div>
+        <div class="feature-item">
+          <p class="feature-number">04</p>
+          <h3 class="feature-title">看護師オーナーの<br>安心設計</h3>
+          <p class="feature-desc">
+            救急看護師26年のオーナーが設計した滞在環境。段差対応・衛生管理・非常時対応——
+            医療的配慮が細部に行き渡る。安心という、見えない贅沢。
+          </p>
+        </div>
+        <div class="feature-item">
+          <p class="feature-number">05</p>
+          <h3 class="feature-title">一棟まるごと<br>貸し切り</h3>
+          <p class="feature-desc">
+            他のゲストの気配がない。オーナーの監視感がない。完全にあなた達のもの。
+            定員8〜10名。家族・チーム・仲間との時間を、最高の密度で使える。
+          </p>
+        </div>
+        <div class="feature-item">
+          <p class="feature-number">06</p>
+          <h3 class="feature-title">糸魚川ジオパーク<br>の玄関口</h3>
+          <p class="feature-desc">
+            世界ジオパーク認定の糸魚川。翡翠の産地、フォッサマグナ、日本海沿岸——
+            ここを拠点に、日本が凝縮した大地を探る。インバウンドが最も求める「本物の日本」がここにある。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Rider Section ==================== -->
+  <section id="rider">
+    <div class="container">
+      <div class="rider-content">
+        <div>
+          <span class="rider-badge">Riders Welcome</span>
+          <span class="section-label">— For Riders</span>
+          <h2 class="section-title">全国のライダーが<br>糸魚川に集まる<br>理由がある。</h2>
+          <div class="section-divider"></div>
+          <ul class="rider-list">
+            <li>オフロードコース隣接。愛車と一緒に眠れるガレージ完備</li>
+            <li>風巻神社——ライダー聖地と目と鼻の先。参拝ライダーの宿として</li>
+            <li>糸魚川ジオパーク・親不知・日本海沿岸ルート——北陸最高峰のツーリングコースが玄関前</li>
+            <li>バイク好きのオーナーが「ライダーが泊まれる場所を探している」地域ニーズを直接把握</li>
+            <li>スキー場温泉（車1分）でその日の疲れをリセット。翌日また走り出す</li>
+          </ul>
+        </div>
+        <div>
+          <div class="route-box">
+            <h4>— Recommended Routes from MIGAKI BASE</h4>
+            <div class="route-item">🏔️ 糸魚川ジオパーク周遊（半日コース）</div>
+            <div class="route-item">🌊 親不知・日本海沿岸ルート（全日コース）</div>
+            <div class="route-item">⛰️ 白馬〜糸魚川（アルプス越えルート）</div>
+            <div class="route-item">🏯 上越〜柏崎・長岡（新潟内陸ルート）</div>
+            <div class="route-item">🌸 飛騨高山〜糸魚川（岐阜〜新潟縦断）</div>
+          </div>
+          <br>
+          <div class="route-box">
+            <h4>— Garage & Bike Facilities</h4>
+            <div class="route-item">バイク専用スペース（複数台対応）</div>
+            <div class="route-item">雨天でも安心の屋根付きガレージ</div>
+            <div class="route-item">工具・洗車スペース（相談可）</div>
+            <div class="route-item">バイク仲間との夜談義ができる庭・焚き火スペース</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Host Section ==================== -->
+  <section id="host">
+    <div class="container">
+      <span class="section-label">— Your Host</span>
+      <h2 class="section-title">世界を旅した航海士の父と、<br>26年患者を救った看護師の息子が作った宿。</h2>
+      <div class="section-divider"></div>
+      <p class="host-highlight">
+        "Your host, my father, was a first-class navigator — he sailed the world for decades.<br>
+        Now he welcomes you here, in the mountains of Itoigawa."
+      </p>
+      <div class="host-grid">
+        <div class="host-card">
+          <span class="host-tag">Father / Host</span>
+          <h3 class="host-name">木島 幸</h3>
+          <p class="host-title">甲種一等航海士 ／ MIGAKI BASE ホスト</p>
+          <p class="host-story">
+            日本の船員免許の最高位・甲種一等航海士として国際航海を経験。
+            世界の海を渡り、英語での対応経験も豊富な父が、糸魚川の山と海が見える宿で皆さんを迎える。
+            <br><br>
+            「幸」という名の父が作ったこの場所に、「幸一」という名の息子が宿を開く。
+            「幸せを、磨く。」——このコピーは、事実だ。
+          </p>
+        </div>
+        <div class="host-card">
+          <span class="host-tag">Son / Manager</span>
+          <h3 class="host-name">木島 幸一（こういち）</h3>
+          <p class="host-title">救急看護師 26年目 ／ MIGAKI BASE 代表</p>
+          <p class="host-story">
+            救急現場26年のキャリアを持つ看護師。
+            アセスメント思考で事業を設計し、AIチームを率いてMIGAKIを遠隔運営する。
+            <br><br>
+            「免許を持ったまま、外に出た。26年の経験は、病棟の外でも使えた。」
+            MIGAKIは、看護師が次のフィールドを試す場所でもある——そのオーナーが設計した宿。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Facilities ==================== -->
+  <section id="facilities">
+    <div class="container">
+      <span class="section-label">— Facilities</span>
+      <h2 class="section-title">施設・設備</h2>
+      <div class="section-divider"></div>
+      <div class="facility-grid">
+        <div class="facility-item">
+          <span class="facility-icon">🏡</span>
+          <div class="facility-info">
+            <h4>一棟まるごと貸し切り</h4>
+            <p>定員8〜10名。2棟構成。隣接する家なし。完全プライベート。</p>
+          </div>
+        </div>
+        <div class="facility-item">
+          <span class="facility-icon">🏍️</span>
+          <div class="facility-info">
+            <h4>バイクガレージ</h4>
+            <p>複数台対応。愛車を安全に保管しながら宿泊できる。</p>
+          </div>
+        </div>
+        <div class="facility-item">
+          <span class="facility-icon">🏓</span>
+          <div class="facility-info">
+            <h4>卓球台</h4>
+            <p>室内設置。雨の日も、夜も、家族・グループで楽しめる。</p>
+          </div>
+        </div>
+        <div class="facility-item">
+          <span class="facility-icon">⛳</span>
+          <div class="facility-info">
+            <h4>パターパット</h4>
+            <p>ゴルフ好きのインバウンドにも人気。アジア富裕層に刺さる設備。</p>
+          </div>
+        </div>
+        <div class="facility-item">
+          <span class="facility-icon">♨️</span>
+          <div class="facility-info">
+            <h4>スキー場温泉（車1分）</h4>
+            <p>シーサイドバレースキー場の温泉に即アクセス。走った後、滑った後に直行。</p>
+          </div>
+        </div>
+        <div class="facility-item">
+          <span class="facility-icon">🍖</span>
+          <div class="facility-info">
+            <h4>BBQスペース・庭</h4>
+            <p>隣人への気遣い不要。夜も大声で盛り上がれる。日本海を見渡す庭。</p>
+          </div>
+        </div>
+        <div class="facility-item">
+          <span class="facility-icon">🛒</span>
+          <div class="facility-info">
+            <h4>ローカル商店（徒歩圏内）</h4>
+            <p>本物の日本の日常体験。地元の食材・日本海の幸を仕入れて自炊も可。</p>
+          </div>
+        </div>
+        <div class="facility-item">
+          <span class="facility-icon">⛷️</span>
+          <div class="facility-info">
+            <h4>スキー場隣接</h4>
+            <p>冬はゲレンデへ徒歩・車で即アクセス。スキー・スノーボードの拠点に最適。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Plans ==================== -->
+  <section id="plans">
+    <div class="container">
+      <span class="section-label">— Stay Plans</span>
+      <h2 class="section-title">宿泊プラン</h2>
+      <div class="section-divider"></div>
+      <div class="plans-grid">
+        <div class="plan-card">
+          <p class="plan-name">Standard</p>
+          <h3 class="plan-title">一棟貸し<br>基本プラン</h3>
+          <p class="plan-price">¥80,000 <span>〜 / 棟・泊</span></p>
+          <p class="plan-note">〜4名利用時の目安</p>
+          <ul class="plan-features">
+            <li>一棟まるごと貸し切り</li>
+            <li>ガレージ利用可</li>
+            <li>BBQスペース使用可</li>
+            <li>卓球台・パターパット</li>
+          </ul>
+          <a href="#reserve" class="plan-btn">Reserve</a>
+        </div>
+        <div class="plan-card featured">
+          <p class="plan-name">Rider Premium</p>
+          <h3 class="plan-title">ライダーズ<br>プレミアムプラン</h3>
+          <p class="plan-price">¥100,000 <span>〜 / 棟・泊</span></p>
+          <p class="plan-note">バイカー向け特別設計</p>
+          <ul class="plan-features">
+            <li>一棟まるごと貸し切り</li>
+            <li>バイク専用ガレージ（複数台）</li>
+            <li>ツーリングルートマップ提供</li>
+            <li>風巻神社ガイド付き</li>
+            <li>スキー場温泉チケット付き</li>
+          </ul>
+          <a href="#reserve" class="plan-btn">Reserve</a>
+        </div>
+        <div class="plan-card">
+          <p class="plan-name">Workcation / Long Stay</p>
+          <h3 class="plan-title">ワーケーション<br>長期滞在プラン</h3>
+          <p class="plan-price">¥120,000 <span>〜 / 週</span></p>
+          <p class="plan-note">ITワーカー・リモートチーム向け</p>
+          <ul class="plan-features">
+            <li>高速Wi-Fi完備</li>
+            <li>作業環境整備</li>
+            <li>週次・月次料金設定あり</li>
+            <li>長期割引あり</li>
+          </ul>
+          <a href="#reserve" class="plan-btn">Reserve</a>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:2rem; font-size:0.78rem; color:var(--gray);">
+        ※ 正式な料金・空室はAirbnb / Booking.comにてご確認ください。<br>
+        開業後順次更新予定。グループ・インバウンド対応は直接お問い合わせください。
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== Access ==================== -->
+  <section id="access">
+    <div class="container">
+      <div class="access-grid">
+        <div class="access-info">
+          <span class="section-label">— Access</span>
+          <h2 class="section-title">アクセス</h2>
+          <div class="section-divider"></div>
+          <div class="access-item">
+            <span class="access-label">住所</span>
+            <span class="access-val">新潟県糸魚川市<br>（詳細は予約確定後にご案内）</span>
+          </div>
+          <div class="access-item">
+            <span class="access-label">最寄り</span>
+            <span class="access-val">シーサイドバレースキー場 車で1分<br>JR北陸新幹線 糸魚川駅より車で約25分</span>
+          </div>
+          <div class="access-item">
+            <span class="access-label">駐車場</span>
+            <span class="access-val">無料・複数台対応（バイク・車）</span>
+          </div>
+          <div class="access-item">
+            <span class="access-label">周辺</span>
+            <span class="access-val">糸魚川ジオパーク・風巻神社・親不知<br>日本海沿岸・白馬村（車約40分）</span>
+          </div>
+          <div class="access-item">
+            <span class="access-label">連絡先</span>
+            <span class="access-val">メールにてお問い合わせください<br>（医療現場勤務のため電話対応は困難な場合があります）</span>
+          </div>
+        </div>
+        <div>
+          <div class="map-placeholder">
+            <span>新潟県糸魚川市</span>
+            <span style="font-size:0.7rem; letter-spacing:0.1em;">シーサイドバレースキー場 隣</span>
+          </div>
+          <br>
+          <div class="route-box">
+            <h4>— Distance from Major Cities</h4>
+            <div class="route-item">🚄 東京 → 糸魚川（新幹線）約2時間</div>
+            <div class="route-item">🚗 長野市 → 糸魚川（車）約1.5時間</div>
+            <div class="route-item">🚗 富山市 → 糸魚川（車）約1時間</div>
+            <div class="route-item">🚗 白馬村 → MIGAKI BASE（車）約40分</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Reserve CTA ==================== -->
+  <section id="reserve">
+    <div class="reserve-en">Reserve your stay</div>
+    <h2 class="reserve-title">幸せを、<br>磨きに来てください。</h2>
+    <p class="reserve-sub">一棟まるごと、あなたたちだけの時間。</p>
+    <div class="reserve-buttons">
+      <a href="#" class="btn-primary">Airbnbで予約する</a>
+      <a href="#" class="btn-secondary">Booking.comで予約する</a>
+    </div>
+    <p style="margin-top:2rem; font-size:0.75rem; color:rgba(245,240,232,0.3); letter-spacing:0.15em;">
+      開業準備中 — 2026年内オープン予定
+    </p>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <p class="footer-logo">MIGAKI BASE</p>
+        <p class="footer-tagline">
+          幸せを、磨く。<br><br>
+          新潟県糸魚川。北アルプスと日本海が交わる場所に、<br>
+          世界を旅した航海士の父と看護師の息子が作った一棟貸しの宿。
+        </p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#features">特徴</a></li>
+          <li><a href="#rider">ライダー向け</a></li>
+          <li><a href="#host">ホストについて</a></li>
+          <li><a href="#facilities">施設・設備</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Reserve</p>
+        <ul class="footer-links">
+          <li><a href="#">Airbnb</a></li>
+          <li><a href="#">Booking.com</a></li>
+          <li><a href="#">じゃらん（予定）</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+        <br>
+        <p class="footer-heading">Language</p>
+        <ul class="footer-links">
+          <li><a href="#">日本語</a></li>
+          <li><a href="#">English</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 MIGAKI BASE. All rights reserved. 新潟県糸魚川市</p>
+      <span class="footer-lang">EN / 日本語</span>
+    </div>
+  </footer>
+
+</body>
+</html>
