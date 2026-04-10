@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>MIGAKI BASE ライダーポスター</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+    background: #0d0d0d;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ======= 背景：山シルエット SVG ======= */
+  .bg-mountains {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    z-index: 0;
+    opacity: 0.18;
+  }
+
+  /* ======= トップ帯 ======= */
+  .top-strip {
+    background: #e85d04;
+    padding: 7px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+  .top-strip span {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  /* ======= HERO ======= */
+  .hero {
+    position: relative;
+    z-index: 10;
+    padding: 38px 36px 24px;
+    background: linear-gradient(160deg, #0d0d0d 0%, #161616 60%, #1a0a00 100%);
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #e85d04;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .eyebrow::before, .eyebrow::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 30px;
+    background: #e85d04;
+  }
+
+  .hero-main-title {
+    font-size: 62px;
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -2px;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .hero-main-title .highlight {
+    color: #e85d04;
+    display: block;
+  }
+  .hero-main-title .sub-line {
+    font-size: 22px;
+    font-weight: 400;
+    color: #888;
+    letter-spacing: 4px;
+    display: block;
+    margin-top: 8px;
+  }
+
+  .hero-tagline {
+    margin-top: 22px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #bbb;
+    border-left: 3px solid #e85d04;
+    padding-left: 14px;
+    max-width: 78%;
+  }
+  .hero-tagline strong { color: #fff; }
+
+  /* ======= 山＆海 バッジ ======= */
+  .location-badges {
+    display: flex;
+    gap: 10px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(232,93,4,0.4);
+    border-radius: 4px;
+    padding: 6px 14px;
+    font-size: 11px;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .badge-icon { font-size: 14px; }
+
+  /* ======= 仕切り ======= */
+  .divider {
+    height: 3px;
+    background: linear-gradient(90deg, #e85d04, #ff9a3c, transparent);
+    position: relative;
+    z-index: 10;
+  }
+
+  /* ======= 3大魅力 ======= */
+  .features {
+    position: relative;
+    z-index: 10;
+    padding: 26px 36px;
+    background: #111;
+  }
+  .section-label {
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #e85d04;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 18px;
+  }
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+  }
+  .feature-card {
+    background: #1a1a1a;
+    border: 1px solid #252525;
+    border-radius: 8px;
+    padding: 18px 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 3px;
+    background: #e85d04;
+  }
+  .feature-card.featured {
+    border-color: #e85d04;
+    background: linear-gradient(145deg, #1e1008, #1a1a1a);
+  }
+  .feature-num {
+    font-size: 32px;
+    font-weight: 900;
+    color: rgba(232,93,4,0.2);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .feature-icon { font-size: 22px; margin-bottom: 8px; display: block; }
+  .feature-title {
+    font-size: 13px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .feature-desc {
+    font-size: 10.5px;
+    color: #999;
+    line-height: 1.7;
+  }
+
+  /* ======= コース情報 ======= */
+  .plans-section {
+    position: relative;
+    z-index: 10;
+    padding: 24px 36px;
+    background: #0d0d0d;
+  }
+  .plans-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .plan-card {
+    background: #161616;
+    border: 1px solid #252525;
+    border-radius: 8px;
+    padding: 20px 18px;
+  }
+  .plan-card.premium {
+    border-color: #e85d04;
+    background: linear-gradient(145deg, #1e1008, #161616);
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: center;
+  }
+  .plan-tag {
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e85d04;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .plan-name {
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .plan-desc {
+    font-size: 10.5px;
+    color: #999;
+    line-height: 1.7;
+  }
+  .plan-price-block { text-align: right; }
+  .plan-price {
+    font-size: 28px;
+    font-weight: 900;
+    color: #e85d04;
+    line-height: 1;
+  }
+  .plan-price-note {
+    font-size: 10px;
+    color: #888;
+    margin-top: 2px;
+  }
+  .plan-price-solo {
+    font-size: 20px;
+    font-weight: 900;
+    color: #e85d04;
+    margin-top: 10px;
+    display: block;
+  }
+  .plan-price-solo-note {
+    font-size: 10px;
+    color: #888;
+  }
+
+  /* ======= キャッチ帯 ======= */
+  .catch-strip {
+    background: #e85d04;
+    padding: 16px 36px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .catch-strip p {
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  .catch-sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.75);
+    letter-spacing: 1px;
+    font-weight: 400;
+    display: block;
+    margin-top: 2px;
+  }
+  .catch-deco {
+    font-size: 28px;
+    opacity: 0.9;
+  }
+
+  /* ======= アクセス ======= */
+  .access {
+    position: relative;
+    z-index: 10;
+    padding: 22px 36px;
+    background: #111;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .access-item { }
+  .access-label {
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #e85d04;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .access-content {
+    font-size: 11.5px;
+    color: #ccc;
+    line-height: 1.8;
+  }
+  .access-content strong { color: #fff; font-weight: 700; }
+
+  /* ======= フッター ======= */
+  .footer {
+    position: relative;
+    z-index: 10;
+    background: #0a0a0a;
+    padding: 18px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #1e1e1e;
+  }
+  .footer-brand {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .footer-brand span { color: #e85d04; }
+  .footer-brand small {
+    font-size: 9px;
+    color: #666;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: 400;
+    margin-top: 1px;
+  }
+  .footer-contact {
+    text-align: right;
+    font-size: 11px;
+    color: #888;
+    line-height: 1.8;
+  }
+  .footer-contact strong { color: #ddd; font-size: 13px; }
+
+  /* ======= 印刷 ======= */
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .bg-mountains { position: absolute; }
+  }
+</style>
+</head>
+<body>
+
+<!-- 背景：山シルエット -->
+<svg class="bg-mountains" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="0,400 120,180 200,260 320,100 420,200 540,80 640,180 720,120 800,160 800,400" fill="#e85d04"/>
+  <polygon points="0,400 80,280 180,320 300,200 400,280 500,160 600,240 700,200 800,220 800,400" fill="#ff7a20" opacity="0.5"/>
+</svg>
+
+<!-- トップ帯 -->
+<div class="top-strip">
+  <span>🏍️ OFF-ROAD RIDERS BASE — ITOIGAWA, NIIGATA</span>
+  <span>シーサイドバレースキー場 車1分</span>
+</div>
+
+<!-- ヒーロー -->
+<div class="hero">
+  <div class="eyebrow">MIGAKI BASE</div>
+  <h1 class="hero-main-title">
+    糸魚川の<span class="highlight">野山</span>を<br>駆け抜けろ。
+    <span class="sub-line">— 幸せを、磨く。</span>
+  </h1>
+  <p class="hero-tagline">
+    日本海の風を背に受け、北アルプスの峰を望む。<br>
+    <strong>ライダーのための、本物の拠点がここにある。</strong><br>
+    走った日の夜は、仲間と飯を食い、ゆっくり眠れ。
+  </p>
+  <div class="location-badges">
+    <div class="badge"><span class="badge-icon">🏔️</span> 北アルプス至近</div>
+    <div class="badge"><span class="badge-icon">🌊</span> 日本海まで20分</div>
+    <div class="badge"><span class="badge-icon">⛷️</span> スキー場まで車1分</div>
+    <div class="badge"><span class="badge-icon">🏠</span> 最大50名収容</div>
+    <div class="badge"><span class="badge-icon">🅿️</span> 大型バス3台分の駐車場</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- 3大魅力 -->
+<div class="features">
+  <div class="section-label">WHY MIGAKI BASE</div>
+  <div class="features-grid">
+    <div class="feature-card featured">
+      <div class="feature-num">01</div>
+      <span class="feature-icon">🏍️</span>
+      <div class="feature-title">バイクごと泊まれる<br>広大な駐車スペース</div>
+      <div class="feature-desc">観光バス3台分の敷地。大型ツーリングチームも余裕で収容。雨でも安心のスペース確保。</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">02</div>
+      <span class="feature-icon">🌄</span>
+      <div class="feature-title">走り終えた後の<br>極上のリセット</div>
+      <div class="feature-desc">北アルプスと日本海に囲まれた糸魚川。走行後に浸かれる温泉も近隣に充実。</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">03</div>
+      <span class="feature-icon">👥</span>
+      <div class="feature-title">チームで貸切れる<br>本格的な宿泊施設</div>
+      <div class="feature-desc">元民宿の2棟体制。食堂・キッチン完備。ソロ〜50名まで対応。仲間との夜が格別に。</div>
+    </div>
+  </div>
+</div>
+
+<!-- プラン -->
+<div class="plans-section">
+  <div class="section-label">STAY PLAN</div>
+  <div class="plans-grid">
+
+    <div class="plan-card premium">
+      <div>
+        <div class="plan-tag">🔥 人気No.1 ／ グループ貸切プラン</div>
+        <div class="plan-name">FULL BASE 貸切<br><small style="font-size:12px;font-weight:400;color:#999">仲間と丸ごと独占。2棟・食堂・キッチン全部使える</small></div>
+        <div class="plan-desc">チーム全員が同じ場所に集まれる。食材持ち込みOK。翌朝も余裕のチェックアウト。</div>
+      </div>
+      <div class="plan-price-block">
+        <div class="plan-price">¥40,000〜</div>
+        <div class="plan-price-note">／ 棟・1泊（人数応相談）</div>
+      </div>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-tag">ソロ・ペアプラン</div>
+      <div class="plan-name">ライダー1名〜<br>シンプルステイ</div>
+      <div class="plan-desc">一人旅でも、ペアでも。必要なものだけで、身軽に泊まる。</div>
+      <span class="plan-price-solo">¥5,000〜</span>
+      <span class="plan-price-solo-note">／ 1名・1泊</span>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-tag">季節イベント</div>
+      <div class="plan-name">冬スキー×<br>ツーリングパッケージ</div>
+      <div class="plan-desc">スキー場まで車1分。雪山を滑り、夜はMIGAKI BASEで。冬季限定の特別プラン。</div>
+      <span class="plan-price-solo">詳細はお問い合わせ</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- キャッチ帯 -->
+<div class="catch-strip">
+  <span class="catch-deco">🏍️</span>
+  <div>
+    <p>走ることを、もっと好きになる場所がある。</p>
+    <span class="catch-sub">MIGAKI BASE — Active &amp; Zen. Zero Friction.</span>
+  </div>
+  <span class="catch-deco">🏔️</span>
+</div>
+
+<!-- アクセス -->
+<div class="access">
+  <div class="access-item">
+    <div class="access-label">ACCESS</div>
+    <div class="access-content">
+      <strong>新潟県糸魚川市</strong><br>
+      北陸自動車道 糸魚川ICより 約15分<br>
+      シーサイドバレースキー場 車で約1分<br>
+      糸魚川駅（新幹線停車）より 約20分
+    </div>
+  </div>
+  <div class="access-item">
+    <div class="access-label">NEARBY SPOTS</div>
+    <div class="access-content">
+      🏄 日本海（翡翠海岸）約20分<br>
+      ♨️ 大糸温泉・小谷温泉 約30分<br>
+      🏔️ 北アルプス登山口 約40分<br>
+      🦕 フォッサマグナミュージアム 約10分
+    </div>
+  </div>
+</div>
+
+<!-- フッター -->
+<div class="footer">
+  <div>
+    <div class="footer-brand"><span>MIGAKI</span> BASE<small>ITOIGAWA, NIIGATA — EST. 2026</small></div>
+  </div>
+  <div class="footer-contact">
+    予約・お問い合わせ<br>
+    <strong>primarykizi@gmail.com</strong><br>
+    Instagram: @hikaru_kango26（準備中）
+  </div>
+</div>
+
+</body>
+</html>
